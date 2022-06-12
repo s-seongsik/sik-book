@@ -1,0 +1,684 @@
+
+<!DOCTYPE HTML>
+<html lang="ko" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>02.CORS의 정의 및 해결 · 서성식의 eBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="서성식">
+        
+        
+    
+    <link rel="stylesheet" href="../../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-highlight-1/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../../../assets/css/website.css">
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="03.html" />
+    
+    
+    <link rel="prev" href="01.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="검색어 입력" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../../">
+            
+                <a href="../../../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../../html-dom/">
+            
+                <a href="../../html-dom/">
+            
+                    
+                    HTML DOM
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../../html-dom/defind.html">
+            
+                <a href="../../html-dom/defind.html">
+            
+                    
+                    DOM의 개념
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../../html-dom/dom-init.html">
+            
+                <a href="../../html-dom/dom-init.html">
+            
+                    
+                    DOM의 타입과 핵심 인터페이스
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../../html-dom/elements-finding.html">
+            
+                <a href="../../html-dom/elements-finding.html">
+            
+                    
+                    HTML Elements 찾기
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../../html-dom/elements-changing.html">
+            
+                <a href="../../html-dom/elements-changing.html">
+            
+                    
+                    HTML Elements 내용 및 속성 변경
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="../../html-dom/elements-add-del.html">
+            
+                <a href="../../html-dom/elements-add-del.html">
+            
+                    
+                    HTML Elements 추가 및 삭제하기
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../../javascript/">
+            
+                <a href="../../javascript/">
+            
+                    
+                    Javascript
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../../javascript/01.type-conversions.html">
+            
+                <a href="../../javascript/01.type-conversions.html">
+            
+                    
+                    형 변환
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../../javascript/02.strict-mode.html">
+            
+                <a href="../../javascript/02.strict-mode.html">
+            
+                    
+                    엄격 모드
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../../javascript/03.comparison.html">
+            
+                <a href="../../javascript/03.comparison.html">
+            
+                    
+                    비교 연산자
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../../javascript/100.class.html">
+            
+                <a href="../../javascript/100.class.html">
+            
+                    
+                    Class 문법
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../../vanilla-javascript/">
+            
+                <a href="../../vanilla-javascript/">
+            
+                    
+                    Vanilla Javascript
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../../vanilla-javascript/vanilla-js_01.html">
+            
+                <a href="../../vanilla-javascript/vanilla-js_01.html">
+            
+                    
+                    웹 컴포넌트 구현하기
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Front-end 필수지식
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Web Browser
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1.1" data-path="01.html">
+            
+                <a href="01.html">
+            
+                    
+                    01.브라우저의 동작원리
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.5.1.2" data-path="02.html">
+            
+                <a href="02.html">
+            
+                    
+                    02.CORS의 정의 및 해결
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.1.3" data-path="03.html">
+            
+                <a href="03.html">
+            
+                    
+                    03.크로스 브라우징
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../javascirpt/">
+            
+                <a href="../javascirpt/">
+            
+                    
+                    Javascirpt
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.2.1" data-path="../javascirpt/01.html">
+            
+                <a href="../javascirpt/01.html">
+            
+                    
+                    01.호이스팅
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2.2" data-path="../javascirpt/02.html">
+            
+                <a href="../javascirpt/02.html">
+            
+                    
+                    02.this
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2.3" data-path="../javascirpt/03.html">
+            
+                <a href="../javascirpt/03.html">
+            
+                    
+                    03.실행 컨텍스트
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2.4" data-path="../javascirpt/04.html">
+            
+                <a href="../javascirpt/04.html">
+            
+                    
+                    04.이벤트 버블링, 캡쳐링, 위임
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            GitBook에 게시
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../../.." >02.CORS의 정의 및 해결</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="cors&#xC758;-&#xC815;&#xC758;-&#xBC0F;-&#xD574;&#xACB0;">CORS&#xC758; &#xC815;&#xC758; &#xBC0F; &#xD574;&#xACB0;</h1>
+<hr>
+<h2 id="cors&#xB780;-&#xBB34;&#xC5C7;&#xC778;&#xAC00;"><strong>CORS&#xB780; &#xBB34;&#xC5C7;&#xC778;&#xAC00;?</strong></h2>
+<p><code>&#xAD50;&#xCC28; &#xCD9C;&#xCC98; &#xB9AC;&#xC18C;&#xC2A4; &#xACF5;&#xC720;(Cross-origin resource sharing, CORS), &#xAD50;&#xCC28; &#xCD9C;&#xCC98; &#xC790;&#xC6D0; &#xACF5;&#xC720;&#xB294; &#xC6F9; &#xD398;&#xC774;&#xC9C0; &#xC0C1;&#xC758; &#xC81C;&#xD55C;&#xB41C; &#xB9AC;&#xC18C;&#xC2A4;&#xB97C; &#xCD5C;&#xCD08; &#xC790;&#xC6D0;&#xC774; &#xC11C;&#xBE44;&#xC2A4;&#xB41C; &#xB3C4;&#xBA54;&#xC778; &#xBC16;&#xC758; &#xB2E4;&#xB978; &#xB3C4;&#xBA54;&#xC778;&#xC73C;&#xB85C;&#xBD80;&#xD130; &#xC694;&#xCCAD;&#xD560; &#xC218; &#xC788;&#xAC8C; &#xD5C8;&#xC6A9;&#xD558;&#xB294; &#xAD6C;&#xC870;&#xC774;&#xB2E4;.</code></p>
+<p>&#xC0AC;&#xC804;&#xC815;&#xC758; &#xADF8;&#xB300;&#xB85C; &#xAC00;&#xC838;&#xC628; &#xAC83;&#xC774;&#xB2E4;. &#xAD50;&#xCC28; &#xCD9C;&#xCC98; &#xB9AC;&#xC18C;&#xC2A4; &#xACF5;&#xC720;?, &#xADF8;&#xB9AC;&#xACE0; &#xCD5C;&#xCD08; &#xC790;&#xC6D0;&#xC774; &#xC11C;&#xBE44;&#xC2A4;&#xB41C; &#xB3C4;&#xBA54;&#xC778; &#xBC16;&#xC758; &#xB2E4;&#xB978; &#xB3C4;&#xBA54;&#xC778;&#xC73C;&#xB85C;&#xBD80;&#xD130; &#xC694;&#xCCAD;&#xD560; &#xC218; &#xC788;&#xAC8C; &#xD5C8;&#xC6A9;&#xD558;&#xB294; &#xAD6C;&#xC870;?<br>&#xC5ED;&#xC2DC; &#xC815;&#xC758;&#xB300;&#xB85C; &#xD574;&#xC11D;&#xD558;&#xB824;&#xACE0;&#xD558;&#xBA74; &#xC774;&#xD574;&#xAC00; &#xC5B4;&#xB835;&#xB2E4;...</p>
+<p>&#xC798; &#xC815;&#xB9AC;&#xB41C; &#xBE14;&#xB85C;&#xADF8;&#xB97C; &#xBCF4;&#xACE0; &#xC774;&#xD574;&#xB97C; &#xB3C4;&#xC654;&#xB2E4;.<br><a href="https://beomy.github.io/tech/browser/cors/" target="_blank">&#xCC38;&#xACE0; &#xBE14;&#xB85C;&#xADF8; &#xC774;&#xB3D9;</a> </p>
+<p><br></p>
+<h2 id="url-&#xAD6C;&#xC870;"><strong>URL &#xAD6C;&#xC870;</strong></h2>
+<p>CORS&#xB97C; &#xC774;&#xD574;&#xAE30; &#xC704;&#xD574;&#xC11C;&#xB294; <code>&#xCD9C;&#xCC98;(Origin)</code> &#xB77C;&#xB294; &#xAC1C;&#xB150;&#xC744; &#xC54C;&#xC544;&#xC57C;&#xD55C;&#xB2E4;.<br>&#xBA3C;&#xC800; URL &#xAD6C;&#xC870;&#xB97C; &#xC0B4;&#xD3B4;&#xBCF4;&#xC790;&#xBA74;, </p>
+<ul>
+<li><a href="https://localhost:8080/user?page=1#Origin&#xC774;&#xB780;?" target="_blank">https://localhost:8080/user?page=1#Origin&#xC774;&#xB780;?</a>  </li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Protocol</th>
+<th style="text-align:left">Host</th>
+<th style="text-align:left">Port(&#xC0DD;&#xB7B5;&#xAC00;&#xB2A5;)</th>
+<th style="text-align:left">Path</th>
+<th style="text-align:left">Query String</th>
+<th style="text-align:left">Fragment</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">https</td>
+<td style="text-align:left">localhost</td>
+<td style="text-align:left">8080</td>
+<td style="text-align:left">user</td>
+<td style="text-align:left">pase=1</td>
+<td style="text-align:left">Origin&#xC774;&#xB780;?</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>&#xCD9C;&#xCC98;&#xB780; URL &#xAD6C;&#xC870;&#xC5D0;&#xC11C; Protocol, Host, Port&#xB97C; &#xD569;&#xCE5C; &#xAC83;&#xC744; &#xB9D0;&#xD55C;&#xB2E4;.</li>
+</ul>
+<p><br></p>
+<h2 id="&#xB3D9;&#xC77C;-&#xCD9C;&#xCC98;-&#xC815;&#xCC45;same-origin-policy&#xC758;-&#xAC1C;&#xB150;&#xACFC;-&#xC7A5;&#xC810;&#xACFC;-&#xB2E8;&#xC810;"><strong>&#xB3D9;&#xC77C; &#xCD9C;&#xCC98; &#xC815;&#xCC45;(Same-Origin Policy)&#xC758; &#xAC1C;&#xB150;&#xACFC; &#xC7A5;&#xC810;&#xACFC; &#xB2E8;&#xC810;</strong></h2>
+<p>&#xBCF4;&#xD1B5; API&#xB97C; &#xD14C;&#xC2A4;&#xD2B8;&#xD560; &#xB54C; Postman, swagger&#xB97C; &#xC0AC;&#xC6A9;&#xD569;&#xB2C8;&#xB2E4;. &#xD574;&#xB2F9; &#xD234;&#xB4E4;&#xC744; &#xC774;&#xC6A9;&#xD560; &#xB550; &#xC798;&#xB418;&#xB2E4;&#xAC00;, &#xBE0C;&#xB77C;&#xC6B0;&#xC800;&#xB97C; &#xD1B5;&#xD574; api&#xB97C; &#xD638;&#xCD9C;&#xD558;&#xAC8C; &#xB418;&#xBA74; CORS policy&#xB77C;&#xB294; &#xC624;&#xB958;&#xAC00; &#xBC1C;&#xC0DD;&#xD560; &#xB54C;&#xAC00; &#xC788;&#xB2E4;. &#xC774;&#xAC70;&#xB294; &#xBE0C;&#xB77C;&#xC6B0;&#xC800;&#xAC00; &#xB3D9;&#xC77C; &#xCD9C;&#xCC98; &#xC815;&#xCC45;&#xC744; &#xC9C0;&#xD0A4;&#xAE30; &#xB54C;&#xBB38;&#xC5D0; &#xB2E4;&#xB978; &#xCD9C;&#xCC98;&#xC758; &#xB9AC;&#xC18C;&#xC2A4; &#xC811;&#xADFC;&#xC744; &#xAE08;&#xC9C0;&#xD558;&#xAE30; &#xB54C;&#xBB38;&#xC5D0; &#xBC1C;&#xC0DD;&#xD558;&#xB294; &#xAC83;&#xC774;&#xB2E4;. </p>
+<p><code>&#xB3D9;&#xC77C; &#xCD9C;&#xCC98; &#xC815;&#xCC45;&#xC758; &#xC7A5;&#xC810;</code>&#xC740; XSS&#xB098; XSRF&#xB4F1;&#xC758; &#xBCF4;&#xC548; &#xCDE8;&#xC57D;&#xC810;&#xC744; &#xB178;&#xB9B0; &#xACF5;&#xACA9;&#xC744; &#xBC29;&#xC5B4;&#xD560; &#xC218; &#xC788;&#xB2E4;.<br><code>&#xB3D9;&#xC77C; &#xCD9C;&#xCC98; &#xC815;&#xCC45;&#xC758; &#xB2E8;&#xC810;</code>&#xC740; &#xC678;&#xBD80; &#xB9AC;&#xC18C;&#xC2A4;&#xB97C; &#xC0AC;&#xC6A9;&#xD560; &#xC218; &#xC5C6;&#xB2E4;.</p>
+<p>&#xB3D9;&#xC77C; &#xCD9C;&#xCC98; &#xC815;&#xCC45;&#xC758; &#xB2E8;&#xC810;&#xC744; &#xBCF4;&#xC644;&#xD558;&#xAE30; &#xC704;&#xD55C; SOP&#xC758; &#xC608;&#xC678; &#xC870;&#xD56D;&#xC774; CORS&#xC774;&#xB2E4;.</p>
+<p><br></p>
+<h2 id="cors&#xC758;-&#xB3D9;&#xC791;&#xC6D0;&#xB9AC;"><strong>CORS&#xC758; &#xB3D9;&#xC791;&#xC6D0;&#xB9AC;</strong></h2>
+<h3 id="&#xB2E8;&#xC21C;-&#xC694;&#xCCAD;-&#xBC29;&#xBC95;simple-request"><strong>&#xB2E8;&#xC21C; &#xC694;&#xCCAD; &#xBC29;&#xBC95;(Simple request)</strong></h3>
+<p>&#xB2E8;&#xC21C; &#xC694;&#xCCAD;&#xC740; API&#xB97C; &#xC694;&#xCCAD;&#xD558;&#xACE0;, &#xC11C;&#xBC84;&#xB294; Access-Control-Allow-Origin &#xD5E4;&#xB354;&#xB97C; &#xD3EC;&#xD568;&#xD55C; &#xC751;&#xB2F5;&#xC744; &#xBE0C;&#xB77C;&#xC6B0;&#xC800;&#xC5D0;&#xAC8C; &#xBCF4;&#xB0B8;&#xB2E4;. &#xBE0C;&#xB77C;&#xC6B0;&#xC800;&#xB294; Access-Control-Allow-Origin &#xD5E4;&#xB354;&#xB97C; &#xD655;&#xC778;&#xD574;&#xC11C; CORS &#xB3D9;&#xC791;&#xC744; &#xC791;&#xB3D9;&#xD560; &#xC9C0; &#xD310;&#xB2E8;&#xD558;&#xB294; &#xC6D0;&#xB9AC;</p>
+<p><br></p>
+<h3 id="&#xB2E8;&#xC21C;-&#xC694;&#xCCAD;-&#xBC29;&#xBC95;simple-request-&#xC870;&#xAC74;"><strong>&#xB2E8;&#xC21C; &#xC694;&#xCCAD; &#xBC29;&#xBC95;(Simple request) &#xC870;&#xAC74;</strong></h3>
+<ol>
+<li>&#xC694;&#xCCAD; &#xBA54;&#xC11C;&#xB4DC;&#xB294; GET, HEAD, POST &#xC911; &#xD558;&#xB098;&#xC5EC;&#xC57C;&#xB9CC; &#xD55C;&#xB2E4;.  </li>
+<li>Accept, Accept-Language, Content-Language, Content-Type, DPR, Downlink,  Save-Data, Viewport-Width, Width&#xB97C; &#xC81C;&#xC678;&#xD55C; header&#xB97C; &#xC0AC;&#xC6A9;&#xD558;&#xBA74; &#xC548; &#xB429;&#xB2C8;&#xB2E4;.  </li>
+<li>Content-Type &#xD5E4;&#xB354;&#xB294; application/x-www-form-urlencoded, multipart/form-data, text/plain &#xC911; &#xD558;&#xB098;&#xB97C; &#xC0AC;&#xC6A9;&#xD574;&#xC57C; &#xD569;&#xB2C8;&#xB2E4;.  </li>
+</ol>
+<p><code>&#xC704;&#xC758; 2,3&#xBC88; &#xC870;&#xAC74;&#xC740; &#xAE4C;&#xB2E4;&#xB85C;&#xC6B4; &#xD3B8;&#xC785;&#xB2C8;&#xB2E4;. 2&#xBC88; &#xC870;&#xAC74;&#xC740; &#xC0AC;&#xC6A9;&#xC790; &#xC778;&#xC99D;&#xC5D0; &#xC0AC;&#xC6A9;&#xB418;&#xB294; Authorization &#xD5E4;&#xB354;&#xB97C; &#xC0AC;&#xC6A9;&#xD558;&#xC9C0; &#xBABB;&#xD558;&#xAE30; &#xB54C;&#xBB38;&#xC774;&#xACE0;, 3&#xBC88; &#xC870;&#xAC74;&#xC740; &#xB300;&#xB2E4;&#xC218;&#xC758; REST API&#xB4E4;&#xC774; Content-Type&#xC73C;&#xB85C; application/json&#xB97C; &#xC0AC;&#xC6A9;&#xD558;&#xAE30; &#xB54C;&#xBB38;&#xC5D0; &#xC9C0;&#xD0A4;&#xAE30; &#xC5B4;&#xB835;&#xB2E4;.</code></p>
+<p><br></p>
+<h3 id="&#xC608;&#xBE44;-&#xC694;&#xCCAD;&#xC744;-&#xBA3C;&#xC800;-&#xBCF4;&#xB0B4;&#xB294;-&#xBC29;&#xBC95;preflight-request"><strong>&#xC608;&#xBE44; &#xC694;&#xCCAD;&#xC744; &#xBA3C;&#xC800; &#xBCF4;&#xB0B4;&#xB294; &#xBC29;&#xBC95;(Preflight request)</strong></h3>
+<p>GET, POST, PUT, DELETE &#xB4F1;&#xC758; &#xBA54;&#xC11C;&#xB4DC;&#xB85C; API&#xB97C; &#xC694;&#xCCAD;&#xD558;&#xAE30; &#xC804;&#xC5D0; OPTIONS&#xB77C;&#xB294; &#xBA54;&#xC11C;&#xB4DC;&#xB97C; &#xD1B5;&#xD574; &#xC2E4;&#xC81C; &#xC694;&#xCCAD;&#xC744; &#xC804;&#xC1A1;&#xD560;&#xC9C0; &#xD310;&#xB2E8;&#xD55C;&#xB2E4;.</p>
+<p>OPTIONS &#xBA54;&#xC11C;&#xB4DC;&#xB85C; &#xC11C;&#xBC84;&#xC5D0; &#xC608;&#xBE44; &#xC694;&#xCCAD;&#xC744; &#xBCF4;&#xB0B8;&#xB4A4;, &#xC11C;&#xBC84;&#xB294; &#xC608;&#xBE44; &#xC694;&#xCCAD;&#xC5D0; &#xB300;&#xD55C; &#xC751;&#xB2F5;&#xC744; Access-Control-Allow-Origin &#xD5E4;&#xB354;&#xB97C; &#xD3EC;&#xD568;&#xD558;&#xC5EC; &#xBE0C;&#xB77C;&#xC6B0;&#xC800;&#xC5D0;&#xAC8C; &#xBCF4;&#xB0B8;&#xB2E4;. &#xBE0C;&#xB77C;&#xC6B0;&#xC800;&#xB294; &#xB2E8;&#xC21C; &#xC694;&#xCCAD;&#xACFC; &#xB3D9;&#xC77C;&#xD558;&#xAC8C; Access-Control-Allow-Origin &#xD5E4;&#xB354;&#xB97C; &#xD655;&#xC778; &#xD6C4; CORS&#xB97C; &#xB3D9;&#xC791;&#xD560; &#xC9C0; &#xD310;&#xB2E8;&#xD558;&#xB294; &#xC6D0;&#xB9AC;&#xC774;&#xB2E4;.</p>
+<p><br></p>
+<h2 id="fastapi&#xB85C;-&#xAC1C;&#xBC1C;&#xB41C;-rest-api&#xB85C;-cors-&#xD14C;&#xC2A4;&#xD2B8;"><strong>FastAPI&#xB85C; &#xAC1C;&#xBC1C;&#xB41C; REST API&#xB85C; CORS &#xD14C;&#xC2A4;&#xD2B8;!</strong></h2>
+<ol>
+<li>&#xD604;&#xC7AC; &#xB0B4;&#xAC00; &#xC704;&#xCE58;&#xD55C; &#xBE0C;&#xB77C;&#xC6B0;&#xC800;&#xB294; &apos;<a href="https://beomy.github.io" target="_blank">https://beomy.github.io</a>&apos; &#xC774;&#xB2E4;. &#xC989; &apos;<a href="https://beomy.github.io" target="_blank">https://beomy.github.io</a>&apos; &#xC5D0;&#xC11C; API&#xC11C;&#xBC84;&#xC5D0; &#xB9AC;&#xC18C;&#xC2A4;&#xB97C; &#xC694;&#xCCAD;&#xD55C;&#xB2E4;&#xACE0; &#xC0DD;&#xAC01;&#xD574;&#xBCF4;&#xC790;.  </li>
+</ol>
+<p><img src="https://user-images.githubusercontent.com/52439201/138238315-0d29ecf0-f487-4015-8362-8ea4a8d92c53.png" alt="image"></p>
+<p><br></p>
+<ol>
+<li>REST API
+(GET) localhost:8000/user &#xD638;&#xCD9C; &#xC2DC; &#xC544;&#xB798;&#xC758; &#xB9AC;&#xC18C;&#xC2A4;&#xB97C; &#xB9AC;&#xD134;<pre><code class="lang-json">[
+{
+ <span class="cm-property">&quot;username&quot;</span>: <span class="cm-string">&quot;Rick&quot;</span>
+},
+{
+ <span class="cm-property">&quot;username&quot;</span>: <span class="cm-string">&quot;Morty&quot;</span>
+}
+]
+</code></pre>
+</li>
+</ol>
+<p><br></p>
+<ol>
+<li>&#xD604;&#xC7AC; &#xB0B4;&#xAC00; &#xC704;&#xCE58;&#xD55C; &#xBE0C;&#xB77C;&#xC6B0;&#xC800;&#xC758; &#xCD9C;&#xCC98;&#xC5D0;&#xC11C; API&#xC758; &#xB9AC;&#xC18C;&#xC2A4;&#xB97C; &#xC694;&#xCCAD;&#xD558;&#xBA74; &#xC544;&#xB798;&#xC640; &#xAC19;&#xC774; Access-Control-Allow-Origin &#xD5E4;&#xB354;&#xAC00; &#xC694;&#xCCAD;&#xB9AC;&#xC18C;&#xC2A4;&#xC5D0; &#xD3EC;&#xD568;&#xB418;&#xC5B4; &#xC788;&#xC9C0; &#xC54A;&#xB2E4;&#xB77C;&#xB294; &#xC624;&#xB958;&#xAC00; &#xB72C;&#xB2E4;. </li>
+</ol>
+<p><img src="https://user-images.githubusercontent.com/52439201/138239426-54668cc0-ca94-48ff-b5ad-266779257c38.png" alt="image"></p>
+<p><br></p>
+<ol>
+<li>FastAPI &#xC11C;&#xBC84;&#xC5D0;&#xC11C; &#xC751;&#xB2F5;&#xD5E4;&#xB354;&#xC5D0; Access-Control-Allow-Origin&#xC640; &#xCD9C;&#xCC98;&#xB97C; &#xCD94;&#xAC00;&#xD574;&#xC900;&#xB2E4;.   </li>
+<li>allow_methods=[&quot;*&quot;]&#xC740; Access-Control-Allow-Methods POST, GET, PUT, DELETE &#xBAA8;&#xB450; &#xD5C8;&#xC6A9;&#xC774;&#xACE0; </li>
+<li>allow_headers=[&quot;*&quot;]&#xC740; Access-Control-Allow-Headers &#xC751;&#xB2F5; &#xD5E4;&#xB354;&#xB97C; &#xBAA8;&#xB450; &#xD5C8;&#xC6A9;&#xD558;&#xACA0;&#xB2E4;&#xB294; &#xC758;&#xBBF8;&#xC774;&#xB2E4;.</li>
+</ol>
+<p><img src="https://user-images.githubusercontent.com/52439201/138239252-f05afda6-16d2-4b93-834a-ee9badbfdd3b.png" alt="image"></p>
+<p><br></p>
+<ol>
+<li>&#xB2E4;&#xC2DC; &#xC694;&#xCCAD;&#xC744; &#xBCF4;&#xB0B4;&#xBA74; &#xC11C;&#xBC84;&#xC5D0;&#xC11C; &#xB9AC;&#xC18C;&#xC2A4;&#xAC00; &#xB9AC;&#xD134;&#xB418;&#xB294; &#xAC83;&#xC744; &#xD655;&#xC778;&#xD560; &#xC218; &#xC788;&#xB2E4;.</li>
+</ol>
+<p><img src="https://user-images.githubusercontent.com/52439201/138239564-b992115f-6595-4215-b933-8669731c288c.png" alt="image"></p>
+<p><br></p>
+<ol>
+<li>&#xAC1C;&#xBC1C;&#xC790; &#xB3C4;&#xAD6C; &gt; Network&#xC5D0;&#xC11C; &#xC751;&#xB2F5; &#xD5E4;&#xB354;&#xB97C; &#xD655;&#xC778;&#xD574;&#xBCF4;&#xBA74; &#xC11C;&#xBC84;&#xC5D0;&#xC11C; Access-Control-Allow-Origin &#xD5E4;&#xB354;&#xB97C; &#xBE0C;&#xB77C;&#xC6B0;&#xC800;&#xC5D0; &#xBCF4;&#xB0B8;&#xAC83;&#xC744; &#xD655;&#xC778;&#xD560; &#xC218; &#xC788;&#xB2E4;!.  </li>
+</ol>
+<p><img src="https://user-images.githubusercontent.com/52439201/138240176-adbc5c1d-7de3-41d2-a004-7f9753eecfaa.png" alt="image"></p>
+<p><br></p>
+<h2 id="&#xB05D;&#xC73C;&#xB85C;"><strong>&#xB05D;&#xC73C;&#xB85C;</strong></h2>
+<p>&#xD504;&#xB860;&#xD2B8;&#xC5D4;&#xB4DC; &#xAC1C;&#xBC1C;&#xC790; &#xC785;&#xC7A5;&#xC5D0;&#xC11C; &#xC11C;&#xBC84;&#xB85C; &#xB9AC;&#xC18C;&#xC2A4;&#xB97C; &#xC694;&#xCCAD;&#xD560; &#xB54C; CORS &#xC5D0;&#xB7EC;&#xAC00; &#xBC1C;&#xC0DD;&#xD55C;&#xB2E4;&#xBA74;, &#xC11C;&#xBC84;&#xC5D0; Access-Control-Allow-Origin &#xB4F1; CORS&#xB97C; &#xD574;&#xACB0;&#xD558;&#xAE30; &#xC704;&#xD55C; &#xBA87; &#xAC00;&#xC9C0; &#xC751;&#xB2F5; &#xD5E4;&#xB354;&#xB97C; &#xD3EC;&#xD568;&#xD574; &#xB2EC;&#xB77C;&#xACE0; &#xC694;&#xCCAD;&#xD55C;&#xB2E4;&#xB294; &#xAC83;&#xC744; &#xBC30;&#xC6E0;&#xB2E4;. </p>
+<p>Node.js, FastAPI &#xB4F1;&#xC758; &#xB300;&#xBD80;&#xBD84;&#xC758; &#xD504;&#xB808;&#xC784;&#xC6CC;&#xD06C;&#xC5D0;&#xC11C; CORS &#xC751;&#xB2F5; &#xD5E4;&#xB354;&#xB97C; &#xCD94;&#xAC00;&#xD574; &#xC8FC;&#xAE30;&#xB294; &#xAE30;&#xB2A5;&#xC774; &#xC788;&#xC5B4; &#xAC04;&#xD3B8;&#xD558;&#xAC8C; &#xC0AC;&#xC6A9;&#xD560; &#xC218; &#xC788;&#xC9C0;&#xB9CC;, CORS&#xAC00; &#xBB34;&#xC5C7;&#xC774;&#xACE0; &#xD574;&#xB2F9; &#xD504;&#xB808;&#xC784;&#xC6CC;&#xD06C;&#xC758; &#xC9C0;&#xC6D0;&#xC774; &#xC5C6;&#xB354;&#xB77C;&#xB3C4; CORS &#xC5D0;&#xB7EC; &#xBB38;&#xC81C;&#xAC00; &#xBC1C;&#xC0DD;&#xD560; &#xB54C; &#xBC1C;&#xC0DD;&#xC6D0;&#xC778;&#xACFC; &#xC5B4;&#xB5BB;&#xAC8C; &#xD574;&#xACB0;&#xD574;&#xC57C; &#xB418;&#xB294;&#xC9C0; &#xC54C;&#xC544;&#xBCF4;&#xB294; &#xC2DC;&#xAC04;&#xC774;&#xC5C8;&#xB2E4;.</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="01.html" class="navigation navigation-prev " aria-label="Previous page: 01.브라우저의 동작원리">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="03.html" class="navigation navigation-next " aria-label="Next page: 03.크로스 브라우징">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"02.CORS의 정의 및 해결","level":"1.5.1.2","depth":3,"next":{"title":"03.크로스 브라우징","level":"1.5.1.3","depth":3,"path":"pages/frontEnd-knowledge/web-browser/03.md","ref":"pages/frontEnd-knowledge/web-browser/03.md","articles":[]},"previous":{"title":"01.브라우저의 동작원리","level":"1.5.1.1","depth":3,"path":"pages/frontEnd-knowledge/web-browser/01.md","ref":"pages/frontEnd-knowledge/web-browser/01.md","articles":[]},"dir":"ltr"},"config":{"plugins":["expandable-chapters-small","theme-darkblue","highlight-1","livereload"],"styles":{"website":"assets/css/website.css","ebook":"assets/css/ebook.css","pdf":"assets/css/pdf.css","mobi":"assets/css/mobi.css","epub":"assets/css/epub.css"},"pluginsConfig":{"livereload":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-darkblue":{},"highlight":{},"highlight-1":{},"expandable-chapters-small":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"서성식","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"INTRO.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"서성식의 eBook","language":"ko","gitbook":"*"},"file":{"path":"pages/frontEnd-knowledge/web-browser/02.md","mtime":"2022-06-12T10:36:55.633Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-06-12T11:43:16.972Z"},"basePath":"../../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../../gitbook/gitbook.js"></script>
+    <script src="../../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

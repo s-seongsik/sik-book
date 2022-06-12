@@ -1,0 +1,695 @@
+
+<!DOCTYPE HTML>
+<html lang="ko" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>01.브라우저의 동작원리 · 서성식의 eBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="서성식">
+        
+        
+    
+    <link rel="stylesheet" href="../../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-highlight-1/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../../../assets/css/website.css">
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="02.html" />
+    
+    
+    <link rel="prev" href="./" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="검색어 입력" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../../">
+            
+                <a href="../../../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../../html-dom/">
+            
+                <a href="../../html-dom/">
+            
+                    
+                    HTML DOM
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../../html-dom/defind.html">
+            
+                <a href="../../html-dom/defind.html">
+            
+                    
+                    DOM의 개념
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../../html-dom/dom-init.html">
+            
+                <a href="../../html-dom/dom-init.html">
+            
+                    
+                    DOM의 타입과 핵심 인터페이스
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../../html-dom/elements-finding.html">
+            
+                <a href="../../html-dom/elements-finding.html">
+            
+                    
+                    HTML Elements 찾기
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../../html-dom/elements-changing.html">
+            
+                <a href="../../html-dom/elements-changing.html">
+            
+                    
+                    HTML Elements 내용 및 속성 변경
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="../../html-dom/elements-add-del.html">
+            
+                <a href="../../html-dom/elements-add-del.html">
+            
+                    
+                    HTML Elements 추가 및 삭제하기
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../../javascript/">
+            
+                <a href="../../javascript/">
+            
+                    
+                    Javascript
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../../javascript/01.type-conversions.html">
+            
+                <a href="../../javascript/01.type-conversions.html">
+            
+                    
+                    형 변환
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../../javascript/02.strict-mode.html">
+            
+                <a href="../../javascript/02.strict-mode.html">
+            
+                    
+                    엄격 모드
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../../javascript/03.comparison.html">
+            
+                <a href="../../javascript/03.comparison.html">
+            
+                    
+                    비교 연산자
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../../javascript/100.class.html">
+            
+                <a href="../../javascript/100.class.html">
+            
+                    
+                    Class 문법
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../../vanilla-javascript/">
+            
+                <a href="../../vanilla-javascript/">
+            
+                    
+                    Vanilla Javascript
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../../vanilla-javascript/vanilla-js_01.html">
+            
+                <a href="../../vanilla-javascript/vanilla-js_01.html">
+            
+                    
+                    웹 컴포넌트 구현하기
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Front-end 필수지식
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Web Browser
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="1.5.1.1" data-path="01.html">
+            
+                <a href="01.html">
+            
+                    
+                    01.브라우저의 동작원리
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.1.2" data-path="02.html">
+            
+                <a href="02.html">
+            
+                    
+                    02.CORS의 정의 및 해결
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.1.3" data-path="03.html">
+            
+                <a href="03.html">
+            
+                    
+                    03.크로스 브라우징
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../javascirpt/">
+            
+                <a href="../javascirpt/">
+            
+                    
+                    Javascirpt
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.2.1" data-path="../javascirpt/01.html">
+            
+                <a href="../javascirpt/01.html">
+            
+                    
+                    01.호이스팅
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2.2" data-path="../javascirpt/02.html">
+            
+                <a href="../javascirpt/02.html">
+            
+                    
+                    02.this
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2.3" data-path="../javascirpt/03.html">
+            
+                <a href="../javascirpt/03.html">
+            
+                    
+                    03.실행 컨텍스트
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2.4" data-path="../javascirpt/04.html">
+            
+                <a href="../javascirpt/04.html">
+            
+                    
+                    04.이벤트 버블링, 캡쳐링, 위임
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            GitBook에 게시
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../../.." >01.브라우저의 동작원리</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#xC6F9;-&#xBE0C;&#xB77C;&#xC6B0;&#xC800;&#xC758;-&#xB3D9;&#xC791;-&#xC6D0;&#xB9AC;">&#xC6F9; &#xBE0C;&#xB77C;&#xC6B0;&#xC800;&#xC758; &#xB3D9;&#xC791; &#xC6D0;&#xB9AC;</h1>
+<hr>
+<p>PC, &#xD0DC;&#xBE14;&#xB9BF;, &#xBAA8;&#xBC14;&#xC77C; &#xB4F1; &#xC5EC;&#xB7EC; &#xAE30;&#xAE30;&#xB85C; &#xC6F9; &#xD398;&#xC774;&#xC9C0;&#xB97C; &#xC811;&#xC18D;&#xD55C; &#xACBD;&#xD5D8;&#xB4E4;&#xC774; &#xC788;&#xC744; &#xAC83;&#xC774;&#xB2E4;.</p>
+<p>&#xC8FC;&#xC18C;&#xCC3D;&#xC5D0; <code>URL(ex.https://www.naver.com)</code>&#xCE58;&#xACE0; &#xD574;&#xB2F9; &#xC6F9; &#xBE0C;&#xB77C;&#xC6B0;&#xC800; &#xC811;&#xC18D;&#xD558;&#xBA74; &#xC5B4;&#xB5A4; &#xB3D9;&#xC791;&#xC6D0;&#xB9AC;&#xB85C; &#xC6F9; &#xD398;&#xC774;&#xC9C0;&#xB85C; &#xC811;&#xC18D;&#xC774; &#xAC00;&#xB2A5;&#xD560;&#xAE4C;?</p>
+<h2 id="&#xBE0C;&#xB77C;&#xC6B0;&#xC800;&#xB780;">&#xBE0C;&#xB77C;&#xC6B0;&#xC800;&#xB780;?</h2>
+<p><code>&#xC6F9; &#xBE0C;&#xB77C;&#xC6B0;&#xC800;</code>&#xB294; &#xB3D9;&#xAE30;(Synchronous)&#xC801;&#xC73C;&#xB85C; (HTML+CSS), Javascript&#xB97C; &#xD574;&#xC11D;&#xD558;&#xC5EC; &#xB0B4;&#xC6A9;&#xC744; &#xD654;&#xBA74;&#xC5D0; &#xBCF4;&#xC5EC;&#xC8FC;&#xB294; &#xC751;&#xC6A9; &#xC18C;&#xD504;&#xD2B8;&#xC6E8;&#xC5B4;&#xC774;&#xB2E4;.</p>
+<blockquote>
+<p>&#xB3D9;&#xAE30;&#xC801;&#xC778; &#xC774;&#xC720;</p>
+<ul>
+<li>HTML &#xC694;&#xC18C;&#xB4E4;&#xC774; script &#xB85C;&#xB529; &#xC9C0;&#xC5F0;&#xC73C;&#xB85C; &#xC778;&#xD574; &#xB80C;&#xB354;&#xB9C1;&#xC5D0; &#xC9C0;&#xC7A5; &#xBC1B;&#xB294; &#xC77C;&#xC774; &#xBC1C;&#xC0DD;&#xD558;&#xC9C0; &#xC54A;&#xC544; &#xD398;&#xC774;&#xC9C0; &#xB85C;&#xB529; &#xC2DC;&#xAC04;&#xC774; &#xB2E8;&#xCD95;&#xB41C;&#xB2E4;.</li>
+<li>DOM&#xC774; &#xC644;&#xC131;&#xB418;&#xAE30; &#xC804;&#xC5D0; script&#xAC00; DOM&#xC744; &#xC870;&#xC791;&#xD558;&#xBA74; &#xC5D0;&#xB7EC;&#xAC00; &#xBC1C;&#xC0DD;&#xD55C;&#xB2E4;.</li>
+<li>&#xC790;&#xBC14;&#xC2A4;&#xD06C;&#xB9BD;&#xD2B8;&#xB294; &#xB80C;&#xB354;&#xB9C1; &#xC5D4;&#xC9C4;&#xC774; &#xC544;&#xB2CC; &#xC790;&#xBC14;&#xC2A4;&#xD06C;&#xB9BD;&#xD2B8; &#xC5D4;&#xC9C4;&#xC774; &#xCC98;&#xB9AC;&#xD55C;&#xB2E4;.</li>
+</ul>
+</blockquote>
+<p> &#xC6F9; &#xBE0C;&#xB77C;&#xC6B0;&#xC800;&#xAC00; &#xC6F9; &#xC11C;&#xBC84;&#xC5D0; &#xD544;&#xC694;&#xD55C; &#xC790;&#xC6D0;(&#xC6F9; &#xD398;&#xC774;&#xC9C0;)&#xC744; &#xC694;&#xCCAD;&#xD558;&#xBA74; &#xC11C;&#xBC84;&#xB294; &#xC751;&#xB2F5;&#xD558;&#xACE0; &#xC6F9; &#xBE0C;&#xB77C;&#xC6B0;&#xC800;&#xB294; &#xC774;&#xB97C; &#xD574;&#xC11D;&#xD55C; &#xD6C4; &#xC0AC;&#xC6A9;&#xC790;(Client)&#xC5D0;&#xAC8C; &#xBCF4;&#xC5EC;&#xC900;&#xB2E4;. 
+ &#xBCF4;&#xD1B5; &#xC790;&#xC6D0;&#xC740; HTML &#xBB38;&#xC11C;&#xC9C0;&#xB9CC; PDF, &#xC774;&#xBBF8;&#xC9C0; &#xB4F1; &#xB2E4;&#xC591;&#xD55C; &#xD615;&#xD0DC;&#xC77C; &#xC218; &#xC788;&#xB2E4;.</p>
+<p><br></p>
+<h2 id="&#xBE0C;&#xB77C;&#xC6B0;&#xC800;&#xC758;-&#xAD6C;&#xC870;">&#xBE0C;&#xB77C;&#xC6B0;&#xC800;&#xC758; &#xAD6C;&#xC870;</h2>
+<p><img src="https://user-images.githubusercontent.com/52439201/158056611-c65c93b5-e837-4c3a-bbd9-37ddcbafe125.png" alt="image"></p>
+<h3 id="1-&#xC0AC;&#xC6A9;&#xC790;-&#xC778;&#xD130;&#xD398;&#xC774;&#xC2A4;">1. &#xC0AC;&#xC6A9;&#xC790; &#xC778;&#xD130;&#xD398;&#xC774;&#xC2A4;</h3>
+<p>&#xC0AC;&#xC6A9;&#xC790;&#xAC00; &#xC811;&#xADFC;&#xD560; &#xC218; &#xC788;&#xB294; &#xC601;&#xC5ED;&#xC73C;&#xB85C; &#xC8FC;&#xC18C; &#xD45C;&#xC2DC;&#xC904;, &#xC774;&#xC804;/&#xB2E4;&#xC74C; &#xBC84;&#xD2BC;, &#xBD81;&#xB9C8;&#xD06C; &#xBA54;&#xB274; &#xB4F1;. &#xC694;&#xCCAD;&#xD55C; &#xD398;&#xC774;&#xC9C0;&#xB97C; &#xBCF4;&#xC5EC;&#xC8FC;&#xB294; &#xCC3D;&#xC744; &#xC81C;&#xC678;&#xD55C; &#xB098;&#xBA38;&#xC9C0; &#xBAA8;&#xB4E0; &#xBD80;&#xBD84;&#xC774;&#xB2E4;.</p>
+<h3 id="2-&#xBE0C;&#xB77C;&#xC6B0;&#xC800;-&#xC5D4;&#xC9C4;">2. &#xBE0C;&#xB77C;&#xC6B0;&#xC800; &#xC5D4;&#xC9C4;</h3>
+<p>&#xC0AC;&#xC6A9;&#xC790; &#xC778;&#xD130;&#xD398;&#xC774;&#xC2A4;&#xC640; &#xB80C;&#xB354;&#xB9C1; &#xC5D4;&#xC9C4; &#xC0AC;&#xC774;&#xC758; &#xB3D9;&#xC791;&#xC744; &#xC81C;&#xC5B4;.</p>
+<h3 id="3-&#xB80C;&#xB354;&#xB9C1;-&#xC5D4;&#xC9C4;&#xAC00;&#xC7A5;-&#xC911;&#xC694;">3. &#xB80C;&#xB354;&#xB9C1; &#xC5D4;&#xC9C4;<strong>(&#xAC00;&#xC7A5; &#xC911;&#xC694;)</strong></h3>
+<p>&#xC694;&#xCCAD;&#xD55C; &#xCF58;&#xD150;&#xCE20;&#xB97C; &#xD45C;&#xC2DC;. &#xC608;&#xB97C; &#xB4E4;&#xC5B4; HTML&#xC744; &#xC694;&#xCCAD;&#xD558;&#xBA74; HTML&#xACFC; CSS&#xB97C; &#xD30C;&#xC2F1;&#xD558;&#xC5EC; &#xD654;&#xBA74;&#xC5D0; &#xD45C;&#xC2DC;&#xD568;.
+&#xBE0C;&#xB77C;&#xC6B0;&#xC800;&#xB294; &#xC11C;&#xBC84;&#xB85C;&#xBD80;&#xD130; HTML &#xBB38;&#xC11C;&#xB97C; &#xC751;&#xB2F5;&#xBC1B;&#xC73C;&#xBA74; &#xB80C;&#xB354;&#xB9C1; &#xC5D4;&#xC9C4;&#xC758; HTML &#xD30C;&#xC11C;&#xC640; CSS &#xD30C;&#xC11C;&#xC5D0; &#xC758;&#xD574; &#xD30C;&#xC2F1;(parsing)&#xB418;&#xC5B4; <code>DOM</code>, <code>CSSOM</code> &#xD2B8;&#xB9AC;&#xB85C; &#xBCC0;&#xD658;&#xB418;&#xACE0; &#xB80C;&#xB354; &#xD2B8;&#xB9AC;&#xB85C; &#xACB0;&#xD569;&#xD569;&#xB2C8;&#xB2E4;. 
+&#xC774;&#xB807;&#xAC8C; &#xC0DD;&#xC131;&#xB41C; &#xB80C;&#xB354; &#xD2B8;&#xB9AC;&#xB97C; &#xAE30;&#xBC18;&#xC73C;&#xB85C; &#xBE0C;&#xB77C;&#xC6B0;&#xC800;&#xB294; &#xC6F9; &#xD398;&#xC774;&#xC9C0;&#xB97C; &#xB098;&#xD0C0;&#xB0C5;&#xB2C8;&#xB2E4;. </p>
+<h3 id="4-&#xD1B5;&#xC2E0;">4. &#xD1B5;&#xC2E0;</h3>
+<p>HTTP &#xC694;&#xCCAD;&#xACFC; &#xAC19;&#xC740; &#xB124;&#xD2B8;&#xC6CC;&#xD06C; &#xD638;&#xCD9C;&#xC5D0; &#xC0AC;&#xC6A9;&#xB428;. &#xC774;&#xAC83;&#xC740; &#xD50C;&#xB7AB;&#xD3FC; &#xB3C5;&#xB9BD;&#xC801;&#xC778; &#xC778;&#xD130;&#xD398;&#xC774;&#xC2A4;&#xC774;&#xACE0; &#xAC01; &#xD50C;&#xB7AB;&#xD3FC; &#xD558;&#xBD80;&#xC5D0;&#xC11C; &#xC2E4;&#xD589;&#xB428;.</p>
+<h3 id="5-ui-&#xBC31;&#xC5D4;&#xB4DC;">5. UI &#xBC31;&#xC5D4;&#xB4DC;</h3>
+<p>&#xCF64;&#xBCF4; &#xBC15;&#xC2A4;&#xC640; &#xCC3D; &#xAC19;&#xC740; &#xAE30;&#xBCF8;&#xC801;&#xC778; &#xC7A5;&#xCE58;&#xB97C; &#xADF8;&#xB9BC;. &#xD50C;&#xB7AB;&#xD3FC;&#xC5D0;&#xC11C; &#xBA85;&#xC2DC;&#xD558;&#xC9C0; &#xC54A;&#xC740; &#xC77C;&#xBC18;&#xC801;&#xC778; &#xC778;&#xD130;&#xD398;&#xC774;&#xC2A4;&#xB85C;&#xC11C;, OS &#xC0AC;&#xC6A9;&#xC790; &#xC778;&#xD130;&#xD398;&#xC774;&#xC2A4; &#xCCB4;&#xACC4;&#xB97C; &#xC0AC;&#xC6A9;.</p>
+<h3 id="6-&#xC790;&#xBC14;&#xC2A4;&#xD06C;&#xB9BD;&#xD2B8;-&#xD574;&#xC11D;&#xAE30;">6. &#xC790;&#xBC14;&#xC2A4;&#xD06C;&#xB9BD;&#xD2B8; &#xD574;&#xC11D;&#xAE30;</h3>
+<p>&#xC790;&#xBC14;&#xC2A4;&#xD06C;&#xB9BD;&#xD2B8; &#xCF54;&#xB4DC;&#xB97C; &#xD574;&#xC11D;&#xD558;&#xACE0; &#xC2E4;&#xD589;.</p>
+<h3 id="7-&#xC790;&#xB8CC;-&#xC800;&#xC7A5;&#xC18C;">7. &#xC790;&#xB8CC; &#xC800;&#xC7A5;&#xC18C;</h3>
+<p>&#xC774; &#xBD80;&#xBD84;&#xC740; &#xC790;&#xB8CC;&#xB97C; &#xC800;&#xC7A5;&#xD558;&#xB294; &#xACC4;&#xCE35;&#xC73C;&#xB85C; HTML5 &#xBA85;&#xC138;&#xC5D0;&#xB294; &#xBE0C;&#xB77C;&#xC6B0;&#xC800;&#xAC00; &#xC9C0;&#xC6D0;&#xD558;&#xB294; &apos;&#xC6F9; &#xB370;&#xC774;&#xD130; &#xBCA0;&#xC774;&#xC2A4;&apos;&#xAC00; &#xC815;&#xC758;&#xB418;&#xC5B4; &#xC788;&#xB2E4;.
+Cookie, Local Storage, Indexed DB &#xB4F1; &#xBE0C;&#xB77C;&#xC6B0;&#xC800; &#xBA54;&#xBAA8;&#xB9AC;&#xB97C; &#xD65C;&#xC6A9;&#xD558;&#xC5EC; &#xC800;&#xC7A5;&#xD558;&#xB294; &#xC601;&#xC5ED;&#xC785;&#xB2C8;&#xB2E4;.</p>
+<p><br></p>
+<h2 id="&#xB80C;&#xB354;&#xB9C1;-&#xC5D4;&#xC9C4;&#xC758;-&#xB3D9;&#xC791;-&#xACFC;&#xC815;">&#xB80C;&#xB354;&#xB9C1; &#xC5D4;&#xC9C4;&#xC758; &#xB3D9;&#xC791; &#xACFC;&#xC815;</h2>
+<h3 id="&#xB80C;&#xB354;&#xB9C1;-&#xC5D4;&#xC9C4;">&#xB80C;&#xB354;&#xB9C1; &#xC5D4;&#xC9C4;</h3>
+<ul>
+<li>&#xB80C;&#xB354;&#xB9C1; &#xC5D4;&#xC9C4;&#xC740; &#xC11C;&#xBC84;&#xB85C;&#xBD80;&#xD130; <code>HTML</code>, <code>XML</code>, <code>&#xC774;&#xBBF8;&#xC9C0;</code> &#xB4F1; &#xC694;&#xCCAD;&#xBC1B;&#xC740; &#xB0B4;&#xC6A9;&#xC744; &#xBE0C;&#xB77C;&#xC6B0;&#xC800; &#xD654;&#xBA74;&#xC5D0; &#xD45C;&#xC2DC;&#xD558;&#xB294; &#xC5D4;&#xC9C4;&#xC774;&#xB2E4;.</li>
+<li>&#xB80C;&#xB354;&#xB9C1; &#xC5D4;&#xC9C4;&#xC740; &#xC880; &#xB354; &#xB098;&#xC740; &#xC0AC;&#xC6A9;&#xC790; &#xACBD;&#xD5D8;&#xC744; &#xC704;&#xD574; &#xAC00;&#xB2A5;&#xD558;&#xBA74; &#xBE60;&#xB974;&#xAC8C; &#xB0B4;&#xC6A9;&#xC744; &#xD45C;&#xC2DC;&#xD55C;&#xB2E4;. &#xADF8;&#xB798;&#xC11C; &#xC77C;&#xB828;&#xC758; &#xACFC;&#xC815;&#xB4E4;&#xC774; &#xB3D9;&#xAE30;&#xC801;&#xC73C;&#xB85C; &#xC9C4;&#xD589;&#xB418;&#xC9C0; &#xC54A;&#xB294;&#xB2E4;. </li>
+<li>HTML&#xC744; &#xD30C;&#xC2F1; &#xD560; &#xB54C;&#xAE4C;&#xC9C0; &#xAE30;&#xB2E4;&#xB9AC;&#xC9C0; &#xC54A;&#xACE0; &#xB80C;&#xB354; &#xD2B8;&#xB9AC; &#xBC30;&#xCE58;&#xC640; &#xADF8;&#xB9AC;&#xAE30; &#xACFC;&#xC815;&#xC744; &#xC2DC;&#xC791;&#xD55C;&#xB2E4;.</li>
+</ul>
+<h3 id="&#xACFC;&#xC815;">&#xACFC;&#xC815;</h3>
+<p> &#xB80C;&#xB354;&#xB9C1; &#xC5D4;&#xC9C4;&#xC740; &#xC11C;&#xBC84;&#xB85C;&#xBD80;&#xD130; &#xC751;&#xB2F5;&#xBC1B;&#xC740; HTML &#xBB38;&#xC11C;&#xB97C; &#xC5BB;&#xB294; &#xAC83;&#xC73C;&#xB85C; &#xC2DC;&#xC791;&#xD55C;&#xB2E4;. &#xC774; &#xBB38;&#xC11C;&#xC758; &#xB0B4;&#xC6A9;&#xC740; &#xBCF4;&#xD1B5; 8KB &#xB2E8;&#xC704;&#xB85C; &#xC804;&#xC1A1;&#xB41C;&#xB2E4;.</p>
+<p> &#xC544;&#xB798; &#xADF8;&#xB9BC;&#xC740; &#xB80C;&#xB354;&#xB9C1; &#xC5D4;&#xC9C4;&#xC758; &#xAE30;&#xBCF8;&#xC801;&#xC778; &#xB3D9;&#xC791; &#xACFC;&#xC815;&#xC774;&#xB2E4;.</p>
+<p> <img src="https://user-images.githubusercontent.com/52439201/158057006-0a5a5909-c94e-4d71-9e5d-eeaa2f88218f.png" alt="image"></p>
+<p>&#x2460; HTML &#xBB38;&#xC11C;&#xB97C; &#xD30C;&#xC2F1; &#xD558;&#xC5EC; DOM &#xB178;&#xB4DC;&#xB85C; &#xBCC0;&#xD658;&#xD55C;&#xB2E4;.<br>&#x2461; &#xADF8; &#xB2E4;&#xC74C; &#xC678;&#xBD80; CSS&#xD30C;&#xC77C;&#xACFC; &#xD568;&#xAED8; &#xD3EC;&#xD568;&#xB41C; &#xC2A4;&#xD0C0;&#xC77C; &#xC694;&#xC18C;&#xB3C4; &#xD30C;&#xC2F1;&#xD55C;&#xB2E4;.<br>&#x2462; DOM &#xD2B8;&#xB9AC;&#xC640; 2&#xBC88;&#xC758; &#xACB0;&#xACFC;&#xBB3C;(CSSOM)&#xC744; &#xD569;&#xCCD0; &quot;&#xB80C;&#xB354; &#xD2B8;&#xB9AC;&quot;&#xB77C;&#xACE0; &#xBD80;&#xB974;&#xB294; &#xB610; &#xB2E4;&#xB978; &#xD2B8;&#xB9AC;&#xB97C; &#xC0DD;&#xC131;&#xD55C;&#xB2E4;.<br>&#x2463; &#xB80C;&#xB354; &#xD2B8;&#xB9AC; &#xC0DD;&#xC131;&#xC774; &#xB05D;&#xB098;&#xBA74; &#xBC30;&#xCE58;&#xAC00; &#xC2DC;&#xC791;&#xB418;&#xB294;&#xB370; &#xC774;&#xAC83;&#xC740; &#xAC01; &#xB178;&#xB4DC;&#xAC00; &#xD654;&#xBA74;&#xC758; &#xC815;&#xD655;&#xD55C; &#xC704;&#xCE58;&#xC5D0; &#xD45C;&#xC2DC;&#xB418;&#xB294; &#xAC83;&#xC744; &#xC758;&#xBBF8;&#xD55C;&#xB2E4;.<br>&#x2464; &#xB2E4;&#xC74C;&#xC740; UI &#xBC31;&#xC5D4;&#xB4DC;&#xC5D0;&#xC11C; &#xB80C;&#xB354; &#xD2B8;&#xB9AC;&#xC758; &#xAC01; &#xB178;&#xB4DC;&#xB97C; &#xAC00;&#xB85C;&#xC9C0;&#xB974;&#xBA70; &#xD615;&#xC0C1;&#xC744; &#xB9CC;&#xB4E4;&#xC5B4; &#xB0B4;&#xB294; &quot;&#xADF8;&#xB9AC;&#xAE30;&quot; &#xACFC;&#xC815;&#xC744; &#xD55C;&#xB2E4;.  </p>
+<p><br></p>
+<p>&#xC544;&#xB798; &#xADF8;&#xB9BC;&#xC740; &#xB80C;&#xB354;&#xB9C1; &#xC5D4;&#xC9C4; &#xC911; &#xD558;&#xB098;&#xC778; &#xC6F9;&#xD0B7; &#xC5D4;&#xC9C4;&#xC744; &#xB098;&#xD0C0;&#xB0B8; &#xADF8;&#xB9BC;&#xC774;&#xB2E4;. &#xC704;&#xC5D0;&#xC11C; &#xC124;&#xBA85;&#xD55C; &#xAE30;&#xBCF8; &#xB3D9;&#xC791; &#xACFC;&#xC815;&#xACFC; &#xC720;&#xC0AC;&#xD558;&#xB2E4;. </p>
+<p><img src="https://user-images.githubusercontent.com/52439201/158057237-55e4f025-16de-4483-8bc8-f06119838f68.png" alt="image"></p>
+<h4 id="&#x2460;-html-&#xBB38;&#xC11C;&#xB97C;-&#xD30C;&#xC2F1;-&#xD558;&#xC5EC;-dom-&#xB178;&#xB4DC;&#xB85C;-&#xBCC0;&#xD658;&#xD55C;&#xB2E4;">&#x2460; HTML &#xBB38;&#xC11C;&#xB97C; &#xD30C;&#xC2F1; &#xD558;&#xC5EC; DOM &#xB178;&#xB4DC;&#xB85C; &#xBCC0;&#xD658;&#xD55C;&#xB2E4;.</h4>
+<ul>
+<li>&#xC11C;&#xBC84;&#xB85C;&#xBD80;&#xD130; HTML &#xBB38;&#xC11C;&#xB97C; &#xBAA8;&#xB450; &#xC804;&#xB2EC;&#xBC1B;&#xACE0; HTML &#xD30C;&#xC11C;&#xB97C; &#xD1B5;&#xD558;&#xC5EC; &#xD30C;&#xC2F1;(parsing)&#xD558;&#xACE0; &#xD30C;&#xC2F1; &#xD2B8;&#xB9AC;&#xB97C; &#xC0DD;&#xC131;&#xD55C;&#xB2E4;.</li>
+<li>&#xC0DD;&#xC131;&#xB41C; &#xD30C;&#xC2F1; &#xD2B8;&#xB9AC;&#xB97C; &#xAE30;&#xBC18;&#xC73C;&#xB85C; DOM &#xD2B8;&#xB9AC;&#xB97C; &#xC0DD;&#xC131;&#xD55C;&#xB2E4;.</li>
+<li>DOM&#xC740; &#xB9C8;&#xD06C;&#xC5C5;&#xACFC; 1:1 &#xAD00;&#xACC4;&#xB97C; &#xC131;&#xB9BD;&#xD55C;&#xB2E4;.</li>
+</ul>
+<pre><code class="lang-HTML"><span class="cm-tagcm-bracket">&lt;</span><span class="cm-tag">html</span> <span class="cm-attribute">lang</span>=<span class="cm-string">&quot;en&quot;</span><span class="cm-tagcm-bracket">&gt;</span>
+    <span class="cm-tagcm-bracket">&lt;</span><span class="cm-tag">head</span><span class="cm-tagcm-bracket">&gt;</span>
+        <span class="cm-tagcm-bracket">&lt;</span><span class="cm-tag">title</span><span class="cm-tagcm-bracket">&gt;</span>DOM &#xC774;&#xB780;?<span class="cm-tagcm-bracket">&lt;/</span><span class="cm-tag">title</span><span class="cm-tagcm-bracket">&gt;</span>
+    <span class="cm-tagcm-bracket">&lt;/</span><span class="cm-tag">head</span><span class="cm-tagcm-bracket">&gt;</span>
+    <span class="cm-tagcm-bracket">&lt;</span><span class="cm-tag">body</span><span class="cm-tagcm-bracket">&gt;</span>
+        <span class="cm-tagcm-bracket">&lt;</span><span class="cm-tag">h1</span><span class="cm-tagcm-bracket">&gt;</span>&#xC548;&#xB155;&#xD558;&#xC138;&#xC694;.<span class="cm-tagcm-bracket">&lt;/</span><span class="cm-tag">h1</span><span class="cm-tagcm-bracket">&gt;</span>
+        <span class="cm-tagcm-bracket">&lt;</span><span class="cm-tag">P</span><span class="cm-tagcm-bracket">&gt;</span>&#xB098;&#xC774;&#xAC00; &#xC5B4;&#xB5BB;&#xAC8C; &#xB418;&#xC2DC;&#xB098;&#xC694;?<span class="cm-tagcm-bracket">&lt;</span><span class="cm-tag">p</span><span class="cm-tagcm-bracket">&gt;</span>
+    <span class="cm-tagcm-bracket">&lt;/</span><span class="cm-tagcm-error">body</span><span class="cm-tagcm-bracketcm-error">&gt;</span>
+<span class="cm-tagcm-bracket">&lt;/</span><span class="cm-tagcm-error">html</span><span class="cm-tagcm-bracketcm-error">&gt;</span>
+</code></pre>
+<p>&#xC704;&#xC758; HTML &#xCF54;&#xB4DC;&#xB97C; <code>DOM</code> &#xD2B8;&#xB9AC;&#xB85C; &#xBCC0;&#xD658;&#xD558;&#xBA74; &#xC544;&#xB798;&#xC640; &#xAC19;&#xB2E4;.</p>
+<pre><code>html
+ &#x251C;&#x2500;&#x2500; head
+ &#x2502;    &#x2514;&#x2500;&#x2500; title
+ &#x2502;         &#x2514;&#x2500;&#x2500; DOM &#xC774;&#xB780;?
+ &#x2514;&#x2500;&#x2500; body
+      &#x251C;&#x2500;&#x2500; h1
+      &#x2502;   &#x2514;&#x2500;&#x2500; &#xC548;&#xB155;&#xD558;&#xC138;&#xC694; &#xC11C;&#xC131;&#xC2DD;&#xC785;&#xB2C8;&#xB2E4;.
+      &#x2514;&#x2500;&#x2500; p
+          &#x2514;&#x2500;&#x2500; &#xB098;&#xC774;&#xAC00; &#xC5B4;&#xB5BB;&#xAC8C; &#xB418;&#xC2DC;&#xB098;&#xC694;?
+</code></pre><h4 id="&#x2461;-cssomcss-object-model&#xC744;-&#xC0DD;&#xC131;&#xD55C;&#xB2E4;">&#x2461; CSSOM(Css Object Model)&#xC744; &#xC0DD;&#xC131;&#xD55C;&#xB2E4;.</h4>
+<p><img src="https://user-images.githubusercontent.com/52439201/158057539-6376c671-7143-4a4e-8b8e-3aa6657d6a29.png" alt="image"></p>
+<p>&#xC704;&#xC758; &#xADF8;&#xB9BC;&#xCC98;&#xB7FC; CSS &#xD30C;&#xC77C;&#xC740; &#xC2A4;&#xD0C0;&#xC77C;&#xC2DC;&#xD2B8; &#xAC1D;&#xCCB4;&#xB85C; &#xD30C;&#xC2F1;&#xB418;&#xACE0; &#xAC01; &#xAC1D;&#xCCB4;&#xB294; CSS &#xADDC;&#xCE59;&#xC744; &#xD3EC;&#xD568;&#xD55C;&#xB2E4;.
+CSS &#xADDC;&#xCE59; &#xAC1D;&#xCCB4;(CSSOM)&#xB294; &#xC120;&#xD0DD;&#xC790;&#xC640; &#xC120;&#xC5B8; &#xAC1D;&#xCCB4; &#xADF8;&#xB9AC;&#xACE0; CSS&#xBB38;&#xBC95;&#xACFC; &#xC77C;&#xCE58;&#xD558;&#xB294; &#xB2E4;&#xB978; &#xAC1D;&#xCCB4;&#xB97C; &#xD3EC;&#xD568;&#xD55C;&#xB2E4;.</p>
+<h4 id="&#x2462;-&#xB80C;&#xB354;-&#xD2B8;&#xB9AC;dom--cssom&#xB97C;-&#xC0DD;&#xC131;&#xD55C;&#xB2E4;">&#x2462; &#xB80C;&#xB354; &#xD2B8;&#xB9AC;(DOM + CSSOM)&#xB97C; &#xC0DD;&#xC131;&#xD55C;&#xB2E4;.</h4>
+<ul>
+<li>DOM &#xD2B8;&#xB9AC;&#xAC00; &#xAD6C;&#xCD95;&#xB418;&#xB294; &#xB3D9;&#xC548; &#xBE0C;&#xB77C;&#xC6B0;&#xC800;&#xB294; DOM &#xD2B8;&#xB9AC;&#xB97C; &#xAE30;&#xBC18;&#xC73C;&#xB85C; &#xB80C;&#xB354; &#xD2B8;&#xB9AC;&#xB97C; &#xC0DD;&#xC131;&#xD55C;&#xB2E4;.</li>
+<li>&#xBE0C;&#xB77C;&#xC6B0;&#xC800;&#xC5D0; &#xBCF4;&#xC774;&#xB294; &#xAC83;&#xC740; &#xB80C;&#xB354; &#xD2B8;&#xB9AC;&#xB85C; DOM&#xACFC; CSSOM&#xC758; &#xC870;&#xD569;&#xC774;&#xB2E4;.</li>
+<li>&#xB80C;&#xB354; &#xD2B8;&#xB9AC;&#xB294; &#xC624;&#xC9C1; &#xC2A4;&#xD06C;&#xB9B0;&#xC5D0; &#xADF8;&#xB824;&#xC9C0;&#xB294; &#xAC83;&#xC73C;&#xB85C; &#xAD6C;&#xC131;&#xB418;&#xC5B4; &#xC788;&#xAE30; &#xB54C;&#xBB38;&#xC5D0; DOM&#xACFC;&#xB294; &#xB2E4;&#xB974;&#xB2E4;.  </li>
+</ul>
+<h4 id="&#x2463;-&#xB80C;&#xB354;-&#xD2B8;&#xB9AC;&#xB97C;-&#xBC30;&#xCE58;&#xD55C;&#xB2E4;-&#xB808;&#xC774;&#xC544;&#xC6C3;">&#x2463; &#xB80C;&#xB354; &#xD2B8;&#xB9AC;&#xB97C; &#xBC30;&#xCE58;&#xD55C;&#xB2E4;. (&#xB808;&#xC774;&#xC544;&#xC6C3;)</h4>
+<p>&#xB80C;&#xB354; &#xD2B8;&#xB9AC;&#xB294; &#xC704;&#xCE58;&#xC640; &#xD06C;&#xAE30;&#xB97C; &#xAC00;&#xC9C0;&#xACE0; &#xC788;&#xC9C0; &#xC54A;&#xAE30; &#xB54C;&#xBB38;&#xC5D0;, &#xC5B4;&#xB290; &#xACF5;&#xAC04;&#xC5D0; &#xC704;&#xCE58;&#xD574;&#xC57C; &#xD560;&#xC9C0; &#xAC01; &#xAC1D;&#xCCB4;&#xB4E4;&#xC5D0;&#xAC8C; <code>&#xC704;&#xCE58;(position)</code>&#xC640; <code>&#xD06C;&#xAE30;(size)</code>&#xB97C; &#xACB0;&#xC815;&#xD574; &#xC900;&#xB2E4;. </p>
+<h4 id="&#x2464;-&#xB80C;&#xB354;-&#xD2B8;&#xB9AC;&#xB97C;-&#xADF8;&#xB9B0;&#xB2E4;">&#x2464; &#xB80C;&#xB354; &#xD2B8;&#xB9AC;&#xB97C; &#xADF8;&#xB9B0;&#xB2E4;.</h4>
+<p>&#xB80C;&#xB354; &#xD2B8;&#xB9AC;&#xAC00; &#xB9CC;&#xB4E4;&#xC5B4;&#xC838; &#xB808;&#xC774;&#xC544;&#xC6C3;&#xC774; &#xAD6C;&#xC131;&#xB418;&#xC5C8;&#xC73C;&#xBA74; UI &#xBC31;&#xC5D4;&#xB4DC;&#xAC00; &#xB3D9;&#xC791;&#xD558;&#xC5EC; &#xB80C;&#xB354; &#xD2B8;&#xB9AC;&#xC758; &#xAC01; &#xAC1D;&#xCCB4;&#xB97C; &#xD654;&#xBA74;&#xC758; &#xD53D;&#xC140;(px) &#xAC12;&#xC73C;&#xB85C; &#xB098;&#xD0C0;&#xB0B8;&#xB2E4;.</p>
+<p><br></p>
+<h2 id="&#xC790;&#xBC14;&#xC2A4;&#xD06C;&#xB9BD;&#xD2B8;">&#xC790;&#xBC14;&#xC2A4;&#xD06C;&#xB9BD;&#xD2B8;</h2>
+<p>&#xC774;&#xC81C;&#xAE4C;&#xC9C0; HTML &#xBB38;&#xC11C;&#xB97C; &#xC11C;&#xBC84;&#xB85C;&#xBD80;&#xD130; &#xC804;&#xB2EC;&#xBC1B;&#xC544; &#xD30C;&#xC2F1;&#xD558;&#xC5EC; HTML&#xACFC; CSS&#xB97C; &#xB80C;&#xB354;&#xB9C1; &#xC5D4;&#xC9C4;&#xC5D0;&#xC11C; &#xCC98;&#xB9AC;&#xD558;&#xB294; &#xACFC;&#xC815;&#xC744; &#xC124;&#xBA85;&#xD588;&#xB2E4;.
+&#xADF8;&#xB807;&#xB2E4;&#xBA74; &#xC790;&#xBC14;&#xC2A4;&#xD06C;&#xB9BD;&#xD2B8;&#xB294; &#xC5B4;&#xB5BB;&#xAC8C; &#xCC98;&#xB9AC;&#xAC00; &#xB420;&#xAE4C;?</p>
+<p>&#xACB0;&#xB860;&#xBD80;&#xD130; &#xB9D0;&#xD558;&#xBA74;</p>
+<blockquote>
+<p>&#xC790;&#xBC14;&#xC2A4;&#xD06C;&#xB9BD;&#xD2B8;&#xB294; &#xB80C;&#xB354;&#xB9C1; &#xC5D4;&#xC9C4;&#xC5D0;&#xC11C; &#xCC98;&#xB9AC;&#xB418;&#xC9C0; &#xC54A;&#xC73C;&#xBA70;, &#xC790;&#xBC14;&#xC2A4;&#xD06C;&#xB9BD;&#xD2B8; &#xC5D4;&#xC9C4;&#xC5D0;&#xC11C; &#xCC98;&#xB9AC;&#xD55C;&#xB2E4;.</p>
+</blockquote>
+<p>HTML &#xD30C;&#xC11C;&#xB294; <code>&lt;script&gt;</code> &#xD0DC;&#xADF8;&#xB97C; &#xB9CC;&#xB098;&#xBA74; &#xC790;&#xBC14;&#xC2A4;&#xD06C;&#xB9BD;&#xD2B8; &#xCF54;&#xB4DC;&#xB97C; &#xC2E4;&#xD589;&#xD558;&#xAE30; &#xC704;&#xD574; DOM &#xC0DD;&#xC131; &#xD504;&#xB85C;&#xC138;&#xC2A4;&#xB97C; &#xC911;&#xC9C0;&#xD558;&#xACE0; &#xC790;&#xBC14;&#xC2A4;&#xD06C;&#xB9BD;&#xD2B8; &#xC5D4;&#xC9C4;&#xC73C;&#xB85C; &#xAD8C;&#xD55C;&#xC744; &#xB118;&#xAE34;&#xB2E4;.
+&#xC81C;&#xC5B4; &#xAD8C;&#xD55C;&#xC744; &#xB118;&#xACA8;&#xBC1B;&#xC740; &#xC790;&#xBC14;&#xC2A4;&#xD06C;&#xB9BD;&#xD2B8; &#xC5D4;&#xC9C4;&#xC740; <code>&lt;script&gt;</code> &#xD0DC;&#xADF8; &#xB0B4;&#xC758; &#xC790;&#xBC14;&#xC2A4;&#xD06C;&#xB9BD;&#xD2B8; &#xCF54;&#xB4DC; &#xB610;&#xB294; <code>src</code> &#xC18D;&#xC131;&#xC5D0; &#xC815;&#xC758;&#xB41C; &#xC790;&#xBC14;&#xC2A4;&#xD06C;&#xB9BD;&#xD2B8; &#xD30C;&#xC77C;&#xC744; &#xB85C;&#xB4DC;&#xD558;&#xACE0; &#xD30C;&#xC2F1;&#xD558;&#xC5EC; &#xC2E4;&#xD589;&#xD55C;&#xB2E4;.
+&#xC790;&#xBC14;&#xC2A4;&#xD06C;&#xB9BD;&#xD2B8;&#xC758; &#xC2E4;&#xD589;&#xC774; &#xC644;&#xB8CC;&#xB418;&#xBA74; &#xB2E4;&#xC2DC; HTML &#xD30C;&#xC11C;&#xB85C; &#xC81C;&#xC5B4; &#xAD8C;&#xD55C;&#xC744; &#xB0A8;&#xACA8;&#xC11C; &#xC911;&#xC9C0;&#xD588;&#xB358; &#xC2DC;&#xC810;&#xC73C;&#xB85C; &#xB3CC;&#xC544;&#xAC00; DOM &#xC0DD;&#xC131;&#xC744; &#xC7AC;&#xAC1C;&#xD55C;&#xB2E4;.</p>
+<p><img src="https://user-images.githubusercontent.com/52439201/158059337-0aecbfde-354e-4a16-b86c-658e5996de7c.png" alt="image"></p>
+<p>&#xC774;&#xCC98;&#xB7FC; &#xBE0C;&#xB77C;&#xC6B0;&#xC800;&#xB294; &#xB3D9;&#xAE30;&#xC801;&#xC73C;&#xB85C; <code>HTML</code>, <code>CSS</code>, <code>Javascript</code>&#xC744; &#xCC98;&#xB9AC;&#xD55C;&#xB2E4;. 
+&#xC774;&#xAC83;&#xC740; <code>script</code> &#xD0DC;&#xADF8;&#xC758; &#xC704;&#xCE58;&#xC5D0; &#xB530;&#xB77C; &#xBE14;&#xB85C;&#xD0B9;&#xC774; &#xBC1C;&#xC0DD;&#xD558;&#xC5EC; DOM&#xC758; &#xC0DD;&#xC131;&#xC774; &#xC9C0;&#xC5F0;&#xB420; &#xC218; &#xC788;&#xB2E4;&#xB294; &#xAC83;&#xC744; &#xC758;&#xBBF8;&#xD55C;&#xB2E4;. &#xB530;&#xB77C;&#xC11C; <code>script</code> &#xD0DC;&#xADF8;&#xC758; &#xC704;&#xCE58;&#xB294; &#xC911;&#xC694;&#xD55C; &#xC758;&#xBBF8;&#xB97C; &#xAC16;&#xB294;&#xB2E4;.</p>
+<p>&#xC608;&#xB85C;, &#xC790;&#xBC14;&#xC2A4;&#xD06C;&#xB9BD;&#xD2B8; &#xC5D4;&#xC9C4;&#xC5D0; &#xC81C;&#xC5B4; &#xAD8C;&#xD55C;&#xC774; &#xC788;&#xC744; &#xB54C; <code>Javascript</code> &#xCF54;&#xB4DC;&#xAC00; &#xC644;&#xC131;&#xB418;&#xC9C0; &#xC54A;&#xC740; <code>DOM</code>&#xC744; &#xC870;&#xC791;&#xD558;&#xAC8C; &#xB41C;&#xB2E4;&#xBA74; &#xC5B4;&#xB5BB;&#xAC8C; &#xB420;&#xAE4C;&#xC694;? &#xB2F9;&#xC5F0;&#xD788; &#xC5D0;&#xB7EC;&#xAC00; &#xBC1C;&#xC0DD;&#xD560; &#xAC83;&#xC774;&#xB2E4;.</p>
+<p>&#xC774;&#xAC83;&#xC774; Javascript &#xCF54;&#xB4DC;&#xB97C; <code>&lt;body&gt;</code>&#xD0DC;&#xADF8; &#xD558;&#xB2E8;&#xC5D0; &#xC704;&#xCE58;&#xC2DC;&#xD0A4;&#xB294; &#xC774;&#xC720;&#xC774;&#xB2E4;.</p>
+<p><br></p>
+<h2 id="reference">Reference</h2>
+<ul>
+<li><a href="https://bbangson.tistory.com/87" target="_blank">[CS] &#xC6F9; &#xBE0C;&#xB77C;&#xC6B0;&#xC800;&#xB294; &#xC5B4;&#xB5BB;&#xAC8C; &#xC791;&#xB3D9;&#xD558;&#xB294;&#xAC00;?</a></li>
+<li><a href="https://d2.naver.com/helloworld/59361" target="_blank">&#xBE0C;&#xB77C;&#xC6B0;&#xC800;&#xB294; &#xC5B4;&#xB5BB;&#xAC8C; &#xB3D9;&#xC791;&#xD558;&#xB294;&#xAC00;?</a></li>
+<li><a href="https://poiemaweb.com/js-browser" target="_blank">&#xBE0C;&#xB77C;&#xC6B0;&#xC800; &#xB3D9;&#xC791; &#xC6D0;&#xB9AC;</a></li>
+</ul>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="./" class="navigation navigation-prev " aria-label="Previous page: Web Browser">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="02.html" class="navigation navigation-next " aria-label="Next page: 02.CORS의 정의 및 해결">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"01.브라우저의 동작원리","level":"1.5.1.1","depth":3,"next":{"title":"02.CORS의 정의 및 해결","level":"1.5.1.2","depth":3,"path":"pages/frontEnd-knowledge/web-browser/02.md","ref":"pages/frontEnd-knowledge/web-browser/02.md","articles":[]},"previous":{"title":"Web Browser","level":"1.5.1","depth":2,"path":"pages/frontEnd-knowledge/web-browser/README.md","ref":"pages/frontEnd-knowledge/web-browser/README.md","articles":[{"title":"01.브라우저의 동작원리","level":"1.5.1.1","depth":3,"path":"pages/frontEnd-knowledge/web-browser/01.md","ref":"pages/frontEnd-knowledge/web-browser/01.md","articles":[]},{"title":"02.CORS의 정의 및 해결","level":"1.5.1.2","depth":3,"path":"pages/frontEnd-knowledge/web-browser/02.md","ref":"pages/frontEnd-knowledge/web-browser/02.md","articles":[]},{"title":"03.크로스 브라우징","level":"1.5.1.3","depth":3,"path":"pages/frontEnd-knowledge/web-browser/03.md","ref":"pages/frontEnd-knowledge/web-browser/03.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["expandable-chapters-small","theme-darkblue","highlight-1","livereload"],"styles":{"website":"assets/css/website.css","ebook":"assets/css/ebook.css","pdf":"assets/css/pdf.css","mobi":"assets/css/mobi.css","epub":"assets/css/epub.css"},"pluginsConfig":{"livereload":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-darkblue":{},"highlight":{},"highlight-1":{},"expandable-chapters-small":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"서성식","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"INTRO.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"서성식의 eBook","language":"ko","gitbook":"*"},"file":{"path":"pages/frontEnd-knowledge/web-browser/01.md","mtime":"2022-06-12T10:36:55.633Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-06-12T11:43:16.972Z"},"basePath":"../../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../../gitbook/gitbook.js"></script>
+    <script src="../../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

@@ -1,0 +1,604 @@
+
+<!DOCTYPE HTML>
+<html lang="ko" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>03.실행 컨텍스트 · 서성식의 eBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="서성식">
+        
+        
+    
+    <link rel="stylesheet" href="../../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-highlight-1/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../../../assets/css/website.css">
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="04.html" />
+    
+    
+    <link rel="prev" href="02.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="검색어 입력" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../../">
+            
+                <a href="../../../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../../html-dom/">
+            
+                <a href="../../html-dom/">
+            
+                    
+                    HTML DOM
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../../html-dom/defind.html">
+            
+                <a href="../../html-dom/defind.html">
+            
+                    
+                    DOM의 개념
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../../html-dom/dom-init.html">
+            
+                <a href="../../html-dom/dom-init.html">
+            
+                    
+                    DOM의 타입과 핵심 인터페이스
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../../html-dom/elements-finding.html">
+            
+                <a href="../../html-dom/elements-finding.html">
+            
+                    
+                    HTML Elements 찾기
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../../html-dom/elements-changing.html">
+            
+                <a href="../../html-dom/elements-changing.html">
+            
+                    
+                    HTML Elements 내용 및 속성 변경
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="../../html-dom/elements-add-del.html">
+            
+                <a href="../../html-dom/elements-add-del.html">
+            
+                    
+                    HTML Elements 추가 및 삭제하기
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../../javascript/">
+            
+                <a href="../../javascript/">
+            
+                    
+                    Javascript
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../../javascript/01.type-conversions.html">
+            
+                <a href="../../javascript/01.type-conversions.html">
+            
+                    
+                    형 변환
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../../javascript/02.strict-mode.html">
+            
+                <a href="../../javascript/02.strict-mode.html">
+            
+                    
+                    엄격 모드
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../../javascript/03.comparison.html">
+            
+                <a href="../../javascript/03.comparison.html">
+            
+                    
+                    비교 연산자
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../../javascript/100.class.html">
+            
+                <a href="../../javascript/100.class.html">
+            
+                    
+                    Class 문법
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../../vanilla-javascript/">
+            
+                <a href="../../vanilla-javascript/">
+            
+                    
+                    Vanilla Javascript
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../../vanilla-javascript/vanilla-js_01.html">
+            
+                <a href="../../vanilla-javascript/vanilla-js_01.html">
+            
+                    
+                    웹 컴포넌트 구현하기
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Front-end 필수지식
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../web-browser/">
+            
+                <a href="../web-browser/">
+            
+                    
+                    Web Browser
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1.1" data-path="../web-browser/01.html">
+            
+                <a href="../web-browser/01.html">
+            
+                    
+                    01.브라우저의 동작원리
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.1.2" data-path="../web-browser/02.html">
+            
+                <a href="../web-browser/02.html">
+            
+                    
+                    02.CORS의 정의 및 해결
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.1.3" data-path="../web-browser/03.html">
+            
+                <a href="../web-browser/03.html">
+            
+                    
+                    03.크로스 브라우징
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Javascirpt
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.2.1" data-path="01.html">
+            
+                <a href="01.html">
+            
+                    
+                    01.호이스팅
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2.2" data-path="02.html">
+            
+                <a href="02.html">
+            
+                    
+                    02.this
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.5.2.3" data-path="03.html">
+            
+                <a href="03.html">
+            
+                    
+                    03.실행 컨텍스트
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2.4" data-path="04.html">
+            
+                <a href="04.html">
+            
+                    
+                    04.이벤트 버블링, 캡쳐링, 위임
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            GitBook에 게시
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../../.." >03.실행 컨텍스트</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#xC790;&#xBC14;&#xC2A4;&#xD06C;&#xB9BD;&#xD2B8;&#xC758;-&#xC2E4;&#xD589;-&#xCEE8;&#xD14D;&#xC2A4;&#xD2B8;">&#xC790;&#xBC14;&#xC2A4;&#xD06C;&#xB9BD;&#xD2B8;&#xC758; &#xC2E4;&#xD589; &#xCEE8;&#xD14D;&#xC2A4;&#xD2B8;</h1>
+<hr>
+<h2 id="&#xC2E4;&#xD589;-&#xCEE8;&#xD14D;&#xC2A4;&#xD2B8;execution-context">&#xC2E4;&#xD589; &#xCEE8;&#xD14D;&#xC2A4;&#xD2B8;(Execution Context)</h2>
+<p>&#xC2E4;&#xD589; &#xCEE8;&#xD14D;&#xC2A4;&#xD2B8;(Execution Context)&#xB294; <code>scope</code>, <code>hoisting</code>, <code>this</code>, <code>function</code>, <code>closure</code> &#xB4F1;&#xC758; &#xB3D9;&#xC791;&#xC6D0;&#xB9AC;&#xB97C; &#xB2F4;&#xACE0; &#xC788;&#xB294; &#xC790;&#xBC14;&#xC2A4;&#xD06C;&#xB9BD;&#xD2B8;&#xC758; &#xD575;&#xC2EC;&#xC6D0;&#xB9AC;&#xC774;&#xB2E4;.
+&#xC2E4;&#xD589; &#xCEE8;&#xD14D;&#xC2A4;&#xD2B8;&#xB97C; &#xC774;&#xD574;&#xD558;&#xC9C0; &#xBABB;&#xD558;&#xBA74; &#xCF54;&#xB4DC; &#xD574;&#xC11D;&#xACFC; &#xB514;&#xBC84;&#xAE45;&#xC774; &#xC5B4;&#xB824;&#xC6B8; &#xC218; &#xC788;&#xB2E4;.</p>
+<p>ECMAScript &#xC2A4;&#xD399;&#xC5D0; &#xB530;&#xB974;&#xBA74; &#xC2E4;&#xD589; &#xCEE8;&#xD14D;&#xC2A4;&#xD2B8;&#xB97C; &#xC2E4;&#xD589; &#xAC00;&#xB2A5;&#xD55C; &#xCF54;&#xB4DC;&#xB97C; &#xD615;&#xC0C1;&#xD654;&#xD558;&#xACE0; &#xAD6C;&#xBD84;&#xD558;&#xB294; &#xCD94;&#xC0C1;&#xC801;&#xC778; &#xAC1C;&#xB150;&#xC774;&#xB77C;&#xACE0; &#xC815;&#xC758;&#xD55C;&#xB2E4;.
+&#xC27D;&#xAC8C; &#xB9D0;&#xD574;, <code>&#xC2E4;&#xD589; &#xCEE8;&#xD14D;&#xC2A4;&#xD2B8;</code>&#xB294; &#xC2E4;&#xD589; &#xAC00;&#xB2A5;&#xD55C; &#xCF54;&#xB4DC;&#xAC00; &#xC2E4;&#xD589;&#xB418;&#xAE30; &#xC704;&#xD574; &#xD544;&#xC694;&#xD55C; &#xD658;&#xACBD;&#xC774;&#xB2E4;.</p>
+<p>&#xC2E4;&#xD589; &#xAC00;&#xB2A5;&#xD55C; &#xCF54;&#xB4DC;&#xB294; &#xC544;&#xB798;&#xC640; &#xAC19;&#xB2E4;.</p>
+<ul>
+<li>&#xC804;&#xC5ED; &#xCF54;&#xB4DC; : &#xC804;&#xC5ED; &#xC601;&#xC5ED;&#xC5D0; &#xC874;&#xC7AC;&#xD558;&#xB294; &#xCF54;&#xB4DC;</li>
+<li>Eval &#xCF54;&#xB4DC; : eval &#xD568;&#xC218;&#xB85C; &#xC2E4;&#xD589;&#xB418;&#xB294; &#xCF54;&#xB4DC;</li>
+<li>&#xD568;&#xC218; &#xCF54;&#xB4DC; : &#xD568;&#xC218; &#xB0B4;&#xC5D0; &#xC874;&#xC7AC;&#xD558;&#xB294; &#xCF54;&#xB4DC;</li>
+</ul>
+<p>&#xC77C;&#xBC18;&#xC801;&#xC73C;&#xB85C; &#xC2E4;&#xD589; &#xAC00;&#xB2A5;&#xD55C; &#xCF54;&#xB4DC;&#xB294; &#xC804;&#xC5ED; &#xCF54;&#xB4DC;&#xC640; &#xD568;&#xC218; &#xB0B4; &#xCF54;&#xB4DC;&#xC774;&#xB2E4;.</p>
+<p>&#xC790;&#xBC14;&#xC2A4;&#xD06C;&#xB9BD;&#xD2B8; &#xC5D4;&#xC9C4;&#xC740; &#xCF54;&#xB4DC;&#xB97C; &#xC2E4;&#xD589;&#xD558;&#xAE30; &#xC704;&#xD574;&#xC11C; &#xC2E4;&#xD589;&#xC5D0; &#xD544;&#xC694;&#xD55C; &#xC815;&#xBCF4;&#xB4E4;&#xC774; &#xC788;&#xC5B4;&#xC57C;&#xD55C;&#xB2E4;. &#xADF8; &#xC815;&#xB3C4;&#xB4E4;&#xC740; &#xC544;&#xB798;&#xC640; &#xAC19;&#xB2E4;.</p>
+<ul>
+<li>&#xBCC0;&#xC218; : &#xC804;&#xC5ED;&#xBCC0;&#xC218;, &#xC9C0;&#xC5ED;&#xBCC0;&#xC218;, &#xB9E4;&#xAC1C;&#xBCC0;&#xC218;, &#xAC1D;&#xCCB4;&#xC758; &#xD504;&#xB85C;&#xD37C;&#xD2F0;</li>
+<li>&#xD568;&#xC218; &#xC120;&#xC5B8;</li>
+<li>&#xBCC0;&#xC218;&#xC758; &#xC720;&#xD6A8;&#xBC94;&#xC704;(Scope)</li>
+<li>this</li>
+</ul>
+<p><br></p>
+<h2 id="&#xC2E4;&#xD589;-&#xCEE8;&#xD14D;&#xC2A4;&#xD2B8;-&#xAD6C;&#xC131;">&#xC2E4;&#xD589; &#xCEE8;&#xD14D;&#xC2A4;&#xD2B8; &#xAD6C;&#xC131;</h2>
+<p>&#xC2E4;&#xD589; &#xCEE8;&#xD14D;&#xC2A4;&#xD2B8;&#xB294; &#xB2E4;&#xC74C;&#xACFC; &#xAC19;&#xC740; &#xAC83;&#xB4E4;&#xC744; &#xC774;&#xC6A9;&#xD558;&#xBA74; call stack&#xC5D0; &#xC313;&#xC774;&#xAC8C; &#xB41C;&#xB2E4;.</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="02.html" class="navigation navigation-prev " aria-label="Previous page: 02.this">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="04.html" class="navigation navigation-next " aria-label="Next page: 04.이벤트 버블링, 캡쳐링, 위임">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"03.실행 컨텍스트","level":"1.5.2.3","depth":3,"next":{"title":"04.이벤트 버블링, 캡쳐링, 위임","level":"1.5.2.4","depth":3,"path":"pages/frontEnd-knowledge/javascirpt/04.md","ref":"pages/frontEnd-knowledge/javascirpt/04.md","articles":[]},"previous":{"title":"02.this","level":"1.5.2.2","depth":3,"path":"pages/frontEnd-knowledge/javascirpt/02.md","ref":"pages/frontEnd-knowledge/javascirpt/02.md","articles":[]},"dir":"ltr"},"config":{"plugins":["expandable-chapters-small","theme-darkblue","highlight-1","livereload"],"styles":{"website":"assets/css/website.css","ebook":"assets/css/ebook.css","pdf":"assets/css/pdf.css","mobi":"assets/css/mobi.css","epub":"assets/css/epub.css"},"pluginsConfig":{"livereload":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-darkblue":{},"highlight":{},"highlight-1":{},"expandable-chapters-small":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"서성식","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"INTRO.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"서성식의 eBook","language":"ko","gitbook":"*"},"file":{"path":"pages/frontEnd-knowledge/javascirpt/03.md","mtime":"2022-06-12T10:36:55.632Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-06-12T11:43:16.972Z"},"basePath":"../../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../../gitbook/gitbook.js"></script>
+    <script src="../../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

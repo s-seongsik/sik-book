@@ -1,0 +1,737 @@
+
+<!DOCTYPE HTML>
+<html lang="ko" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>DOM의 개념 · 서성식의 eBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="서성식">
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight-1/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../../assets/css/website.css">
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="dom-init.html" />
+    
+    
+    <link rel="prev" href="./" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="검색어 입력" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    HTML DOM
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="1.2.1" data-path="defind.html">
+            
+                <a href="defind.html">
+            
+                    
+                    DOM의 개념
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="dom-init.html">
+            
+                <a href="dom-init.html">
+            
+                    
+                    DOM의 타입과 핵심 인터페이스
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="elements-finding.html">
+            
+                <a href="elements-finding.html">
+            
+                    
+                    HTML Elements 찾기
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="elements-changing.html">
+            
+                <a href="elements-changing.html">
+            
+                    
+                    HTML Elements 내용 및 속성 변경
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="elements-add-del.html">
+            
+                <a href="elements-add-del.html">
+            
+                    
+                    HTML Elements 추가 및 삭제하기
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../javascript/">
+            
+                <a href="../javascript/">
+            
+                    
+                    Javascript
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../javascript/01.type-conversions.html">
+            
+                <a href="../javascript/01.type-conversions.html">
+            
+                    
+                    형 변환
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../javascript/02.strict-mode.html">
+            
+                <a href="../javascript/02.strict-mode.html">
+            
+                    
+                    엄격 모드
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../javascript/03.comparison.html">
+            
+                <a href="../javascript/03.comparison.html">
+            
+                    
+                    비교 연산자
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../javascript/100.class.html">
+            
+                <a href="../javascript/100.class.html">
+            
+                    
+                    Class 문법
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../vanilla-javascript/">
+            
+                <a href="../vanilla-javascript/">
+            
+                    
+                    Vanilla Javascript
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../vanilla-javascript/vanilla-js_01.html">
+            
+                <a href="../vanilla-javascript/vanilla-js_01.html">
+            
+                    
+                    웹 컴포넌트 구현하기
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../frontEnd-knowledge/">
+            
+                <a href="../frontEnd-knowledge/">
+            
+                    
+                    Front-end 필수지식
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../frontEnd-knowledge/web-browser/">
+            
+                <a href="../frontEnd-knowledge/web-browser/">
+            
+                    
+                    Web Browser
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1.1" data-path="../frontEnd-knowledge/web-browser/01.html">
+            
+                <a href="../frontEnd-knowledge/web-browser/01.html">
+            
+                    
+                    01.브라우저의 동작원리
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.1.2" data-path="../frontEnd-knowledge/web-browser/02.html">
+            
+                <a href="../frontEnd-knowledge/web-browser/02.html">
+            
+                    
+                    02.CORS의 정의 및 해결
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.1.3" data-path="../frontEnd-knowledge/web-browser/03.html">
+            
+                <a href="../frontEnd-knowledge/web-browser/03.html">
+            
+                    
+                    03.크로스 브라우징
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../frontEnd-knowledge/javascirpt/">
+            
+                <a href="../frontEnd-knowledge/javascirpt/">
+            
+                    
+                    Javascirpt
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.2.1" data-path="../frontEnd-knowledge/javascirpt/01.html">
+            
+                <a href="../frontEnd-knowledge/javascirpt/01.html">
+            
+                    
+                    01.호이스팅
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2.2" data-path="../frontEnd-knowledge/javascirpt/02.html">
+            
+                <a href="../frontEnd-knowledge/javascirpt/02.html">
+            
+                    
+                    02.this
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2.3" data-path="../frontEnd-knowledge/javascirpt/03.html">
+            
+                <a href="../frontEnd-knowledge/javascirpt/03.html">
+            
+                    
+                    03.실행 컨텍스트
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2.4" data-path="../frontEnd-knowledge/javascirpt/04.html">
+            
+                <a href="../frontEnd-knowledge/javascirpt/04.html">
+            
+                    
+                    04.이벤트 버블링, 캡쳐링, 위임
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            GitBook에 게시
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >DOM의 개념</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="html-dom&#xC758;-&#xAC1C;&#xB150;">HTML DOM&#xC758; &#xAC1C;&#xB150;</h1>
+<hr>
+<h2 id="&#xBB38;&#xC11C;-&#xAC1D;&#xCCB4;-&#xBAA8;&#xB378;document-object-model&#xC774;&#xB780;">&#xBB38;&#xC11C; &#xAC1D;&#xCCB4; &#xBAA8;&#xB378;(Document Object Model)&#xC774;&#xB780;?</h2>
+<p>&#xBB38;&#xC11C; &#xAC1D;&#xCCB4; &#xBAA8;&#xB378;(Document Object Model)&#xC740; HTML, XML &#xBB38;&#xC11C;&#xC5D0; &#xC811;&#xADFC;&#xD558;&#xAE30; &#xC704;&#xD55C; <code>&#xC778;&#xD130;&#xD398;&#xC774;&#xC2A4;</code>&#xC774;&#xB2E4;.
+DOM&#xC740; &#xBB38;&#xC11C;&#xC758; &#xAD6C;&#xC870;&#xD654;&#xB41C; &#xD45C;&#xD604;&#xC744; &#xC81C;&#xACF5;&#xD558;&#xBA70; &#xD504;&#xB85C;&#xADF8;&#xB798;&#xBC0D; &#xC5B8;&#xC5B4;&#xAC00; DOM &#xAD6C;&#xC870;&#xC5D0; &#xC811;&#xADFC;&#xD560; &#xC218; &#xC788;&#xB294; &#xBC29;&#xBC95;&#xC744; &#xC81C;&#xACF5;&#xD558;&#xC5EC; &#xADF8;&#xB4E4;&#xC758; &#xBB38;&#xC11C; &#xAD6C;&#xC870;, &#xC2A4;&#xD0C0;&#xC77C;, &#xB0B4;&#xC6A9; &#xB4F1;&#xC744; &#xBCC0;&#xACBD;&#xD560; &#xC218; &#xC788;&#xB3C4;&#xB85D; &#xB3D5;&#xB294;&#xB2E4;.
+DOM&#xC740; nodes&#xC640; objects&#xB85C; &#xBB38;&#xC11C;&#xB97C; &#xD45C;&#xD604;&#xD55C;&#xB2E4;. &#xC774;&#xB4E4;&#xC740; &#xC6F9; &#xD398;&#xC774;&#xC9C0;&#xB97C; &#xC2A4;&#xD06C;&#xB9BD;&#xD2B8; &#xB610;&#xB294; &#xD504;&#xB85C;&#xADF8;&#xB798;&#xBC0D; &#xC5B8;&#xC5B4;&#xB4E4;&#xC5D0;&#xAC8C; &#xC0AC;&#xC6A9;&#xB420; &#xC218; &#xC788;&#xAC8C; &#xC5F0;&#xACB0;&#xD574;&#xC8FC;&#xB294; &#xC5ED;&#xD560;&#xC744; &#xD55C;&#xB2E4;.</p>
+<p>&#xAC04;&#xB2E8;&#xD788; &#xB9D0;&#xD574; &#xC6F9; &#xD398;&#xC774;&#xC9C0;&#xC758; &#xCF58;&#xD150;&#xCE20;, &#xAD6C;&#xC870;, &#xC2A4;&#xD0C0;&#xC77C;&#xC744; &#xC77D;&#xACE0; &#xC870;&#xC791;&#xD560; &#xC218; &#xC788;&#xB294; API&#xB97C; &#xC81C;&#xACF5;&#xD55C;&#xB2E4;.</p>
+<p><img src="https://user-images.githubusercontent.com/52439201/157377268-88b361a3-838d-40aa-821a-dac8f1197b07.png" alt="image"></p>
+<p>&#xAC1D;&#xCCB4; &#xBAA8;&#xB378;&#xC744; &#xD1B5;&#xD574; &#xC790;&#xBC14;&#xC2A4;&#xD06C;&#xB9BD;&#xD2B8;&#xB294; &#xB3D9;&#xC801; HTML&#xC744; &#xC0DD;&#xC131;&#xD558;&#xB294; &#xB370; &#xD544;&#xC694;&#xD55C; &#xBAA8;&#xB4E0; &#xAE30;&#xB2A5;&#xC744; &#xC5BB;&#xC744; &#xC218; &#xC788;&#xB2E4;.</p>
+<ul>
+<li>JavaScript&#xB294; &#xD398;&#xC774;&#xC9C0;&#xC758; &#xBAA8;&#xB4E0; HTML &#xC694;&#xC18C;&#xB97C; &#xBCC0;&#xACBD;&#xD560; &#xC218; &#xC788;&#xB2E4;.</li>
+<li>JavaScript&#xB294; &#xD398;&#xC774;&#xC9C0;&#xC758; &#xBAA8;&#xB4E0; HTML &#xC18D;&#xC131;&#xC744; &#xBCC0;&#xACBD;&#xD560; &#xC218; &#xC788;&#xB2E4;.</li>
+<li>JavaScript&#xB294; &#xD398;&#xC774;&#xC9C0;&#xC758; &#xBAA8;&#xB4E0; CSS &#xC2A4;&#xD0C0;&#xC77C;&#xC744; &#xBCC0;&#xACBD;&#xD560; &#xC218; &#xC788;&#xB2E4;.</li>
+<li>JavaScript&#xB294; &#xAE30;&#xC874; HTML &#xC694;&#xC18C; &#xBC0F; &#xC18D;&#xC131;&#xC744; &#xC81C;&#xAC70;&#xD560; &#xC218; &#xC788;&#xB2E4;.</li>
+<li>JavaScript&#xB294; &#xC0C8;&#xB85C;&#xC6B4; HTML &#xC694;&#xC18C;&#xC640; &#xC18D;&#xC131;&#xC744; &#xCD94;&#xAC00;&#xD560; &#xC218; &#xC788;&#xB2E4;.</li>
+<li>JavaScript&#xB294; &#xD398;&#xC774;&#xC9C0;&#xC758; &#xBAA8;&#xB4E0; &#xAE30;&#xC874; HTML &#xC774;&#xBCA4;&#xD2B8;&#xC5D0; &#xBC18;&#xC751;&#xD560; &#xC218; &#xC788;&#xB2E4;.</li>
+<li>JavaScript&#xB294; &#xD398;&#xC774;&#xC9C0;&#xC5D0;&#xC11C; &#xC0C8;&#xB85C;&#xC6B4; HTML &#xC774;&#xBCA4;&#xD2B8;&#xB97C; &#xC0DD;&#xC131;&#xD560; &#xC218; &#xC788;&#xB2E4;.</li>
+</ul>
+<p><br></p>
+<h2 id="&#xC6F9;-&#xD398;&#xC774;&#xC9C0;-&#xC0DD;&#xC131;">&#xC6F9; &#xD398;&#xC774;&#xC9C0; &#xC0DD;&#xC131;</h2>
+<p>&#xC6F9; &#xBE0C;&#xB77C;&#xC6B0;&#xC800;&#xB294; &#xC6D0;&#xBCF8; HTML &#xBB38;&#xC11C;&#xB97C; &#xC77D;&#xC5B4; &#xC2A4;&#xD0C0;&#xC77C;&#xC744; &#xC785;&#xD788;&#xACE0; &#xB300;&#xD654;&#xD615; &#xD398;&#xC774;&#xC9C0;&#xB85C; &#xB9CC;&#xB4E4;&#xC5B4; &#xBDF0; &#xD3EC;&#xD2B8;&#xC5D0; &#xD45C;&#xC2DC;&#xD55C;&#xB2E4;. &#xC774; &#xACFC;&#xC815;&#xC744; <code>&#x201C;Critical Rendering Path&#x201D;</code>&#xB77C;&#xACE0; &#xD55C;&#xB2E4;.
+<code>&#x201C;Critical Rendering Path&#x201D;</code>&#xC740; &#xC5EC;&#xB7EC; &#xB2E8;&#xACC4;&#xB85C; &#xB098;&#xB204;&#xC5B4;&#xC838; &#xC788;&#xC9C0;&#xB9CC; &#xB300;&#xB7B5; &#xB450; &#xB2E8;&#xACC4;&#xB85C; &#xB098;&#xB20C; &#xC218; &#xC788;&#xB2E4;.  </p>
+<ol>
+<li>&#xBE0C;&#xB77C;&#xC6B0;&#xC800;&#xB294; &#xC77D;&#xC5B4;&#xB4E4;&#xC778; &#xBB38;&#xC11C;&#xB97C; &#xD30C;&#xC2F1;&#xD558;&#xC5EC; &#xCD5C;&#xC885;&#xC801;&#xC73C;&#xB85C; &#xC5B4;&#xB5A4; &#xCEE8;&#xD150;&#xCE20;&#xB97C; &#xD398;&#xC774;&#xC9C0;&#xC5D0; &#xB80C;&#xB354;&#xB9C1;&#xD560; &#xAC83;&#xC778;&#xC9C0; &#xACB0;&#xC815;&#xD55C;&#xB2E4;.</li>
+<li>&#xBE0C;&#xB77C;&#xC6B0;&#xC800;&#xB294; &#xD574;&#xB2F9; &#xB80C;&#xB354;&#xB9C1;&#xC744; &#xC218;&#xD589;&#xD55C;&#xB2E4;.</li>
+</ol>
+<p><img src="https://user-images.githubusercontent.com/52439201/157378033-43583d80-b730-4b85-8ae4-4a3a637ee3ad.png" alt="image"></p>
+<p>&#xCCAB; &#xBC88;&#xC9F8; &#xACFC;&#xC815;&#xC744; &#xC218;&#xD589;&#xD558;&#xBA74; <code>Render Tree</code>&#xAC00; &#xC0DD;&#xC131;&#xB41C;&#xB2E4;. 
+<code>Render Tree</code>&#xB294; &#xC6F9; &#xD398;&#xC774;&#xC9C0;&#xC5D0; &#xD45C;&#xC2DC;&#xB420; HTML &#xC694;&#xC18C;&#xB4E4;&#xACFC; &#xC774;&#xC640; &#xAD00;&#xB828;&#xB41C; &#xC2A4;&#xD0C0;&#xC77C; &#xC694;&#xC18C;&#xB4E4;&#xB85C; &#xAD6C;&#xC131;&#xB41C;&#xB2E4;. &#xC774;&#xB97C; &#xAD6C;&#xC131;&#xD558;&#xAE30; &#xC704;&#xD55C; 2&#xAC00;&#xC9C0; &#xBAA8;&#xB378;&#xC740; &#xB2E4;&#xC74C;&#xACFC; &#xAC19;&#xB2E4;.</p>
+<ol>
+<li>DOM(Document Object Model), HTML &#xC694;&#xC18C;&#xB4E4;&#xC758; &#xAD6C;&#xC870;&#xD654;&#xB41C; &#xD45C;&#xD604;</li>
+<li>CSSOM(Cascading Style Sheets Object Model)- &#xC694;&#xC18C;&#xB4E4;&#xACFC; &#xAD00;&#xB828;&#xB41C; &#xC2A4;&#xD0C0;&#xC77C; &#xC815;&#xBCF4;&#xC758; &#xAD6C;&#xC870;&#xD654;&#xB41C; &#xD45C;&#xD604;</li>
+</ol>
+<p><br></p>
+<h2 id="dom&#xC758;-&#xC0DD;&#xC131;">DOM&#xC758; &#xC0DD;&#xC131;</h2>
+<p>DOM&#xC740; &#xC6D0;&#xBCF8; HTML &#xBB38;&#xC11C;&#xC758; &#xAC1D;&#xCCB4; &#xAE30;&#xBC18; &#xD45C;&#xD604; &#xBC29;&#xC2DD;&#xC774;&#xB2E4;. DOM&#xC740; &#xB2E8;&#xC21C; &#xD14D;&#xC2A4;&#xD2B8;&#xB85C; &#xAD6C;&#xC131;&#xB41C; HTML &#xBB38;&#xC11C;&#xC758; &#xB0B4;&#xC6A9;&#xACFC; &#xAD6C;&#xC870;&#xAC00; &#xAC1D;&#xCCB4; &#xBAA8;&#xB378;&#xB85C; &#xBCC0;&#xD658;&#xB418;&#xC5B4; &#xB2E4;&#xC591;&#xD55C; &#xD504;&#xB85C;&#xADF8;&#xB7A8;&#xC5D0;&#xC11C; &#xC0AC;&#xC6A9;&#xB420; &#xC218; &#xC788;&#xB2E4;.<br>DOM&#xC758; &#xAC1C;&#xCCB4; &#xAD6C;&#xC870;&#xB294; <code>&#xB178;&#xB4DC; &#xD2B8;&#xB9AC;</code>&#xB85C; &#xD45C;&#xD604;&#xB41C;&#xB2E4;. &#xD558;&#xB098;&#xC758; &#xBD80;&#xBAA8; &#xC904;&#xAE30;&#xAC00; &#xC5EC;&#xB7EC; &#xAC1C;&#xC758; &#xC790;&#xC2DD; &#xB098;&#xBB47;&#xAC00;&#xC9C0;&#xB97C; &#xAC16;&#xACE0; &#xC788;&#xACE0;, &#xB610; &#xAC01;&#xAC01;&#xC758; &#xB098;&#xBB47;&#xAC00;&#xC9C0;&#xB294; &#xC78E;&#xB4E4;&#xC744; &#xAC00;&#xC9C8; &#xC218; &#xC788;&#xB294; &#xB098;&#xBB34;&#xC640; &#xAC19;&#xC740; &#xAD6C;&#xC870;&#xB85C; &#xC774;&#xB8E8;&#xC5B4;&#xC838; &#xC788;&#xB2E4;.  </p>
+<ul>
+<li>&#xBC11;&#xC758; HTML &#xBB38;&#xC11C;&#xB97C; &#xBCF4;&#xBA74; <html> &#xC740; <code>&#x201C;&#xBD80;&#xBAA8; &#xC904;&#xAE30;&#x201D;</code> &#xB8E8;&#xD2B8; &#xC694;&#xC18C;&#xC5D0; &#xB0B4;&#xD3EC;&#xB41C; &#xD0DC;&#xADF8;&#xB4E4;&#xC740; <code>&#x201C;&#xC790;&#xC2DD; &#xB098;&#xBB47;&#xAC00;&#xC9C0;&#x201D;</code> &#xADF8;&#xB9AC;&#xACE0; &#xC694;&#xC18C; &#xC548;&#xC758; &#xB0B4;&#xC6A9;&#xC740; <code>&quot;&#xC78E;&quot;</code>&#xC5D0; &#xD574;&#xB2F9;&#xD55C;&#xB2E4;.</html></li>
+</ul>
+<pre><code class="lang-HTML"><span class="cm-tagcm-bracket">&lt;</span><span class="cm-tag">html</span> <span class="cm-attribute">lang</span>=<span class="cm-string">&quot;en&quot;</span><span class="cm-tagcm-bracket">&gt;</span>
+    <span class="cm-tagcm-bracket">&lt;</span><span class="cm-tag">head</span><span class="cm-tagcm-bracket">&gt;</span>
+        <span class="cm-tagcm-bracket">&lt;</span><span class="cm-tag">title</span><span class="cm-tagcm-bracket">&gt;</span>DOM &#xC774;&#xB780;?<span class="cm-tagcm-bracket">&lt;/</span><span class="cm-tag">title</span><span class="cm-tagcm-bracket">&gt;</span>
+    <span class="cm-tagcm-bracket">&lt;/</span><span class="cm-tag">head</span><span class="cm-tagcm-bracket">&gt;</span>
+    <span class="cm-tagcm-bracket">&lt;</span><span class="cm-tag">body</span><span class="cm-tagcm-bracket">&gt;</span>
+        <span class="cm-tagcm-bracket">&lt;</span><span class="cm-tag">h1</span><span class="cm-tagcm-bracket">&gt;</span>&#xC548;&#xB155;&#xD558;&#xC138;&#xC694;.<span class="cm-tagcm-bracket">&lt;/</span><span class="cm-tag">h1</span><span class="cm-tagcm-bracket">&gt;</span>
+        <span class="cm-tagcm-bracket">&lt;</span><span class="cm-tag">P</span><span class="cm-tagcm-bracket">&gt;</span>&#xB098;&#xC774;&#xAC00; &#xC5B4;&#xB5BB;&#xAC8C; &#xB418;&#xC2DC;&#xB098;&#xC694;?<span class="cm-tagcm-bracket">&lt;</span><span class="cm-tag">p</span><span class="cm-tagcm-bracket">&gt;</span>
+    <span class="cm-tagcm-bracket">&lt;/</span><span class="cm-tagcm-error">body</span><span class="cm-tagcm-bracketcm-error">&gt;</span>
+<span class="cm-tagcm-bracket">&lt;/</span><span class="cm-tagcm-error">html</span><span class="cm-tagcm-bracketcm-error">&gt;</span>
+</code></pre>
+<pre><code>html
+ &#x251C;&#x2500;&#x2500; head
+ &#x2502;    &#x2514;&#x2500;&#x2500; title
+ &#x2502;         &#x2514;&#x2500;&#x2500; DOM &#xC774;&#xB780;?
+ &#x2514;&#x2500;&#x2500; body
+      &#x251C;&#x2500;&#x2500; h1
+      &#x2502;   &#x2514;&#x2500;&#x2500; &#xC548;&#xB155;&#xD558;&#xC138;&#xC694; &#xC11C;&#xC131;&#xC2DD;&#xC785;&#xB2C8;&#xB2E4;.
+      &#x2514;&#x2500;&#x2500; p
+          &#x2514;&#x2500;&#x2500; &#xB098;&#xC774;&#xAC00; &#xC5B4;&#xB5BB;&#xAC8C; &#xB418;&#xC2DC;&#xB098;&#xC694;?
+</code></pre><p><br></p>
+<h2 id="dom&#xC5D0;-&#xB300;&#xD55C;-&#xC624;&#xD574;">DOM&#xC5D0; &#xB300;&#xD55C; &#xC624;&#xD574;</h2>
+<h3 id="1dom&#xC740;-html&#xC774;-&#xC544;&#xB2C8;&#xB2E4;">1.DOM&#xC740; HTML&#xC774; &#xC544;&#xB2C8;&#xB2E4;</h3>
+<p>DOM&#xC740; HTML &#xBB38;&#xC11C;&#xB85C;&#xBD80;&#xD130; &#xC0DD;&#xC131;&#xB418;&#xC9C0;&#xB9CC; &#xD56D;&#xC0C1; &#xB3D9;&#xC77C;&#xD558;&#xC9C0; &#xC54A;&#xB2E4;.<br>DOM&#xC774; &#xC6D0;&#xBCF8; HTML &#xC18C;&#xC2A4;&#xC640; &#xB2E4;&#xB97C; &#xC218; &#xC788;&#xB294; &#xB450; &#xAC00;&#xC9C0; <code>&#xCF00;&#xC774;&#xC2A4;</code>&#xAC00; &#xC788;&#xB2E4;.</p>
+<h4 id="&#xC791;&#xC131;&#xB41C;-html-&#xBB38;&#xC11C;&#xAC00;-&#xC720;&#xD6A8;&#xD558;&#xC9C0;-&#xC54A;&#xC744;-&#xB54C;">&#xC791;&#xC131;&#xB41C; HTML &#xBB38;&#xC11C;&#xAC00; &#xC720;&#xD6A8;&#xD558;&#xC9C0; &#xC54A;&#xC744; &#xB54C;</h4>
+<p>DOM&#xC740; &#xC720;&#xD6A8;&#xD55C; HTML &#xBB38;&#xC11C;&#xC758; &#xC778;&#xD130;&#xD398;&#xC774;&#xC2A4; &#xC774;&#xB2E4;. DOM&#xC744; &#xC0DD;&#xC131;&#xD558;&#xB294; &#xB3D9;&#xC548; &#xBE0C;&#xB77C;&#xC6B0;&#xC800;&#xB294; &#xC720;&#xD6A8;&#xD558;&#xC9C0; &#xC54A;&#xB294; HTML &#xCF54;&#xB4DC;&#xB97C; &#xC62C;&#xBC14;&#xB974;&#xAC8C; &#xAD50;&#xC815;&#xD55C;&#xB2E4;.</p>
+<pre><code class="lang-HTML"><span class="cm-tagcm-bracket">&lt;</span><span class="cm-tag">head</span><span class="cm-tagcm-bracket">&gt;</span>
+    DOM &#xC774;&#xB780;?
+<span class="cm-tagcm-bracket">&lt;/</span><span class="cm-tag">head</span><span class="cm-tagcm-bracket">&gt;</span>
+</code></pre>
+<p>HTML &#xADDC;&#xCE59;&#xC758; &#xD544;&#xC218; &#xC0AC;&#xD56D;&#xC778; <code>head</code>&#xC640; <code>body</code> &#xC694;&#xC18C;&#xAC00; &#xBE60;&#xC838;&#xC788;&#xB2E4;. &#xD558;&#xC9C0;&#xB9CC; DOM &#xD2B8;&#xB9AC;&#xC5D0;&#xB294; &#xC62C;&#xBC14;&#xB974;&#xAC8C; &#xAD50;&#xC815;&#xB418;&#xC5B4; &#xC0DD;&#xC131;&#xB41C;&#xB2E4;.</p>
+<pre><code>html
+ &#x251C;&#x2500;&#x2500; head
+ &#x2514;&#x2500;&#x2500; body
+      &#x2514;&#x2500;&#x2500; DOM &#xC774;&#xB780;?
+</code></pre><h4 id="&#xC790;&#xBC14;&#xC2A4;&#xD06C;&#xB9BD;&#xD2B8;&#xC5D0;-&#xC758;&#xD574;-dom&#xC774;-&#xC218;&#xC815;&#xB420;-&#xB54C;">&#xC790;&#xBC14;&#xC2A4;&#xD06C;&#xB9BD;&#xD2B8;&#xC5D0; &#xC758;&#xD574; DOM&#xC774; &#xC218;&#xC815;&#xB420; &#xB54C;</h4>
+<p>DOM&#xC740; HTML &#xBB38;&#xC11C;&#xC758; &#xB0B4;&#xC6A9;&#xC744; &#xBCFC; &#xC218; &#xC788;&#xB294; &#xC778;&#xD130;&#xD398;&#xC774;&#xC2A4; &#xC5ED;&#xD560;&#xC744; &#xD558;&#xB294; &#xB3D9;&#xC2DC;&#xC5D0; &#xB3D9;&#xC801; &#xC790;&#xC6D0;&#xC774; &#xB418;&#xC5B4; &#xC218;&#xC815;&#xB420; &#xC218; &#xC788;&#xB2E4;.</p>
+<p>&#xC790;&#xBC14;&#xC2A4;&#xD06C;&#xB9BD;&#xD2B8;&#xB85C; DOM&#xC5D0; &#xC0C8;&#xB85C;&#xC6B4; &#xB178;&#xB4DC;&#xB97C; &#xCD94;&#xAC00;&#xD574;&#xBCF4;&#xC790;.</p>
+<pre><code class="lang-js"><span class="cm-keyword">var</span> <span class="cm-variable">newNode</span> <span class="cm-operator">=</span> <span class="cm-variable">document</span>.<span class="cm-property">createElement</span>(<span class="cm-string">&quot;p&quot;</span>);
+<span class="cm-keyword">var</span> <span class="cm-variable">newContent</span> <span class="cm-operator">=</span> <span class="cm-variable">document</span>.<span class="cm-property">createTextNode</span>(<span class="cm-string">&quot;new content!!&quot;</span>);
+<span class="cm-variable">newNode</span>.<span class="cm-property">appendChild</span>(<span class="cm-variable">newContent</span>);
+<span class="cm-variable">document</span>.<span class="cm-property">body</span>.<span class="cm-property">appendChild</span>(<span class="cm-variable">newNode</span>);
+</code></pre>
+<p>&#xD574;&#xB2F9; &#xCF54;&#xB4DC;&#xB97C; &#xC2E4;&#xD589;&#xD558;&#xBA74; DOM&#xC744; &#xC5C5;&#xB370;&#xC774;&#xD2B8;&#xD558;&#xC9C0;&#xB9CC;, &#xC6D0;&#xBCF8; HTML &#xB0B4;&#xC6A9;&#xC740; &#xBCC0;&#xACBD;&#xB418;&#xC9C0; &#xC54A;&#xB294;&#xB2E4;.</p>
+<h3 id="2dom&#xC740;-&#xBE0C;&#xB77C;&#xC6B0;&#xC800;&#xC5D0;-&#xBCF4;&#xC774;&#xC9C0;-&#xC54A;&#xB294;&#xB2E4;">2.DOM&#xC740; &#xBE0C;&#xB77C;&#xC6B0;&#xC800;&#xC5D0; &#xBCF4;&#xC774;&#xC9C0; &#xC54A;&#xB294;&#xB2E4;.</h3>
+<p>&#xBE0C;&#xB77C;&#xC6B0;&#xC800;&#xC5D0; &#xBCF4;&#xC774;&#xB294; &#xAC83;&#xC740; &#xB80C;&#xB354; &#xD2B8;&#xB9AC;&#xB85C; <code>DOM</code>&#xACFC; <code>CSSOM</code>&#xC758; &#xC870;&#xD569;&#xC774;&#xB2E4;.
+&#xB80C;&#xB354; &#xD2B8;&#xB9AC;&#xB294; &#xC624;&#xC9C1; &#xC2A4;&#xD06C;&#xB9B0;&#xC5D0; &#xADF8;&#xB824;&#xC9C0;&#xB294; &#xAC83;&#xC73C;&#xB85C; &#xAD6C;&#xC131;&#xB418;&#xC5B4; &#xC788;&#xAE30; &#xB54C;&#xBB38;&#xC5D0; DOM&#xACFC;&#xB294; &#xB2E4;&#xB974;&#xB2E4;.</p>
+<p>&#xB2EC;&#xB9AC; &#xB9D0;&#xD558;&#xBA74;, &#xB80C;&#xB354;&#xB9C1; &#xB418;&#xB294; &#xC694;&#xC18C;&#xB9CC; &#xAD00;&#xB828; &#xC788;&#xAE30; &#xB54C;&#xBB38;&#xC5D0; &#xC2DC;&#xAC01;&#xC801;&#xC73C;&#xB85C; &#xBCF4;&#xC774;&#xC9C0; &#xC54A;&#xB294; &#xC694;&#xC18C;&#xB294; &#xC81C;&#xC678;&#xB41C;&#xB2E4;.</p>
+<p>&#xBC11;&#xC758; &#xC608;&#xC81C;&#xB97C; &#xBCF4;&#xC790;. </p>
+<pre><code class="lang-HTML"><span class="cm-tagcm-bracket">&lt;</span><span class="cm-tag">html</span> <span class="cm-attribute">lang</span>=<span class="cm-string">&quot;en&quot;</span><span class="cm-tagcm-bracket">&gt;</span>
+    <span class="cm-tagcm-bracket">&lt;</span><span class="cm-tag">head</span><span class="cm-tagcm-bracket">&gt;</span>
+        <span class="cm-tagcm-bracket">&lt;</span><span class="cm-tag">title</span><span class="cm-tagcm-bracket">&gt;</span>DOM &#xC774;&#xB780;?<span class="cm-tagcm-bracket">&lt;/</span><span class="cm-tag">title</span><span class="cm-tagcm-bracket">&gt;</span>
+    <span class="cm-tagcm-bracket">&lt;/</span><span class="cm-tag">head</span><span class="cm-tagcm-bracket">&gt;</span>
+    <span class="cm-tagcm-bracket">&lt;</span><span class="cm-tag">body</span><span class="cm-tagcm-bracket">&gt;</span>
+    <span class="cm-tagcm-bracket">&lt;</span><span class="cm-tag">style</span><span class="cm-tagcm-bracket">&gt;</span><span class="cm-tagcm-bracket">&lt;/</span><span class="cm-tag">style</span><span class="cm-tagcm-bracket">&gt;</span>
+        <span class="cm-tagcm-bracket">&lt;</span><span class="cm-tag">div</span><span class="cm-tagcm-bracket">&gt;</span>&#xC548;&#xB155;&#xD558;&#xC138;&#xC694;.<span class="cm-tagcm-bracket">&lt;/</span><span class="cm-tag">div</span><span class="cm-tagcm-bracket">&gt;</span>
+        <span class="cm-tagcm-bracket">&lt;</span><span class="cm-tag">P</span> <span class="cm-attribute">style</span>=<span class="cm-string">&quot;display: none;&quot;</span><span class="cm-tagcm-bracket">&gt;</span>&#xB098;&#xC774;&#xAC00; &#xC5B4;&#xB5BB;&#xAC8C; &#xB418;&#xC2DC;&#xB098;&#xC694;?<span class="cm-tagcm-bracket">&lt;/</span><span class="cm-tag">P</span><span class="cm-tagcm-bracket">&gt;</span>
+    <span class="cm-tagcm-bracket">&lt;/</span><span class="cm-tag">body</span><span class="cm-tagcm-bracket">&gt;</span>
+<span class="cm-tagcm-bracket">&lt;/</span><span class="cm-tag">html</span><span class="cm-tagcm-bracket">&gt;</span>
+</code></pre>
+<ul>
+<li><p>DOM&#xC5D0;&#xC11C;&#xB294; <code>P&#xD0DC;&#xADF8;</code>&#xB97C; &#xD3EC;&#xD568;&#xC2DC;&#xD0A4;&#xC9C0;&#xB9CC;</p>
+<pre><code>html
+&#x251C;&#x2500;&#x2500; head
+&#x2502;    &#x2514;&#x2500;&#x2500; title
+&#x2502;         &#x2514;&#x2500;&#x2500; DOM &#xC774;&#xB780;?
+&#x2514;&#x2500;&#x2500; body
+    &#x251C;&#x2500;&#x2500; h1
+    &#x2502;   &#x2514;&#x2500;&#x2500; &#xC548;&#xB155;&#xD558;&#xC138;&#xC694; &#xC11C;&#xC131;&#xC2DD;&#xC785;&#xB2C8;&#xB2E4;.
+    &#x2514;&#x2500;&#x2500; p
+        &#x2514;&#x2500;&#x2500; &#xB098;&#xC774;&#xAC00; &#xC5B4;&#xB5BB;&#xAC8C; &#xB418;&#xC2DC;&#xB098;&#xC694;?
+</code></pre></li>
+<li><p>&#xB80C;&#xB354; &#xD2B8;&#xB9AC;&#xC5D0;&#xC11C;&#xB294; <code>P&#xD0DC;&#xADF8;</code>&#xAC00; &#xC2DC;&#xAC01;&#xC801;&#xC73C;&#xB85C; &#xBCF4;&#xC774;&#xC9C0; &#xC54A;&#xAE30; &#xB54C;&#xBB38;&#xC5D0; &#xC81C;&#xC678;&#xC2DC;&#xD0A8;&#xB2E4;.</p>
+<pre><code>html
+&#x251C;&#x2500;&#x2500; head
+&#x2502;    &#x2514;&#x2500;&#x2500; title
+&#x2502;         &#x2514;&#x2500;&#x2500; DOM &#xC774;&#xB780;?
+&#x2514;&#x2500;&#x2500; body
+    &#x2514;&#x2500;&#x2500; h1
+        &#x2514;&#x2500;&#x2500; &#xC548;&#xB155;&#xD558;&#xC138;&#xC694; &#xC11C;&#xC131;&#xC2DD;&#xC785;&#xB2C8;&#xB2E4;.
+</code></pre></li>
+</ul>
+<h3 id="3dom&#xC740;-&#xAC1C;&#xBC1C;&#xC790;-&#xB3C4;&#xAD6C;&#xC5D0;-&#xBCF4;&#xC774;&#xB294;-&#xAC83;&#xC774;-&#xC544;&#xB2C8;&#xB2E4;">3.DOM&#xC740; &#xAC1C;&#xBC1C;&#xC790; &#xB3C4;&#xAD6C;&#xC5D0; &#xBCF4;&#xC774;&#xB294; &#xAC83;&#xC774; &#xC544;&#xB2C8;&#xB2E4;.</h3>
+<p>&#xAC1C;&#xBC1C;&#xB3C4;&#xAD6C;&#xC758; &#xC694;&#xC18C; &#xAC80;&#xC0AC;&#xAE30;&#xB97C; &#xBCF4;&#xBA74; DOM&#xACFC; &#xAC00;&#xC7A5; &#xAC00;&#xAE4C;&#xC6B4; &#xADFC;&#xC0AC;&#xCE58;&#xB97C; &#xC81C;&#xACF5;&#xD55C;&#xB2E4;. &#xD558;&#xC9C0;&#xB9CC; &#xAC1C;&#xBC1C;&#xB3C4;&#xAD6C;&#xC758; &#xC694;&#xC18C; &#xAC80;&#xC0AC;&#xAE30;&#xC5D0;&#xB294; DOM&#xC5D0; &#xC5C6;&#xB294; &#xC815;&#xBCF4;&#xAE4C;&#xC9C0; &#xC81C;&#xACF5;&#xD55C;&#xB2E4;.
+&#xAC00;&#xC7A5; &#xC88B;&#xC740; &#xC608;&#xB294; CSS&#xC758; &#xAC00;&#xC0C1; &#xC694;&#xC18C;&#xC774;&#xB2E4;. &#xC544;&#xB798;&#xC758; &#xC608;&#xC81C;&#xB97C; &#xBCF4;&#xC790;.</p>
+<pre><code class="lang-html"><span class="cm-tagcm-bracket">&lt;</span><span class="cm-tag">html</span> <span class="cm-attribute">lang</span>=<span class="cm-string">&quot;en&quot;</span><span class="cm-tagcm-bracket">&gt;</span>
+    <span class="cm-tagcm-bracket">&lt;</span><span class="cm-tag">head</span><span class="cm-tagcm-bracket">&gt;</span>
+        <span class="cm-tagcm-bracket">&lt;</span><span class="cm-tag">title</span><span class="cm-tagcm-bracket">&gt;</span>DOM &#xC774;&#xB780;?<span class="cm-tagcm-bracket">&lt;/</span><span class="cm-tag">title</span><span class="cm-tagcm-bracket">&gt;</span>
+    <span class="cm-tagcm-bracket">&lt;/</span><span class="cm-tag">head</span><span class="cm-tagcm-bracket">&gt;</span>
+    <span class="cm-tagcm-bracket">&lt;</span><span class="cm-tag">body</span><span class="cm-tagcm-bracket">&gt;</span>
+    <span class="cm-tagcm-bracket">&lt;</span><span class="cm-tag">style</span><span class="cm-tagcm-bracket">&gt;</span>
+        div::after {
+            content: &quot;&#xC548;&#xB155;&#xD558;&#xC138;&#xC694;.&quot;;
+        }
+    <span class="cm-tagcm-bracket">&lt;/</span><span class="cm-tag">style</span><span class="cm-tagcm-bracket">&gt;</span>
+    <span class="cm-tagcm-bracket">&lt;</span><span class="cm-tag">div</span><span class="cm-tagcm-bracket">&gt;</span><span class="cm-tagcm-bracket">&lt;/</span><span class="cm-tag">div</span><span class="cm-tagcm-bracket">&gt;</span>
+    <span class="cm-tagcm-bracket">&lt;/</span><span class="cm-tag">body</span><span class="cm-tagcm-bracket">&gt;</span>
+<span class="cm-tagcm-bracket">&lt;/</span><span class="cm-tag">html</span><span class="cm-tagcm-bracket">&gt;</span>
+</code></pre>
+<p>::before &#xACFC; ::after &#xC120;&#xD0DD;&#xC790;&#xB97C; &#xC0AC;&#xC6A9;&#xD558;&#xC5EC; &#xC0DD;&#xC131;&#xB41C; <code>&#xAC00;&#xC0C1; &#xC694;&#xC18C;</code>&#xB294; <code>CSSOM</code>&#xC640; &#xB80C;&#xB354; &#xD2B8;&#xB9AC;&#xC758; &#xC77C;&#xBD80;&#xB97C; &#xAD6C;&#xC131;&#xD55C;&#xB2E4;.
+&#xC774;&#xB294; &#xAE30;&#xC220;&#xC801;&#xC73C;&#xB85C; DOM&#xC758; &#xC77C;&#xBD80;&#xB294; &#xC544;&#xB2C8;&#xB2E4;. DOM&#xC740; &#xC624;&#xC9C1; &#xC6D0;&#xBCF8; HTML &#xBB38;&#xC11C;&#xB85C;&#xBD80;&#xD130; &#xBE4C;&#xB4DC;&#xD55C;&#xB2E4;. &#xB530;&#xB77C;&#xC11C; &#xC694;&#xC18C;&#xC5D0; &#xC801;&#xC6A9;&#xB418;&#xB294; &#xC2A4;&#xD0C0;&#xC77C;&#xC744; &#xD3EC;&#xD568;&#xD558;&#xC9C0; &#xC54A;&#xB294;&#xB2E4;.
+&#xB530;&#xB77C;&#xC11C; <code>&#xAC00;&#xC0C1; &#xC694;&#xC18C;</code>&#xB294; DOM&#xC758; &#xC77C;&#xBD80;&#xAC00; &#xC544;&#xB2D8;&#xC5D0;&#xB3C4; &#xBD88;&#xAD6C;&#xD558;&#xACE0;, &#xAC1C;&#xBC1C;&#xC790;&#xB3C4;&#xAD6C; &#xC694;&#xC18C; &#xAC80;&#xC0AC;&#xAE30;&#xC5D0;&#xB294; &#xB098;&#xD0C0;&#xB09C;&#xB2E4;.</p>
+<p><img src="https://user-images.githubusercontent.com/52439201/157382682-e7bb9e91-8b90-4338-9bb6-980a3e59d0df.png" alt="image"></p>
+<blockquote>
+<p>&#xC5EC;&#xAE30;&#xC11C; &#xC911;&#xC694;&#xD55C; &#xAC74;, &#xAC00;&#xC0C1;&#xC694;&#xC18C;&#xB294; DOM&#xC774; &#xC544;&#xB2C8;&#xAE30; &#xB54C;&#xBB38;&#xC5D0; &#xC790;&#xBC14;&#xC2A4;&#xD06C;&#xB9BD;&#xD2B8;&#xB85C; &#xC218;&#xC815;&#xD560; &#xC218; &#xC5C6;&#xB2E4;.</p>
+</blockquote>
+<p><br></p>
+<h2 id="&#xC694;&#xC57D;">&#xC694;&#xC57D;</h2>
+<ul>
+<li>DOM&#xC740; HTML&#xBB38;&#xC11C;&#xC5D0; &#xB300;&#xD55C; &#xC778;&#xD130;&#xD398;&#xC774;&#xC2A4;&#xC774;&#xBA70;, &#xBDF0; &#xD3EC;&#xD2B8;&#xC5D0; &#xBB34;&#xC5C7;&#xC744; &#xB80C;&#xB354;&#xB9C1; &#xD560;&#xC9C0; &#xACB0;&#xC815;&#xD558;&#xAE30; &#xC704;&#xD574; &#xC0AC;&#xC6A9;&#xB41C;&#xB2E4;.</li>
+<li>&#xB0B4;&#xC6A9;, &#xAD6C;&#xC870;, &#xC2A4;&#xD0C0;&#xC77C;&#xC744; &#xC790;&#xBC14;&#xC2A4;&#xD06C;&#xB9BD;&#xD2B8;&#xB85C; &#xC218;&#xC815;&#xB420; &#xC218; &#xC788;&#xB2E4;.</li>
+<li>DOM&#xC740; &#xC6D0;&#xBCF8; HTML &#xBB38;&#xC11C;&#xC640; &#xBE44;&#xC2B7;&#xD558;&#xC9C0;&#xB9CC; &#xBA87; &#xAC00;&#xC9C0; &#xCC28;&#xC774;&#xC810;&#xC774; &#xC788;&#xB2E4;.<ul>
+<li>&#xD56D;&#xC0C1; &#xC720;&#xD6A8;&#xD55C; HTML &#xD615;&#xC2DD;&#xC774;&#xB2E4;.</li>
+<li>&#xC790;&#xBC14;&#xC2A4;&#xD06C;&#xB9BD;&#xD2B8;&#xC5D0; &#xC218;&#xC815;&#xB420; &#xC218; &#xC788;&#xB294; &#xB3D9;&#xC801; &#xBAA8;&#xB378;&#xC774;&#xC5B4;&#xC57C; &#xD55C;&#xB2E4;.</li>
+<li>&#xAC00;&#xC0C1; &#xC694;&#xC18C;&#xB97C; &#xD3EC;&#xD568;&#xD558;&#xC9C0; &#xC54A;&#xB294;&#xB2E4;.</li>
+<li>&#xBCF4;&#xC774;&#xC9C0; &#xC54A;&#xB294; &#xC694;&#xC18C;&#xB97C; &#xD3EC;&#xD568;&#xD55C;&#xB2E4;.</li>
+</ul>
+</li>
+</ul>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="./" class="navigation navigation-prev " aria-label="Previous page: HTML DOM">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="dom-init.html" class="navigation navigation-next " aria-label="Next page: DOM의 타입과 핵심 인터페이스">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"DOM의 개념","level":"1.2.1","depth":2,"next":{"title":"DOM의 타입과 핵심 인터페이스","level":"1.2.2","depth":2,"path":"pages/html-dom/dom-init.md","ref":"pages/html-dom/dom-init.md","articles":[]},"previous":{"title":"HTML DOM","level":"1.2","depth":1,"path":"pages/html-dom/README.md","ref":"pages/html-dom//README.md","articles":[{"title":"DOM의 개념","level":"1.2.1","depth":2,"path":"pages/html-dom/defind.md","ref":"pages/html-dom/defind.md","articles":[]},{"title":"DOM의 타입과 핵심 인터페이스","level":"1.2.2","depth":2,"path":"pages/html-dom/dom-init.md","ref":"pages/html-dom/dom-init.md","articles":[]},{"title":"HTML Elements 찾기","level":"1.2.3","depth":2,"path":"pages/html-dom/elements-finding.md","ref":"pages/html-dom/elements-finding.md","articles":[]},{"title":"HTML Elements 내용 및 속성 변경","level":"1.2.4","depth":2,"path":"pages/html-dom/elements-changing.md","ref":"pages/html-dom/elements-changing.md","articles":[]},{"title":"HTML Elements 추가 및 삭제하기","level":"1.2.5","depth":2,"path":"pages/html-dom/elements-add-del.md","ref":"pages/html-dom/elements-add-del.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["expandable-chapters-small","theme-darkblue","highlight-1","livereload"],"styles":{"website":"assets/css/website.css","ebook":"assets/css/ebook.css","pdf":"assets/css/pdf.css","mobi":"assets/css/mobi.css","epub":"assets/css/epub.css"},"pluginsConfig":{"livereload":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-darkblue":{},"highlight":{},"highlight-1":{},"expandable-chapters-small":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"서성식","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"INTRO.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"서성식의 eBook","language":"ko","gitbook":"*"},"file":{"path":"pages/html-dom/defind.md","mtime":"2022-06-12T10:36:55.633Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-06-12T11:43:16.972Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

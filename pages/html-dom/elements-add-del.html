@@ -1,0 +1,735 @@
+
+<!DOCTYPE HTML>
+<html lang="ko" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>HTML Elements 추가 및 삭제하기 · 서성식의 eBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="서성식">
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight-1/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../../assets/css/website.css">
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../javascript/" />
+    
+    
+    <link rel="prev" href="elements-changing.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="검색어 입력" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    HTML DOM
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="defind.html">
+            
+                <a href="defind.html">
+            
+                    
+                    DOM의 개념
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="dom-init.html">
+            
+                <a href="dom-init.html">
+            
+                    
+                    DOM의 타입과 핵심 인터페이스
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="elements-finding.html">
+            
+                <a href="elements-finding.html">
+            
+                    
+                    HTML Elements 찾기
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="elements-changing.html">
+            
+                <a href="elements-changing.html">
+            
+                    
+                    HTML Elements 내용 및 속성 변경
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.2.5" data-path="elements-add-del.html">
+            
+                <a href="elements-add-del.html">
+            
+                    
+                    HTML Elements 추가 및 삭제하기
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../javascript/">
+            
+                <a href="../javascript/">
+            
+                    
+                    Javascript
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../javascript/01.type-conversions.html">
+            
+                <a href="../javascript/01.type-conversions.html">
+            
+                    
+                    형 변환
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../javascript/02.strict-mode.html">
+            
+                <a href="../javascript/02.strict-mode.html">
+            
+                    
+                    엄격 모드
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../javascript/03.comparison.html">
+            
+                <a href="../javascript/03.comparison.html">
+            
+                    
+                    비교 연산자
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../javascript/100.class.html">
+            
+                <a href="../javascript/100.class.html">
+            
+                    
+                    Class 문법
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../vanilla-javascript/">
+            
+                <a href="../vanilla-javascript/">
+            
+                    
+                    Vanilla Javascript
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../vanilla-javascript/vanilla-js_01.html">
+            
+                <a href="../vanilla-javascript/vanilla-js_01.html">
+            
+                    
+                    웹 컴포넌트 구현하기
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../frontEnd-knowledge/">
+            
+                <a href="../frontEnd-knowledge/">
+            
+                    
+                    Front-end 필수지식
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../frontEnd-knowledge/web-browser/">
+            
+                <a href="../frontEnd-knowledge/web-browser/">
+            
+                    
+                    Web Browser
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1.1" data-path="../frontEnd-knowledge/web-browser/01.html">
+            
+                <a href="../frontEnd-knowledge/web-browser/01.html">
+            
+                    
+                    01.브라우저의 동작원리
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.1.2" data-path="../frontEnd-knowledge/web-browser/02.html">
+            
+                <a href="../frontEnd-knowledge/web-browser/02.html">
+            
+                    
+                    02.CORS의 정의 및 해결
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.1.3" data-path="../frontEnd-knowledge/web-browser/03.html">
+            
+                <a href="../frontEnd-knowledge/web-browser/03.html">
+            
+                    
+                    03.크로스 브라우징
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../frontEnd-knowledge/javascirpt/">
+            
+                <a href="../frontEnd-knowledge/javascirpt/">
+            
+                    
+                    Javascirpt
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.2.1" data-path="../frontEnd-knowledge/javascirpt/01.html">
+            
+                <a href="../frontEnd-knowledge/javascirpt/01.html">
+            
+                    
+                    01.호이스팅
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2.2" data-path="../frontEnd-knowledge/javascirpt/02.html">
+            
+                <a href="../frontEnd-knowledge/javascirpt/02.html">
+            
+                    
+                    02.this
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2.3" data-path="../frontEnd-knowledge/javascirpt/03.html">
+            
+                <a href="../frontEnd-knowledge/javascirpt/03.html">
+            
+                    
+                    03.실행 컨텍스트
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2.4" data-path="../frontEnd-knowledge/javascirpt/04.html">
+            
+                <a href="../frontEnd-knowledge/javascirpt/04.html">
+            
+                    
+                    04.이벤트 버블링, 캡쳐링, 위임
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            GitBook에 게시
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >HTML Elements 추가 및 삭제하기</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="html-elements-&#xCD94;&#xAC00;-&#xBC0F;-&#xC0AD;&#xC81C;&#xD558;&#xAE30;">HTML Elements &#xCD94;&#xAC00; &#xBC0F; &#xC0AD;&#xC81C;&#xD558;&#xAE30;</h1>
+<hr>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Method</th>
+<th style="text-align:left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">document.createElement(element)</td>
+<td style="text-align:left">HTML &#xC694;&#xC18C;&#xB97C; &#xC0DD;&#xC131;</td>
+</tr>
+<tr>
+<td style="text-align:left">document.remove()</td>
+<td style="text-align:left">document&#xC5D0;&#xC11C; &#xC694;&#xC18C;&#xB97C; &#xC81C;&#xAC70;</td>
+</tr>
+<tr>
+<td style="text-align:left">document.removeChild(element)</td>
+<td style="text-align:left">HTML &#xC694;&#xC18C;&#xC758; &#xC790;&#xC2DD;&#xC744; &#xC81C;&#xAC70;</td>
+</tr>
+<tr>
+<td style="text-align:left">document.appendChild(element)</td>
+<td style="text-align:left">HTML &#xC694;&#xC18C;&#xC758; &#xC790;&#xC2DD;&#xC744; &#xCD94;&#xAC00;</td>
+</tr>
+<tr>
+<td style="text-align:left">document.replaceChild(new, old)</td>
+<td style="text-align:left">HTML &#xC694;&#xC18C; &#xBC14;&#xAFB8;&#xAE30;</td>
+</tr>
+<tr>
+<td style="text-align:left">document.write(text)</td>
+<td style="text-align:left">HTML &#xCD9C;&#xB825; &#xC2A4;&#xD2B8;&#xB9BC;&#xC5D0; &#xC4F0;&#xAE30;</td>
+</tr>
+</tbody>
+</table>
+<h2 id="createelementelement">createElement(element)</h2>
+<p><code>createElement()</code> &#xBA54;&#xC11C;&#xB4DC;&#xB294; &#xC694;&#xC18C; &#xB178;&#xB4DC;&#xB97C; &#xB9CC;&#xB4DC;&#xB294;&#xB370; &#xC0AC;&#xC6A9;&#xD55C;&#xB2E4;.</p>
+<pre><code class="lang-js"><span class="cm-comment">// Create element:</span>
+<span class="cm-keyword">const</span> <span class="cm-variable">para</span> <span class="cm-operator">=</span> <span class="cm-variable">document</span>.<span class="cm-property">createElement</span>(<span class="cm-string">&quot;p&quot;</span>);
+<span class="cm-variable">para</span>.<span class="cm-property">innerText</span> <span class="cm-operator">=</span> <span class="cm-string">&quot;p&#xC694;&#xC18C; &#xC0DD;&#xC131;&quot;</span>;
+
+<span class="cm-keyword">const</span> <span class="cm-variable">btn</span> <span class="cm-operator">=</span> <span class="cm-variable">document</span>.<span class="cm-property">createElement</span>(<span class="cm-string">&quot;button&quot;</span>);
+<span class="cm-variable">btn</span>.<span class="cm-property">innerHTML</span> <span class="cm-operator">=</span> <span class="cm-string">&quot;button &#xC694;&#xC18C; &#xC0DD;&#xC131;&quot;</span>
+
+<span class="cm-comment">// Append to body:</span>
+<span class="cm-variable">document</span>.<span class="cm-property">body</span>.<span class="cm-property">appendChild</span>(<span class="cm-variable">para</span>);
+<span class="cm-variable">document</span>.<span class="cm-property">body</span>.<span class="cm-property">appendChild</span>(<span class="cm-variable">btn</span>);
+
+<span class="cm-variable">console</span>.<span class="cm-property">log</span>(<span class="cm-variable">para</span>); <span class="cm-comment">// &lt;p&gt;p&#xC694;&#xC18C; &#xC0DD;&#xC131;&lt;/p&gt;</span>
+<span class="cm-variable">console</span>.<span class="cm-property">log</span>(<span class="cm-variable">btn</span>);  <span class="cm-comment">// &lt;button&gt;button &#xC694;&#xC18C; &#xC0DD;&#xC131;&lt;/button&gt;</span>
+</code></pre>
+<p><br></p>
+<h2 id="remove">remove()</h2>
+<p><code>remove()</code> &#xBA54;&#xC11C;&#xB4DC;&#xB294; <code>document</code>&#xC5D0;&#xC11C; &#xC694;&#xC18C;(or &#xB178;&#xB4DC;)&#xB97C; &#xC81C;&#xAC70;&#xD558;&#xB294;&#xB370; &#xC0AC;&#xC6A9;&#xD55C;&#xB2E4;.</p>
+<pre><code class="lang-html"><span class="cm-tagcm-bracket">&lt;</span><span class="cm-tag">p</span> <span class="cm-attribute">id</span>=<span class="cm-string">&quot;demo&quot;</span><span class="cm-tagcm-bracket">&gt;</span>&quot;&#xC81C;&#xAC70;&quot;&#xB97C; &#xD074;&#xB9AD;&#xD558;&#xBA74; &#xC774; &#xB2E8;&#xB77D;&#xC774; DOM&#xC5D0;&#xC11C; &#xC81C;&#xAC70;&#xB429;&#xB2C8;&#xB2E4;.<span class="cm-tagcm-bracket">&lt;/</span><span class="cm-tag">p</span><span class="cm-tagcm-bracket">&gt;</span>
+<span class="cm-tagcm-bracket">&lt;</span><span class="cm-tag">button</span> <span class="cm-attribute">onclick</span>=<span class="cm-string">&quot;myFunction()&quot;</span><span class="cm-tagcm-bracket">&gt;</span>&#xC81C;&#xAC70;<span class="cm-tagcm-bracket">&lt;/</span><span class="cm-tag">button</span><span class="cm-tagcm-bracket">&gt;</span>
+</code></pre>
+<pre><code class="lang-js"><span class="cm-keyword">function</span> <span class="cm-variable">myFunction</span>() {
+  <span class="cm-keyword">const</span> <span class="cm-def">element</span> <span class="cm-operator">=</span> <span class="cm-variable">document</span>.<span class="cm-property">getElementById</span>(<span class="cm-string">&quot;demo&quot;</span>);
+  <span class="cm-variable-2">element</span>.<span class="cm-property">remove</span>();
+}
+</code></pre>
+<p><br></p>
+<h2 id="removechildelement">removeChild(element)</h2>
+<ul>
+<li><code>removeChild()</code> &#xBA54;&#xC11C;&#xB4DC;&#xB294; &#xC694;&#xC18C;&#xC758; &#xC790;&#xC2DD;&#xC744; &#xC81C;&#xAC70;&#xD558;&#xB294;&#xB370; &#xC0AC;&#xC6A9;&#xD55C;&#xB2E4;.</li>
+</ul>
+<pre><code class="lang-html"><span class="cm-tagcm-bracket">&lt;</span><span class="cm-tag">p</span><span class="cm-tagcm-bracket">&gt;</span>&#xC81C;&#xAC70;&#xB97C; &#xD074;&#xB9AD;&#xD558;&#xBA74; list&#xC758; &#xCCAB; &#xBC88;&#xC9F8; &#xC694;&#xC18C;&#xAC00; &#xC0AD;&#xC81C;&#xB429;&#xB2C8;&#xB2E4;.<span class="cm-tagcm-bracket">&lt;/</span><span class="cm-tag">p</span><span class="cm-tagcm-bracket">&gt;</span>
+<span class="cm-tagcm-bracket">&lt;</span><span class="cm-tag">button</span> <span class="cm-attribute">onclick</span>=<span class="cm-string">&quot;myFunction()&quot;</span><span class="cm-tagcm-bracket">&gt;</span>&#xC81C;&#xAC70;<span class="cm-tagcm-bracket">&lt;/</span><span class="cm-tag">button</span><span class="cm-tagcm-bracket">&gt;</span>
+
+<span class="cm-tagcm-bracket">&lt;</span><span class="cm-tag">ul</span> <span class="cm-attribute">id</span>=<span class="cm-string">&quot;myList&quot;</span><span class="cm-tagcm-bracket">&gt;</span>
+  <span class="cm-tagcm-bracket">&lt;</span><span class="cm-tag">li</span><span class="cm-tagcm-bracket">&gt;</span>Coffee<span class="cm-tagcm-bracket">&lt;/</span><span class="cm-tag">li</span><span class="cm-tagcm-bracket">&gt;</span>
+  <span class="cm-tagcm-bracket">&lt;</span><span class="cm-tag">li</span><span class="cm-tagcm-bracket">&gt;</span>Tea<span class="cm-tagcm-bracket">&lt;/</span><span class="cm-tag">li</span><span class="cm-tagcm-bracket">&gt;</span>
+  <span class="cm-tagcm-bracket">&lt;</span><span class="cm-tag">li</span><span class="cm-tagcm-bracket">&gt;</span>Milk<span class="cm-tagcm-bracket">&lt;/</span><span class="cm-tag">li</span><span class="cm-tagcm-bracket">&gt;</span>
+<span class="cm-tagcm-bracket">&lt;/</span><span class="cm-tag">ul</span><span class="cm-tagcm-bracket">&gt;</span>
+</code></pre>
+<pre><code class="lang-js"><span class="cm-keyword">function</span> <span class="cm-variable">myFunction</span>() {
+  <span class="cm-keyword">const</span> <span class="cm-def">list</span> <span class="cm-operator">=</span> <span class="cm-variable">document</span>.<span class="cm-property">getElementById</span>(<span class="cm-string">&quot;myList&quot;</span>);
+  <span class="cm-variable-2">list</span>.<span class="cm-property">removeChild</span>(<span class="cm-variable-2">list</span>.<span class="cm-property">firstElementChild</span>);
+}
+</code></pre>
+<p><br></p>
+<h2 id="appendchildelement">appendChild(element)</h2>
+<p><code>appendChild()</code>&#xBA54;&#xC11C;&#xB4DC;&#xB294; &#xB178;&#xB4DC;(&#xC694;&#xC18C;)&#xB97C; &#xC694;&#xC18C;&#xC758; &#xB9C8;&#xC9C0;&#xB9C9; &#xC790;&#xC2DD;&#xC73C;&#xB85C; &#xCD94;&#xAC00;&#xD558;&#xB294;&#xB370; &#xC0AC;&#xC6A9;&#xD55C;&#xB2E4;.</p>
+<pre><code class="lang-html"><span class="cm-tagcm-bracket">&lt;</span><span class="cm-tag">ul</span> <span class="cm-attribute">id</span>=<span class="cm-string">&quot;myList&quot;</span><span class="cm-tagcm-bracket">&gt;</span>
+  <span class="cm-tagcm-bracket">&lt;</span><span class="cm-tag">li</span><span class="cm-tagcm-bracket">&gt;</span>1<span class="cm-tagcm-bracket">&lt;/</span><span class="cm-tag">li</span><span class="cm-tagcm-bracket">&gt;</span>
+  <span class="cm-tagcm-bracket">&lt;</span><span class="cm-tag">li</span><span class="cm-tagcm-bracket">&gt;</span>2<span class="cm-tagcm-bracket">&lt;/</span><span class="cm-tag">li</span><span class="cm-tagcm-bracket">&gt;</span>
+<span class="cm-tagcm-bracket">&lt;/</span><span class="cm-tag">ul</span><span class="cm-tagcm-bracket">&gt;</span>
+
+<span class="cm-tagcm-bracket">&lt;</span><span class="cm-tag">button</span> <span class="cm-attribute">onclick</span>=<span class="cm-string">&quot;myFunction()&quot;</span><span class="cm-tagcm-bracket">&gt;</span>&#xCD94;&#xAC00;<span class="cm-tagcm-bracket">&lt;/</span><span class="cm-tag">button</span><span class="cm-tagcm-bracket">&gt;</span>
+</code></pre>
+<pre><code class="lang-js"><span class="cm-keyword">function</span> <span class="cm-variable">myFunction</span>() {
+
+<span class="cm-keyword">const</span> <span class="cm-def">node</span> <span class="cm-operator">=</span> <span class="cm-variable">document</span>.<span class="cm-property">createElement</span>(<span class="cm-string">&quot;li&quot;</span>);
+<span class="cm-keyword">const</span> <span class="cm-def">value</span> <span class="cm-operator">=</span> <span class="cm-variable">document</span>.<span class="cm-property">getElementById</span>(<span class="cm-string">&quot;myList&quot;</span>).<span class="cm-property">children</span>.<span class="cm-property">length</span><span class="cm-operator">+</span><span class="cm-number">1</span>
+<span class="cm-keyword">const</span> <span class="cm-def">textnode</span> <span class="cm-operator">=</span> <span class="cm-variable">document</span>.<span class="cm-property">createTextNode</span>(<span class="cm-variable-2">value</span>);
+
+<span class="cm-variable-2">node</span>.<span class="cm-property">appendChild</span>(<span class="cm-variable-2">textnode</span>);
+
+<span class="cm-variable">document</span>.<span class="cm-property">getElementById</span>(<span class="cm-string">&quot;myList&quot;</span>).<span class="cm-property">appendChild</span>(<span class="cm-variable-2">node</span>);
+}
+</code></pre>
+<p><br></p>
+<h2 id="replacechildnew-old">replaceChild(new, old)</h2>
+<p><code>replaceChild()</code> &#xBA54;&#xC11C;&#xB4DC;&#xB294; &#xC790;&#xC2DD; &#xB178;&#xB4DC;&#xB97C; &#xC0C8; &#xB178;&#xB4DC;&#xB85C; &#xBC14;&#xAFB8;&#xB294;&#xB370; &#xC0AC;&#xC6A9;&#xD55C;&#xB2E4;.</p>
+<pre><code class="lang-html"><span class="cm-tagcm-bracket">&lt;</span><span class="cm-tag">ul</span> <span class="cm-attribute">id</span>=<span class="cm-string">&quot;myList&quot;</span><span class="cm-tagcm-bracket">&gt;</span>
+  <span class="cm-tagcm-bracket">&lt;</span><span class="cm-tag">li</span><span class="cm-tagcm-bracket">&gt;</span>1<span class="cm-tagcm-bracket">&lt;/</span><span class="cm-tag">li</span><span class="cm-tagcm-bracket">&gt;</span>
+  <span class="cm-tagcm-bracket">&lt;</span><span class="cm-tag">li</span><span class="cm-tagcm-bracket">&gt;</span>2<span class="cm-tagcm-bracket">&lt;/</span><span class="cm-tag">li</span><span class="cm-tagcm-bracket">&gt;</span>
+  <span class="cm-tagcm-bracket">&lt;</span><span class="cm-tag">li</span><span class="cm-tagcm-bracket">&gt;</span>3<span class="cm-tagcm-bracket">&lt;/</span><span class="cm-tag">li</span><span class="cm-tagcm-bracket">&gt;</span>
+<span class="cm-tagcm-bracket">&lt;/</span><span class="cm-tag">ul</span><span class="cm-tagcm-bracket">&gt;</span>
+
+<span class="cm-tagcm-bracket">&lt;</span><span class="cm-tag">button</span> <span class="cm-attribute">onclick</span>=<span class="cm-string">&quot;myFunction()&quot;</span><span class="cm-tagcm-bracket">&gt;</span>&quot;Replace&quot;<span class="cm-tagcm-bracket">&lt;/</span><span class="cm-tag">button</span><span class="cm-tagcm-bracket">&gt;</span>
+</code></pre>
+<pre><code class="lang-js"><span class="cm-keyword">function</span> <span class="cm-variable">myFunction</span>() {
+<span class="cm-comment">// &#xCCAB; &#xBC88;&#xC9F8; &#xC790;&#xC2DD; &#xC694;&#xC18C;&#xB97C; &#xC120;&#xD0DD;</span>
+<span class="cm-keyword">const</span> <span class="cm-def">element</span> <span class="cm-operator">=</span> <span class="cm-variable">document</span>.<span class="cm-property">getElementById</span>(<span class="cm-string">&quot;myList&quot;</span>).<span class="cm-property">children</span>[<span class="cm-number">0</span>]; <span class="cm-comment">// &lt;li&gt;1&lt;/li&gt;</span>
+
+<span class="cm-comment">// &#xC0C8;&#xB85C;&#xC6B4; text &#xB178;&#xB4DC; &#xC0DD;&#xC131;</span>
+<span class="cm-keyword">const</span> <span class="cm-def">newNode</span> <span class="cm-operator">=</span> <span class="cm-variable">document</span>.<span class="cm-property">createTextNode</span>(<span class="cm-string">&quot;New Replace&quot;</span>);
+
+<span class="cm-comment">// text &#xB178;&#xB4DC;&#xB97C; &#xBC14;&#xAFBC;&#xB2E4;.:</span>
+<span class="cm-variable-2">element</span>.<span class="cm-property">replaceChild</span>(<span class="cm-variable-2">newNode</span>, <span class="cm-variable-2">element</span>.<span class="cm-property">childNodes</span>[<span class="cm-number">0</span>]); <span class="cm-comment">// 1 -&gt; New Replace&#xB85C; &#xBC14;&#xAFC8;</span>
+}
+</code></pre>
+<p><br></p>
+<h2 id="writetext">write(text)</h2>
+<ul>
+<li><code>write()</code> &#xBA54;&#xC11C;&#xB4DC;&#xB294; HTML &#xBB38;&#xC11C; &#xC2A4;&#xD2B8;&#xB9BC;&#xC5D0; &#xC9C1;&#xC811; &#xC4F8; &#xB54C; &#xC0AC;&#xC6A9;&#xD55C;&#xB2E4;.</li>
+<li><p><code>write()</code> &#xBA54;&#xC11C;&#xB4DC;&#xB294; &#xB85C;&#xB4DC;&#xB41C; &#xBB38;&#xC11C;&#xC5D0;&#xC11C; &#xC0AC;&#xC6A9;&#xB420; &#xB54C; &#xAE30;&#xC874;&#xC758; &#xBAA8;&#xB4E0; <code>HTML</code>&#xC744; &#xC0AD;&#xC81C;&#xD55C;&#xB2E4;.</p>
+</li>
+<li><p>&#xC608;&#xC81C; 1 : HTML &#xCD9C;&#xB825;&#xC5D0; &#xC9C1;&#xC811; &#xC77C;&#xBD80; &#xD14D;&#xC2A4;&#xD2B8;&#xB97C; &#xC791;&#xC131;&#xD55C;&#xB2E4;.</p>
+</li>
+</ul>
+<pre><code class="lang-html"><span class="cm-tagcm-bracket">&lt;</span><span class="cm-tag">h1</span><span class="cm-tagcm-bracket">&gt;</span>&#xC548;&#xB155;&#xD558;&#xC138;&#xC694;.<span class="cm-tagcm-bracket">&lt;/</span><span class="cm-tag">h1</span><span class="cm-tagcm-bracket">&gt;</span>
+
+<span class="cm-tagcm-bracket">&lt;</span><span class="cm-tag">script</span><span class="cm-tagcm-bracket">&gt;</span>
+document.write(&quot;&#xCD94;&#xAC00; 1&quot;);
+document.write(&quot;<span class="cm-tagcm-bracket">&lt;</span><span class="cm-tag">h2</span><span class="cm-tagcm-bracket">&gt;</span>Hello World!<span class="cm-tagcm-bracket">&lt;/</span><span class="cm-tag">h2</span><span class="cm-tagcm-bracket">&gt;</span>&quot;);
+<span class="cm-tagcm-bracket">&lt;/</span><span class="cm-tag">script</span><span class="cm-tagcm-bracket">&gt;</span>
+</code></pre>
+<ul>
+<li>&#xC608;&#xC81C; 2 : &#xBB38;&#xC11C;&#xAC00; &#xB85C;&#xB4DC;&#xB41C; &#xD6C4; <code>document.write()</code>&#xB97C; &#xC0AC;&#xC6A9;&#xD558;&#xBA74; &#xAE30;&#xC874; HTML&#xC774; &#xBAA8;&#xB450; &#xC0AD;&#xC81C;&#xB41C;&#xB2E4;.</li>
+</ul>
+<pre><code class="lang-html"><span class="cm-tagcm-bracket">&lt;</span><span class="cm-tag">h1</span><span class="cm-tagcm-bracket">&gt;</span>&#xC548;&#xB155;&#xD558;&#xC138;&#xC694;<span class="cm-tagcm-bracket">&lt;/</span><span class="cm-tag">h1</span><span class="cm-tagcm-bracket">&gt;</span>
+<span class="cm-tagcm-bracket">&lt;</span><span class="cm-tag">h2</span><span class="cm-tagcm-bracket">&gt;</span>The write() Method<span class="cm-tagcm-bracket">&lt;/</span><span class="cm-tag">h2</span><span class="cm-tagcm-bracket">&gt;</span>
+
+<span class="cm-tagcm-bracket">&lt;</span><span class="cm-tag">h2</span><span class="cm-tagcm-bracket">&gt;</span>The Lorem Ipsum Passage<span class="cm-tagcm-bracket">&lt;/</span><span class="cm-tag">h2</span><span class="cm-tagcm-bracket">&gt;</span>
+
+<span class="cm-tagcm-bracket">&lt;</span><span class="cm-tag">button</span> <span class="cm-attribute">type</span>=<span class="cm-string">&quot;button&quot;</span> <span class="cm-attribute">onclick</span>=<span class="cm-string">&quot;myFunction()&quot;</span><span class="cm-tagcm-bracket">&gt;</span>&#xD074;&#xB9AD;<span class="cm-tagcm-bracket">&lt;/</span><span class="cm-tag">button</span><span class="cm-tagcm-bracket">&gt;</span>
+</code></pre>
+<pre><code class="lang-js"><span class="cm-keyword">function</span> <span class="cm-variable">myFunction</span>() {
+  <span class="cm-variable">document</span>.<span class="cm-property">write</span>(<span class="cm-string">&quot;Hello World&quot;</span>);
+}
+</code></pre>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="elements-changing.html" class="navigation navigation-prev " aria-label="Previous page: HTML Elements 내용 및 속성 변경">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../javascript/" class="navigation navigation-next " aria-label="Next page: Javascript">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"HTML Elements 추가 및 삭제하기","level":"1.2.5","depth":2,"next":{"title":"Javascript","level":"1.3","depth":1,"path":"pages/javascript/README.md","ref":"pages/javascript/README.md","articles":[{"title":"형 변환","level":"1.3.1","depth":2,"path":"pages/javascript/01.type-conversions.md","ref":"pages/javascript/01.type-conversions.md","articles":[]},{"title":"엄격 모드","level":"1.3.2","depth":2,"path":"pages/javascript/02.strict-mode.md","ref":"pages/javascript/02.strict-mode.md","articles":[]},{"title":"비교 연산자","level":"1.3.3","depth":2,"path":"pages/javascript/03.comparison.md","ref":"pages/javascript/03.comparison.md","articles":[]},{"title":"Class 문법","level":"1.3.4","depth":2,"path":"pages/javascript/100.class.md","ref":"pages/javascript/100.class.md","articles":[]}]},"previous":{"title":"HTML Elements 내용 및 속성 변경","level":"1.2.4","depth":2,"path":"pages/html-dom/elements-changing.md","ref":"pages/html-dom/elements-changing.md","articles":[]},"dir":"ltr"},"config":{"plugins":["expandable-chapters-small","theme-darkblue","highlight-1","livereload"],"styles":{"website":"assets/css/website.css","ebook":"assets/css/ebook.css","pdf":"assets/css/pdf.css","mobi":"assets/css/mobi.css","epub":"assets/css/epub.css"},"pluginsConfig":{"livereload":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-darkblue":{},"highlight":{},"highlight-1":{},"expandable-chapters-small":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"서성식","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"INTRO.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"서성식의 eBook","language":"ko","gitbook":"*"},"file":{"path":"pages/html-dom/elements-add-del.md","mtime":"2022-06-12T10:36:55.633Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-06-12T11:43:16.972Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

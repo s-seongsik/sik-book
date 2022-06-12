@@ -1,0 +1,1336 @@
+
+<!DOCTYPE HTML>
+<html lang="ko" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>웹 컴포넌트 구현하기 · 서성식의 eBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="서성식">
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight-1/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../../assets/css/website.css">
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../frontEnd-knowledge/" />
+    
+    
+    <link rel="prev" href="./" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="검색어 입력" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../html-dom/">
+            
+                <a href="../html-dom/">
+            
+                    
+                    HTML DOM
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../html-dom/defind.html">
+            
+                <a href="../html-dom/defind.html">
+            
+                    
+                    DOM의 개념
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../html-dom/dom-init.html">
+            
+                <a href="../html-dom/dom-init.html">
+            
+                    
+                    DOM의 타입과 핵심 인터페이스
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../html-dom/elements-finding.html">
+            
+                <a href="../html-dom/elements-finding.html">
+            
+                    
+                    HTML Elements 찾기
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../html-dom/elements-changing.html">
+            
+                <a href="../html-dom/elements-changing.html">
+            
+                    
+                    HTML Elements 내용 및 속성 변경
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="../html-dom/elements-add-del.html">
+            
+                <a href="../html-dom/elements-add-del.html">
+            
+                    
+                    HTML Elements 추가 및 삭제하기
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../javascript/">
+            
+                <a href="../javascript/">
+            
+                    
+                    Javascript
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../javascript/01.type-conversions.html">
+            
+                <a href="../javascript/01.type-conversions.html">
+            
+                    
+                    형 변환
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../javascript/02.strict-mode.html">
+            
+                <a href="../javascript/02.strict-mode.html">
+            
+                    
+                    엄격 모드
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../javascript/03.comparison.html">
+            
+                <a href="../javascript/03.comparison.html">
+            
+                    
+                    비교 연산자
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../javascript/100.class.html">
+            
+                <a href="../javascript/100.class.html">
+            
+                    
+                    Class 문법
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Vanilla Javascript
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="1.4.1" data-path="vanilla-js_01.html">
+            
+                <a href="vanilla-js_01.html">
+            
+                    
+                    웹 컴포넌트 구현하기
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../frontEnd-knowledge/">
+            
+                <a href="../frontEnd-knowledge/">
+            
+                    
+                    Front-end 필수지식
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../frontEnd-knowledge/web-browser/">
+            
+                <a href="../frontEnd-knowledge/web-browser/">
+            
+                    
+                    Web Browser
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1.1" data-path="../frontEnd-knowledge/web-browser/01.html">
+            
+                <a href="../frontEnd-knowledge/web-browser/01.html">
+            
+                    
+                    01.브라우저의 동작원리
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.1.2" data-path="../frontEnd-knowledge/web-browser/02.html">
+            
+                <a href="../frontEnd-knowledge/web-browser/02.html">
+            
+                    
+                    02.CORS의 정의 및 해결
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.1.3" data-path="../frontEnd-knowledge/web-browser/03.html">
+            
+                <a href="../frontEnd-knowledge/web-browser/03.html">
+            
+                    
+                    03.크로스 브라우징
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../frontEnd-knowledge/javascirpt/">
+            
+                <a href="../frontEnd-knowledge/javascirpt/">
+            
+                    
+                    Javascirpt
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.2.1" data-path="../frontEnd-knowledge/javascirpt/01.html">
+            
+                <a href="../frontEnd-knowledge/javascirpt/01.html">
+            
+                    
+                    01.호이스팅
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2.2" data-path="../frontEnd-knowledge/javascirpt/02.html">
+            
+                <a href="../frontEnd-knowledge/javascirpt/02.html">
+            
+                    
+                    02.this
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2.3" data-path="../frontEnd-knowledge/javascirpt/03.html">
+            
+                <a href="../frontEnd-knowledge/javascirpt/03.html">
+            
+                    
+                    03.실행 컨텍스트
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2.4" data-path="../frontEnd-knowledge/javascirpt/04.html">
+            
+                <a href="../frontEnd-knowledge/javascirpt/04.html">
+            
+                    
+                    04.이벤트 버블링, 캡쳐링, 위임
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            GitBook에 게시
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >웹 컴포넌트 구현하기</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#xCEF4;&#xD3EC;&#xB10C;&#xD2B8;-&#xC608;&#xC81C;">&#xCEF4;&#xD3EC;&#xB10C;&#xD2B8; &#xC608;&#xC81C;</h1>
+<p>&#xBC11;&#xC5D0; &#xBAA8;&#xB4E0; &#xCF54;&#xB4DC;&#xB294; <a href="https://junilhwang.github.io/TIL/Javascript/Design/Vanilla-JS-Component/#_1-%E1%84%8F%E1%85%A5%E1%86%B7%E1%84%91%E1%85%A9%E1%84%82%E1%85%A5%E1%86%AB%E1%84%90%E1%85%B3%E1%84%8B%E1%85%AA-%E1%84%89%E1%85%A1%E1%86%BC%E1%84%90%E1%85%A2%E1%84%80%E1%85%AA%E1%86%AB%E1%84%85%E1%85%B5" target="_blank">&#xD669;&#xC900;&#xC77C;&#xB2D8;&#xC758; &#xBE14;&#xB85C;&#xADF8;&#xB97C; &#xB530;&#xB77C;&#xD558;&#xBA70; &#xAD6C;&#xD604;&#xD558;&#xC600;&#xC2B5;&#xB2C8;&#xB2E4;.</a></p>
+<h2 id="state---setstate---render">state - setState - render</h2>
+<p>&#xCEF4;&#xD3EC;&#xB10C;&#xD2B8; &#xC124;&#xACC4;&#xC758; &#xAE30;&#xBC18;&#xC774; &#xB418;&#xB294; &#xCF54;&#xB4DC;&#xB97C; &#xC791;&#xC131;&#xD574;&#xBCF4;&#xC790;.</p>
+<h2 id="1-&#xAE30;&#xB2A5;-&#xAD6C;&#xD604;">1. &#xAE30;&#xB2A5; &#xAD6C;&#xD604;</h2>
+<ul>
+<li><code>setState</code>&#xB77C;&#xB294; &#xBA54;&#xC18C;&#xB4DC;&#xB97C; &#xD1B5;&#xD574; <code>state</code>&#xB97C; &#xAE30;&#xBC18;&#xC73C;&#xB85C; <code>render</code>&#xB97C; &#xD574;&#xC8FC;&#xB294; &#xCF54;&#xB4DC;&#xB97C; &#xC791;&#xC131;</li>
+<li>&#xBC84;&#xD2BC; &#xD074;&#xB9AD; -&gt; setState() -&gt; state.items.push -&gt; render()</li>
+</ul>
+<pre><code class="lang-html"><span class="cm-comment">&lt;!-- index.html --&gt;</span>
+<span class="cm-meta">&lt;!DOCTYPE html&gt;</span>
+<span class="cm-tagcm-bracket">&lt;</span><span class="cm-tag">html</span> <span class="cm-attribute">lang</span>=<span class="cm-string">&quot;en&quot;</span><span class="cm-tagcm-bracket">&gt;</span>
+<span class="cm-tagcm-bracket">&lt;</span><span class="cm-tag">head</span><span class="cm-tagcm-bracket">&gt;</span>
+    <span class="cm-tagcm-bracket">&lt;</span><span class="cm-tag">meta</span> <span class="cm-attribute">charset</span>=<span class="cm-string">&quot;UTF-8&quot;</span><span class="cm-tagcm-bracket">&gt;</span>
+    <span class="cm-tagcm-bracket">&lt;</span><span class="cm-tag">meta</span> <span class="cm-attribute">http-equiv</span>=<span class="cm-string">&quot;X-UA-Compatible&quot;</span> <span class="cm-attribute">content</span>=<span class="cm-string">&quot;IE=edge&quot;</span><span class="cm-tagcm-bracket">&gt;</span>
+    <span class="cm-tagcm-bracket">&lt;</span><span class="cm-tag">meta</span> <span class="cm-attribute">name</span>=<span class="cm-string">&quot;viewport&quot;</span> <span class="cm-attribute">content</span>=<span class="cm-string">&quot;width=device-width, initial-scale=1.0&quot;</span><span class="cm-tagcm-bracket">&gt;</span>
+    <span class="cm-tagcm-bracket">&lt;</span><span class="cm-tag">title</span><span class="cm-tagcm-bracket">&gt;</span>Document<span class="cm-tagcm-bracket">&lt;/</span><span class="cm-tag">title</span><span class="cm-tagcm-bracket">&gt;</span>
+<span class="cm-tagcm-bracket">&lt;/</span><span class="cm-tag">head</span><span class="cm-tagcm-bracket">&gt;</span>
+<span class="cm-tagcm-bracket">&lt;</span><span class="cm-tag">body</span><span class="cm-tagcm-bracket">&gt;</span>
+    <span class="cm-tagcm-bracket">&lt;</span><span class="cm-tag">div</span> <span class="cm-attribute">id</span>=<span class="cm-string">&quot;app&quot;</span><span class="cm-tagcm-bracket">&gt;</span><span class="cm-tagcm-bracket">&lt;/</span><span class="cm-tag">div</span><span class="cm-tagcm-bracket">&gt;</span>
+<span class="cm-tagcm-bracket">&lt;/</span><span class="cm-tag">body</span><span class="cm-tagcm-bracket">&gt;</span>
+<span class="cm-tagcm-bracket">&lt;/</span><span class="cm-tag">html</span><span class="cm-tagcm-bracket">&gt;</span>
+</code></pre>
+<pre><code class="lang-js"><span class="cm-comment">// main.js</span>
+<span class="cm-keyword">const</span> <span class="cm-variable">$app</span> <span class="cm-operator">=</span> <span class="cm-variable">document</span>.<span class="cm-property">querySelector</span>(<span class="cm-string">&apos;#app&apos;</span>);
+
+<span class="cm-keyword">let</span> <span class="cm-variable">state</span> <span class="cm-operator">=</span> {
+    <span class="cm-property">items</span> : [<span class="cm-string">&apos;item1&apos;</span>, <span class="cm-string">&apos;item2&apos;</span>, <span class="cm-string">&apos;item3&apos;</span>, <span class="cm-string">&apos;item4&apos;</span>]
+}
+
+<span class="cm-keyword">const</span> <span class="cm-variable">render</span> <span class="cm-operator">=</span> () <span class="cm-operator">=&gt;</span> {
+    <span class="cm-keyword">const</span> {<span class="cm-variable">items</span>} <span class="cm-operator">=</span> <span class="cm-variable">state</span>;
+    <span class="cm-variable">$app</span>.<span class="cm-property">innerHTML</span> <span class="cm-operator">=</span> <span class="cm-string-2">`</span>
+        <span class="cm-string-2">&lt;ul&gt;</span>
+            <span class="cm-string-2">${</span><span class="cm-variable">items</span>.<span class="cm-property">map</span>(<span class="cm-def">item</span><span class="cm-operator">=&gt;</span> <span class="cm-string-2">`&lt;li&gt; ${</span><span class="cm-variable-2">item</span><span class="cm-string-2">}</span> <span class="cm-string-2">&lt;/li&gt;`</span>).<span class="cm-property">join</span>(<span class="cm-string">&apos;&apos;</span>)<span class="cm-string-2">}</span>
+        <span class="cm-string-2">&lt;/ul&gt;</span>
+        <span class="cm-string-2">&lt;button id=&quot;append&quot;&gt;&#xCD94;&#xAC00;&lt;/button&gt;</span>
+    <span class="cm-string-2">`</span>;
+
+    <span class="cm-variable">document</span>.<span class="cm-property">querySelector</span>(<span class="cm-string">&apos;#append&apos;</span>).<span class="cm-property">addEventListener</span>(<span class="cm-string">&apos;click&apos;</span>, () <span class="cm-operator">=&gt;</span> {
+        <span class="cm-variable">setState</span>({<span class="cm-variable">items</span>: [<span class="cm-meta">...</span><span class="cm-variable">items</span>, <span class="cm-string-2">`item${</span><span class="cm-variable">items</span>.<span class="cm-variable">length</span> <span class="cm-operator">+</span> <span class="cm-number">1</span>}<span class="cm-string-2">` ] });  </span>
+    <span class="cm-string-2">})</span>
+<span class="cm-string-2">}</span>
+
+<span class="cm-string-2">const setState = (newState) =&gt; {</span>
+    <span class="cm-string-2">state = {...state, ...newState};</span>
+    <span class="cm-string-2">render();</span>
+<span class="cm-string-2">}</span>
+
+<span class="cm-string-2">render();</span>
+</code></pre>
+<iframe src="/example/vanilla-js/example_01/index.html" width="100%" height="250px" class="example-frame"></iframe>
+
+<p>&#xC704; &#xCF54;&#xB4DC;&#xC758; &#xD575;&#xC2EC;&#xC740;</p>
+<ul>
+<li><code>state</code>&#xAC00; &#xBCC0;&#xACBD;&#xB418;&#xBA74; <code>render</code>&#xB97C; &#xC2E4;&#xD589;</li>
+<li><code>state</code>&#xB294; <code>setState</code>&#xB85C;&#xB9CC; &#xBCC0;&#xACBD;&#xD574;&#xC57C; &#xD55C;&#xB2E4;.</li>
+</ul>
+<p>&#xC704;&#xC758; &#xADDC;&#xCE59;&#xC744; &#xC9C0;&#xD0A4;&#xBA74; &#xBE0C;&#xB77C;&#xC6B0;&#xC800;&#xC5D0; &#xCD9C;&#xB825;&#xB418;&#xB294; &#xB0B4;&#xC6A9;&#xC740; &#xBB34;&#xC870;&#xAC74; <code>state</code>&#xC5D0; &#xC885;&#xC18D;&#xB418;&#xB294; &#xAC83;&#xC774;&#xB2E4;. &#xC989; DOM&#xC744; &#xC9C1;&#xC811; &#xB2E4;&#xB8F0; &#xD544;&#xC694;&#xAC00; &#xC5C6;&#xB2E4;.</p>
+<p><br></p>
+<h2 id="2-&#xCD94;&#xC0C1;&#xD654;">2. &#xCD94;&#xC0C1;&#xD654;</h2>
+<ul>
+<li>&#xC704;&#xC758; &#xCF54;&#xB4DC;&#xB97C; <code>class</code>&#xBB38;&#xBC95;&#xC73C;&#xB85C; &#xCD94;&#xC0C1;&#xD654;&#xD558;&#xC5EC; &#xC791;&#xC131;&#xD574;&#xBCF4;&#xC790;.</li>
+</ul>
+<pre><code class="lang-html"><span class="cm-comment">&lt;!-- index.html --&gt;</span>
+<span class="cm-meta">&lt;!DOCTYPE html&gt;</span>
+<span class="cm-tagcm-bracket">&lt;</span><span class="cm-tag">html</span> <span class="cm-attribute">lang</span>=<span class="cm-string">&quot;en&quot;</span><span class="cm-tagcm-bracket">&gt;</span>
+<span class="cm-tagcm-bracket">&lt;</span><span class="cm-tag">head</span><span class="cm-tagcm-bracket">&gt;</span>
+    <span class="cm-tagcm-bracket">&lt;</span><span class="cm-tag">meta</span> <span class="cm-attribute">charset</span>=<span class="cm-string">&quot;UTF-8&quot;</span><span class="cm-tagcm-bracket">&gt;</span>
+    <span class="cm-tagcm-bracket">&lt;</span><span class="cm-tag">meta</span> <span class="cm-attribute">http-equiv</span>=<span class="cm-string">&quot;X-UA-Compatible&quot;</span> <span class="cm-attribute">content</span>=<span class="cm-string">&quot;IE=edge&quot;</span><span class="cm-tagcm-bracket">&gt;</span>
+    <span class="cm-tagcm-bracket">&lt;</span><span class="cm-tag">meta</span> <span class="cm-attribute">name</span>=<span class="cm-string">&quot;viewport&quot;</span> <span class="cm-attribute">content</span>=<span class="cm-string">&quot;width=device-width, initial-scale=1.0&quot;</span><span class="cm-tagcm-bracket">&gt;</span>
+    <span class="cm-tagcm-bracket">&lt;</span><span class="cm-tag">title</span><span class="cm-tagcm-bracket">&gt;</span>Document<span class="cm-tagcm-bracket">&lt;/</span><span class="cm-tag">title</span><span class="cm-tagcm-bracket">&gt;</span>
+<span class="cm-tagcm-bracket">&lt;/</span><span class="cm-tag">head</span><span class="cm-tagcm-bracket">&gt;</span>
+<span class="cm-tagcm-bracket">&lt;</span><span class="cm-tag">body</span><span class="cm-tagcm-bracket">&gt;</span>
+    <span class="cm-tagcm-bracket">&lt;</span><span class="cm-tag">div</span> <span class="cm-attribute">id</span>=<span class="cm-string">&quot;app&quot;</span><span class="cm-tagcm-bracket">&gt;</span><span class="cm-tagcm-bracket">&lt;/</span><span class="cm-tag">div</span><span class="cm-tagcm-bracket">&gt;</span>
+<span class="cm-tagcm-bracket">&lt;/</span><span class="cm-tag">body</span><span class="cm-tagcm-bracket">&gt;</span>
+
+<span class="cm-tagcm-bracket">&lt;</span><span class="cm-tag">script</span> <span class="cm-attribute">src</span>=<span class="cm-string">&quot;./main.js&quot;</span><span class="cm-tagcm-bracket">&gt;</span><span class="cm-tagcm-bracket">&lt;/</span><span class="cm-tag">script</span><span class="cm-tagcm-bracket">&gt;</span>
+
+<span class="cm-tagcm-bracket">&lt;/</span><span class="cm-tag">html</span><span class="cm-tagcm-bracket">&gt;</span>
+</code></pre>
+<pre><code class="lang-js"><span class="cm-comment">//main.js</span>
+<span class="cm-keyword">class</span> <span class="cm-variable">component</span> {
+    <span class="cm-property">$target</span>;
+    <span class="cm-variable">$state</span>;
+    <span class="cm-variable">constructor</span>(<span class="cm-variable">$target</span>){
+        <span class="cm-keyword">this</span>.<span class="cm-variable">$target</span> <span class="cm-operator">=</span> <span class="cm-variable">$target</span>;
+        <span class="cm-keyword">this</span>.<span class="cm-variable">setup</span>();
+        <span class="cm-keyword">this</span>.<span class="cm-variable">render</span>();
+    }
+    <span class="cm-variable">setup</span>() {};
+    <span class="cm-variable">template</span>() {<span class="cm-keyword">return</span> <span class="cm-string">&apos;&apos;</span>;}
+    <span class="cm-variable">render</span>() {
+        <span class="cm-keyword">this</span>.<span class="cm-property">$target</span>.<span class="cm-property">innerHTML</span> <span class="cm-operator">=</span> <span class="cm-keyword">this</span>.<span class="cm-property">template</span>();
+        <span class="cm-keyword">this</span>.<span class="cm-property">setEvent</span>();
+    }
+    <span class="cm-variable">setEvent</span>() {}
+    <span class="cm-variable">setState</span> (<span class="cm-variable">newState</span>) {
+        <span class="cm-keyword">this</span>.<span class="cm-property">$state</span> <span class="cm-operator">=</span> {<span class="cm-meta">...</span><span class="cm-keyword">this</span>.<span class="cm-variable">$state</span>, <span class="cm-meta">...</span><span class="cm-variable">newState</span>};
+        <span class="cm-keyword">this</span>.<span class="cm-property">render</span>();
+    }
+}
+
+<span class="cm-keyword">class</span> <span class="cm-variable">App</span> <span class="cm-keyword">extends</span> <span class="cm-variable">component</span> {
+    <span class="cm-property">setup</span>() {
+        <span class="cm-keyword">this</span>.<span class="cm-property">$state</span> <span class="cm-operator">=</span> {<span class="cm-property">items</span>: [<span class="cm-string">&apos;item1&apos;</span>, <span class="cm-string">&apos;item2&apos;</span>] };
+    }
+    <span class="cm-variable">template</span> () {
+        <span class="cm-keyword">const</span> { <span class="cm-variable">items</span> } <span class="cm-operator">=</span> <span class="cm-keyword">this</span>.<span class="cm-property">$state</span>;
+        <span class="cm-keyword">return</span> <span class="cm-string-2">`</span>
+            <span class="cm-string-2">&lt;ul&gt;</span>
+                <span class="cm-string-2">${</span><span class="cm-variable">items</span>.<span class="cm-property">map</span>(<span class="cm-def">item</span> <span class="cm-operator">=&gt;</span> <span class="cm-string-2">`&lt;li&gt;${</span><span class="cm-variable-2">item</span><span class="cm-string-2">}</span><span class="cm-string-2">&lt;/li&gt;`</span>).<span class="cm-property">join</span>(<span class="cm-string">&apos;&apos;</span>)<span class="cm-string-2">}</span>
+            <span class="cm-string-2">&lt;/ul&gt;</span>
+            <span class="cm-string-2">&lt;button id=&quot;append&quot;&gt;&#xCD94;&#xAC00;&lt;/button&gt;</span>
+        <span class="cm-string-2">`</span>
+    }
+
+
+    <span class="cm-variable">setEvent</span> () {
+        <span class="cm-keyword">this</span>.<span class="cm-property">$target</span>.<span class="cm-property">querySelector</span>(<span class="cm-string">&apos;#append&apos;</span>).<span class="cm-property">addEventListener</span>(<span class="cm-string">&apos;click&apos;</span>, () <span class="cm-operator">=&gt;</span> {
+            <span class="cm-keyword">const</span> { <span class="cm-variable">items</span> } <span class="cm-operator">=</span> <span class="cm-keyword">this</span>.<span class="cm-variable">$state</span>;
+            <span class="cm-keyword">this</span>.<span class="cm-variable">setState</span>({ <span class="cm-variable">items</span>: [ <span class="cm-meta">...</span><span class="cm-variable">items</span>,<span class="cm-string-2">`item${</span><span class="cm-variable">items</span>.<span class="cm-variable">length</span> <span class="cm-operator">+</span> <span class="cm-number">1</span>}<span class="cm-string-2">` ] });</span>
+        <span class="cm-string-2">});</span>
+    <span class="cm-string-2">}</span>
+<span class="cm-string-2">}</span>
+
+<span class="cm-string-2">new App(document.querySelector(&apos;#app&apos;));</span>
+</code></pre>
+<iframe src="/example/vanilla-js/example_02/index.html" width="100%" height="250px" class="example-frame"></iframe>
+
+<p>&#xCEF4;&#xD3EC;&#xB10C;&#xD2B8;&#xB97C; &#xD074;&#xB798;&#xC2A4;&#xB85C; &#xBC14;&#xAFD4; &#xC720;&#xC5F0;&#xD558;&#xAC8C; &#xB9CC;&#xB4E4;&#xC5B4;&#xBD24;&#xB2E4;. &#xBB34;&#xC5C7;&#xBCF4;&#xB2E4; &#xCEF4;&#xD3EC;&#xB10C;&#xD2B8; &#xCF54;&#xB4DC;&#xC758; &#xC0AC;&#xC6A9; &#xBC29;&#xBC95;&#xC744; &#xAC15;&#xC81C;&#xD560; &#xC218; &#xC788;&#xAE30; &#xB300;&#xBB38;&#xC5D0; &#xCF54;&#xB4DC;&#xB97C; &#xC720;&#xC9C0;&#xBCF4;&#xC218;&#xD558;&#xACE0; &#xAD00;&#xB9AC;&#xD560; &#xB54C; &#xB9E4;&#xC6B0; &#xC774;&#xB86D;&#xB2E4;.</p>
+<p><br></p>
+<h2 id="3-&#xBAA8;&#xB4C8;&#xD654;">3. &#xBAA8;&#xB4C8;&#xD654;</h2>
+<ul>
+<li>ES6 &#xBAA8;&#xB4C8;&#xC2DC;&#xC2A4;&#xD15C;&#xC744; &#xC0AC;&#xC6A9;&#xD558;&#xC5EC; &#xD504;&#xB85C;&#xC81D;&#xD2B8; &#xAD6C;&#xC870;&#xB97C; &#xBAA8;&#xB4C8;&#xD654; &#xD574;&#xBCF4;&#xC790;.</li>
+</ul>
+<pre><code>.
+&#x251C;&#x2500;&#x2500; index.html
+&#x2514;&#x2500;&#x2500; src
+    &#x251C;&#x2500;&#x2500; app.js              # ES Module&#xC758; entry file
+    &#x251C;&#x2500;&#x2500; components          # Component &#xC5ED;&#xD560;&#xC744;&#xD558;&#xB294; &#xAC83;&#xB4E4;
+    &#x2502;   &#x2514;&#x2500;&#x2500; Items.js
+    &#x2514;&#x2500;&#x2500; core                # &#xAD6C;&#xD604;&#xC5D0; &#xD544;&#xC694;&#xD55C; &#xCF54;&#xC5B4;&#xB4E4;
+        &#x2514;&#x2500;&#x2500; Component.js
+</code></pre><ul>
+<li>index.html</li>
+</ul>
+<pre><code class="lang-html"><span class="cm-meta">&lt;!DOCTYPE html&gt;</span>
+<span class="cm-tagcm-bracket">&lt;</span><span class="cm-tag">html</span> <span class="cm-attribute">lang</span>=<span class="cm-string">&quot;en&quot;</span><span class="cm-tagcm-bracket">&gt;</span>
+<span class="cm-tagcm-bracket">&lt;</span><span class="cm-tag">head</span><span class="cm-tagcm-bracket">&gt;</span>
+    <span class="cm-tagcm-bracket">&lt;</span><span class="cm-tag">meta</span> <span class="cm-attribute">charset</span>=<span class="cm-string">&quot;UTF-8&quot;</span><span class="cm-tagcm-bracket">&gt;</span>
+    <span class="cm-tagcm-bracket">&lt;</span><span class="cm-tag">meta</span> <span class="cm-attribute">http-equiv</span>=<span class="cm-string">&quot;X-UA-Compatible&quot;</span> <span class="cm-attribute">content</span>=<span class="cm-string">&quot;IE=edge&quot;</span><span class="cm-tagcm-bracket">&gt;</span>
+    <span class="cm-tagcm-bracket">&lt;</span><span class="cm-tag">meta</span> <span class="cm-attribute">name</span>=<span class="cm-string">&quot;viewport&quot;</span> <span class="cm-attribute">content</span>=<span class="cm-string">&quot;width=device-width, initial-scale=1.0&quot;</span><span class="cm-tagcm-bracket">&gt;</span>
+    <span class="cm-tagcm-bracket">&lt;</span><span class="cm-tag">title</span><span class="cm-tagcm-bracket">&gt;</span>Document<span class="cm-tagcm-bracket">&lt;/</span><span class="cm-tag">title</span><span class="cm-tagcm-bracket">&gt;</span>
+<span class="cm-tagcm-bracket">&lt;/</span><span class="cm-tag">head</span><span class="cm-tagcm-bracket">&gt;</span>
+<span class="cm-tagcm-bracket">&lt;</span><span class="cm-tag">body</span><span class="cm-tagcm-bracket">&gt;</span>
+    <span class="cm-tagcm-bracket">&lt;</span><span class="cm-tag">div</span> <span class="cm-attribute">id</span>=<span class="cm-string">&quot;app&quot;</span><span class="cm-tagcm-bracket">&gt;</span><span class="cm-tagcm-bracket">&lt;/</span><span class="cm-tag">div</span><span class="cm-tagcm-bracket">&gt;</span>
+    <span class="cm-tagcm-bracket">&lt;</span><span class="cm-tag">script</span> <span class="cm-attribute">src</span>=<span class="cm-string">&quot;./src/app.js&quot;</span> <span class="cm-attribute">type</span>=<span class="cm-string">&quot;module&quot;</span><span class="cm-tagcm-bracket">&gt;</span><span class="cm-tagcm-bracket">&lt;/</span><span class="cm-tag">script</span><span class="cm-tagcm-bracket">&gt;</span>
+<span class="cm-tagcm-bracket">&lt;/</span><span class="cm-tag">body</span><span class="cm-tagcm-bracket">&gt;</span>
+<span class="cm-tagcm-bracket">&lt;/</span><span class="cm-tag">html</span><span class="cm-tagcm-bracket">&gt;</span>
+</code></pre>
+<ul>
+<li>src/app.js  </li>
+</ul>
+<pre><code class="lang-js"><span class="cm-keyword">import</span> <span class="cm-variable">Items</span> <span class="cm-keyword">from</span> <span class="cm-string">&apos;./components/Items.js&apos;</span>;
+
+<span class="cm-keyword">class</span> <span class="cm-variable">App</span> {
+    <span class="cm-property">constructor</span>() {
+        <span class="cm-keyword">const</span> <span class="cm-def">app</span> <span class="cm-operator">=</span> <span class="cm-variable">document</span>.<span class="cm-property">querySelector</span>(<span class="cm-string">&quot;#app&quot;</span>);
+        <span class="cm-keyword">new</span> <span class="cm-variable">Items</span>(<span class="cm-variable-2">app</span>);
+    }
+}
+
+<span class="cm-keyword">new</span> <span class="cm-variable">App</span>();
+</code></pre>
+<ul>
+<li>src/components/Items.js </li>
+</ul>
+<pre><code class="lang-js"><span class="cm-keyword">import</span> <span class="cm-variable">Component</span> <span class="cm-keyword">from</span> <span class="cm-string">&quot;../core/Component.js&quot;</span>;
+
+<span class="cm-keyword">export</span> <span class="cm-keyword">default</span> <span class="cm-keyword">class</span> <span class="cm-variable">Items</span> <span class="cm-keyword">extends</span> <span class="cm-variable">Component</span> {
+  <span class="cm-variable">setup</span> () {
+    <span class="cm-keyword">this</span>.<span class="cm-property">$state</span> <span class="cm-operator">=</span> { <span class="cm-property">items</span>: [<span class="cm-string">&apos;item1&apos;</span>, <span class="cm-string">&apos;item2&apos;</span>] };
+  }
+  <span class="cm-variable">template</span> () {
+    <span class="cm-keyword">const</span> { <span class="cm-variable">items</span> } <span class="cm-operator">=</span> <span class="cm-keyword">this</span>.<span class="cm-property">$state</span>;
+    <span class="cm-keyword">return</span> <span class="cm-string-2">`</span>
+      <span class="cm-string-2">&lt;ul&gt;</span>
+        <span class="cm-string-2">${</span><span class="cm-variable">items</span>.<span class="cm-property">map</span>(<span class="cm-def">item</span> <span class="cm-operator">=&gt;</span> <span class="cm-string-2">`&lt;li&gt;${</span><span class="cm-variable-2">item</span><span class="cm-string-2">}</span><span class="cm-string-2">&lt;/li&gt;`</span>).<span class="cm-property">join</span>(<span class="cm-string">&apos;&apos;</span>)<span class="cm-string-2">}</span>
+      <span class="cm-string-2">&lt;/ul&gt;</span>
+      <span class="cm-string-2">&lt;button&gt;&#xCD94;&#xAC00;&lt;/button&gt;</span>
+    <span class="cm-string-2">`</span>
+  }
+
+  <span class="cm-variable">setEvent</span> () {
+    <span class="cm-keyword">this</span>.<span class="cm-property">$target</span>.<span class="cm-property">querySelector</span>(<span class="cm-string">&apos;button&apos;</span>).<span class="cm-property">addEventListener</span>(<span class="cm-string">&apos;click&apos;</span>, () <span class="cm-operator">=&gt;</span> {
+      <span class="cm-keyword">const</span> { <span class="cm-variable">items</span> } <span class="cm-operator">=</span> <span class="cm-keyword">this</span>.<span class="cm-variable">$state</span>;
+      <span class="cm-keyword">this</span>.<span class="cm-variable">setState</span>({ <span class="cm-variable">items</span>: [ <span class="cm-meta">...</span><span class="cm-variable">items</span>, <span class="cm-string-2">`item${</span><span class="cm-variable">items</span>.<span class="cm-variable">length</span> <span class="cm-operator">+</span> <span class="cm-number">1</span>}<span class="cm-string-2">` ] });</span>
+    <span class="cm-string-2">});</span>
+  <span class="cm-string-2">}</span>
+<span class="cm-string-2">}</span>
+</code></pre>
+<ul>
+<li>src/core/Component.js </li>
+</ul>
+<pre><code class="lang-js"><span class="cm-keyword">export</span> <span class="cm-keyword">default</span> <span class="cm-keyword">class</span> <span class="cm-variable">Components</span> {
+    <span class="cm-variable">$target</span>;
+    <span class="cm-variable">$state</span>;
+    <span class="cm-variable">constructor</span>(<span class="cm-variable">$target</span>) {
+        <span class="cm-keyword">this</span>.<span class="cm-property">$target</span> <span class="cm-operator">=</span> <span class="cm-variable">$target</span>;
+        <span class="cm-keyword">this</span>.<span class="cm-property">setup</span>();
+        <span class="cm-keyword">this</span>.<span class="cm-property">render</span>();
+    }
+    <span class="cm-variable">setup</span>() {};
+    <span class="cm-variable">template</span> () { <span class="cm-keyword">return</span> <span class="cm-string">&apos;&apos;</span>; }
+    <span class="cm-variable">render</span>() {
+        <span class="cm-keyword">this</span>.<span class="cm-property">$target</span>.<span class="cm-property">innerHTML</span> <span class="cm-operator">=</span> <span class="cm-keyword">this</span>.<span class="cm-property">template</span>();
+        <span class="cm-keyword">this</span>.<span class="cm-property">setEvent</span>();
+    }
+    <span class="cm-variable">setEvent</span> () {}
+    <span class="cm-variable">setState</span> (<span class="cm-variable">newState</span>) {
+        <span class="cm-keyword">this</span>.<span class="cm-property">$state</span> <span class="cm-operator">=</span> { <span class="cm-meta">...</span><span class="cm-keyword">this</span>.<span class="cm-variable">$state</span>, <span class="cm-meta">...</span><span class="cm-variable">newState</span> };
+        <span class="cm-keyword">this</span>.<span class="cm-property">render</span>();
+      }
+}
+</code></pre>
+<ul>
+<li><p><code>lite-server</code>&#xB85C; html, css, js &#xC2E4;&#xC2B5; &#xC11C;&#xBC84; &#xC2E4;&#xD589;</p>
+<pre><code class="lang-console">npm install lite-server --save-dev
+</code></pre>
+</li>
+<li><p>package.json&#xC5D0; main&#xC774; &#xB418;&#xB294; &#xC5D4;&#xB4DC;&#xB9AC; <code>js(&quot;./src/app.js&quot;)</code>&#xC640; &#xC2E4;&#xD589; &#xC2A4;&#xD06C;&#xB9BD;&#xD2B8;&#xB97C; &#xB4F1;&#xB85D;&#xD558;&#xC790;</p>
+</li>
+</ul>
+<pre><code class="lang-json">{
+  <span class="cm-property">&quot;name&quot;</span>: <span class="cm-string">&quot;web-component&quot;</span>,
+  <span class="cm-property">&quot;version&quot;</span>: <span class="cm-string">&quot;1.0.0&quot;</span>,
+  <span class="cm-property">&quot;description&quot;</span>: <span class="cm-string">&quot;&quot;</span>,
+  <span class="cm-property">&quot;main&quot;</span>: <span class="cm-string">&quot;./src/app.js&quot;</span>,
+  <span class="cm-property">&quot;scripts&quot;</span>: {
+    <span class="cm-property">&quot;test&quot;</span>: <span class="cm-string">&quot;echo \&quot;Error: no test specified\&quot; &amp;&amp; exit 1&quot;</span>,
+    <span class="cm-property">&quot;dev&quot;</span>: <span class="cm-string">&quot;lite-server&quot;</span>
+  },
+  <span class="cm-property">&quot;author&quot;</span>: <span class="cm-string">&quot;&quot;</span>,
+  <span class="cm-property">&quot;license&quot;</span>: <span class="cm-string">&quot;ISC&quot;</span>,
+  <span class="cm-property">&quot;devDependencies&quot;</span>: {
+    <span class="cm-property">&quot;lite-server&quot;</span>: <span class="cm-string">&quot;^2.6.1&quot;</span>
+  }
+}
+</code></pre>
+<ul>
+<li><code>npm run dev</code>&#xB85C; &#xC11C;&#xBC84;&#xB97C; &#xC2E4;&#xD589;&#xD558;&#xC5EC; &#xD655;&#xC778;<pre><code class="lang-console.log">$ npm run dev
+</code></pre>
+</li>
+</ul>
+<iframe src="/example/vanilla-js/example_03/index.html" width="100%" height="250px" class="example-frame"></iframe>
+
+
+<p><br></p>
+<h2 id="4-&#xC774;&#xBCA4;&#xD2B8;-&#xBC84;&#xBE14;&#xB9C1;">4. &#xC774;&#xBCA4;&#xD2B8; &#xBC84;&#xBE14;&#xB9C1;</h2>
+<blockquote>
+<ul>
+<li>&#xC704;&#xC758; &#xBAA8;&#xB4C8;&#xD654; &#xC608;&#xC81C;&#xB294; <code>addBtn</code>&#xBC84;&#xD2BC;&#xC744; &#xB204;&#xB97C;&#xB54C;&#xB9C8;&#xB2E4; render()&#xAC00; &#xC2E4;&#xD589;&#xB41C;&#xB2E4;. &#xC774;&#xB294; &#xCD94;&#xAC00;&#xD560; &#xB54C; &#xB9C8;&#xB2E4; &#xC774;&#xBCA4;&#xD2B8;&#xAC00; &#xC0C8;&#xB85C; &#xB4F1;&#xB85D;&#xD558;&#xAC8C; &#xB41C;&#xB2E4;.</li>
+<li>&#xC774;&#xBCA4;&#xD2B8; &#xBC84;&#xBE14;&#xB9C1;&#xC744; &#xC774;&#xC6A9;&#xD558;&#xBA74;, &#xC880; &#xB354; &#xC9C1;&#xAD00;&#xC801;&#xC73C;&#xB85C; &#xCF54;&#xB4DC;&#xB97C; &#xC791;&#xC131;&#xD560; &#xC218; &#xC788;&#xB2E4;.</li>
+<li>&#xAE30;&#xC874;&#xC758; render()&#xAC00; &#xC2E4;&#xD589;&#xB420; &#xB54C;&#xB9C8;&#xB2E4; setEvent()&#xB97C; &#xC2E4;&#xD589;&#xD558;&#xAC8C; &#xB418;&#xB294;&#xB370; &#xB77C;&#xC774;&#xD504; &#xC0AC;&#xC774;&#xD074;&#xC744; component&#xAC00; &#xC0DD;&#xC131;&#xB420; &#xB54C; &#xD55C;&#xBC88; &#xC2E4;&#xD589;&#xD558;&#xAC8C; &#xBCC0;&#xACBD;&#xD55C;&#xB2E4;. &#xADF8;&#xB807;&#xAC8C; &#xB418;&#xBA74; &#xCD94;&#xAC00;&#xB85C; &#xB4F1;&#xB85D;&#xD560; &#xD544;&#xC694;&#xAC00; &#xC5C6;&#xC5B4;&#xC9C4;&#xB2E4;.</li>
+<li>&#xC774;&#xBCA4;&#xD2B8;&#xB97C; &#xAC01;&#xAC01;&#xC758; &#xD558;&#xC704; &#xC694;&#xC18C;&#xC5D0; &#xB4F1;&#xB85D;&#xD558;&#xB294;&#xAC8C; &#xC544;&#xB2C8;&#xB77C; component&#xC758; target &#xC790;&#xCCB4;&#xC5D0; &#xB4F1;&#xB85D;&#xD558;&#xB294; &#xAC83;&#xC774;&#xB2E4;.</li>
+</ul>
+</blockquote>
+<pre><code class="lang-js"><span class="cm-keyword">import</span> <span class="cm-variable">Component</span> <span class="cm-keyword">from</span> <span class="cm-string">&quot;../core/Component.js&quot;</span>;
+
+<span class="cm-keyword">export</span> <span class="cm-keyword">default</span> <span class="cm-keyword">class</span> <span class="cm-variable">Items</span> <span class="cm-keyword">extends</span> <span class="cm-variable">Component</span> {
+  <span class="cm-variable">setup</span> () {
+    <span class="cm-keyword">this</span>.<span class="cm-property">$state</span> <span class="cm-operator">=</span> { <span class="cm-property">items</span>: [<span class="cm-string">&apos;item1&apos;</span>, <span class="cm-string">&apos;item2&apos;</span>] };
+  }
+  <span class="cm-variable">template</span> () {
+    <span class="cm-keyword">const</span> { <span class="cm-variable">items</span> } <span class="cm-operator">=</span> <span class="cm-keyword">this</span>.<span class="cm-property">$state</span>;
+    <span class="cm-keyword">return</span> <span class="cm-string-2">`</span>
+      <span class="cm-string-2">&lt;ul&gt;</span>
+        <span class="cm-string-2">${</span><span class="cm-variable">items</span>.<span class="cm-property">map</span>((<span class="cm-def">item</span>, <span class="cm-def">key</span>) <span class="cm-operator">=&gt;</span> <span class="cm-string-2">`</span>
+          <span class="cm-string-2">&lt;li&gt;${</span><span class="cm-variable-2">item</span><span class="cm-string-2">}</span><span class="cm-string-2">&lt;/li&gt;</span>
+          <span class="cm-string-2">&lt;button class=&quot;deleteBtn&quot; data-index=&quot;${</span><span class="cm-variable-2">key</span><span class="cm-string-2">}</span><span class="cm-string-2">&quot;&gt;&#xC0AD;&#xC81C;&lt;/button&gt;</span>
+        <span class="cm-string-2">`</span>).<span class="cm-property">join</span>(<span class="cm-string">&apos;&apos;</span>)<span class="cm-string-2">}</span>
+      <span class="cm-string-2">&lt;/ul&gt;</span>
+      <span class="cm-string-2">&lt;button class=&quot;addBtn&quot;&gt;&#xCD94;&#xAC00;&lt;/button&gt;</span>
+    <span class="cm-string-2">`</span>
+  }
+
+  <span class="cm-variable">setEvent</span> () {
+    <span class="cm-keyword">this</span>.<span class="cm-property">$target</span>.<span class="cm-property">addEventListener</span>(<span class="cm-string">&apos;click&apos;</span>, ({<span class="cm-def">target</span>}) <span class="cm-operator">=&gt;</span> {
+      <span class="cm-keyword">const</span> <span class="cm-def">items</span> <span class="cm-operator">=</span> [ <span class="cm-meta">...</span><span class="cm-keyword">this</span>.<span class="cm-property">$state</span>.<span class="cm-property">items</span> ];
+
+
+      <span class="cm-keyword">if</span> (<span class="cm-variable-2">target</span>.<span class="cm-property">classList</span>.<span class="cm-property">contains</span>(<span class="cm-string">&apos;addBtn&apos;</span>)) {
+        <span class="cm-keyword">this</span>.<span class="cm-property">setState</span>({ <span class="cm-property">items</span>: [ <span class="cm-meta">...</span><span class="cm-variable-2">items</span>, <span class="cm-string-2">`item${</span><span class="cm-variable-2">items</span>.<span class="cm-property">length</span> <span class="cm-operator">+</span> <span class="cm-number">1</span><span class="cm-string-2">}</span><span class="cm-string-2">`</span> ] });
+      }
+
+      <span class="cm-keyword">if</span> (<span class="cm-variable-2">target</span>.<span class="cm-property">classList</span>.<span class="cm-property">contains</span>(<span class="cm-string">&apos;deleteBtn&apos;</span>)) {
+        <span class="cm-variable-2">items</span>.<span class="cm-property">splice</span>(<span class="cm-variable-2">target</span>.<span class="cm-property">dataset</span>.<span class="cm-property">index</span>, <span class="cm-number">1</span>);
+        <span class="cm-keyword">this</span>.<span class="cm-property">setState</span>({ <span class="cm-property">items</span> });
+      }
+    })
+
+  }
+}
+</code></pre>
+<pre><code class="lang-js"><span class="cm-keyword">export</span> <span class="cm-keyword">default</span> <span class="cm-keyword">class</span> <span class="cm-variable">Components</span> {
+    <span class="cm-variable">$target</span>;
+    <span class="cm-variable">$state</span>;
+    <span class="cm-variable">constructor</span>(<span class="cm-variable">$target</span>) {
+        <span class="cm-keyword">this</span>.<span class="cm-property">$target</span> <span class="cm-operator">=</span> <span class="cm-variable">$target</span>;
+        <span class="cm-keyword">this</span>.<span class="cm-property">setup</span>();
+        <span class="cm-keyword">this</span>.<span class="cm-property">render</span>();
+        <span class="cm-keyword">this</span>.<span class="cm-property">setEvent</span>();
+    }
+    <span class="cm-variable">setup</span>() {};
+    <span class="cm-variable">template</span> () { <span class="cm-keyword">return</span> <span class="cm-string">&apos;&apos;</span>; }
+    <span class="cm-variable">render</span>() {
+        <span class="cm-keyword">this</span>.<span class="cm-property">$target</span>.<span class="cm-property">innerHTML</span> <span class="cm-operator">=</span> <span class="cm-keyword">this</span>.<span class="cm-property">template</span>();
+    }
+    <span class="cm-variable">setEvent</span> () {}
+    <span class="cm-variable">setState</span> (<span class="cm-variable">newState</span>) {
+        <span class="cm-keyword">this</span>.<span class="cm-property">$state</span> <span class="cm-operator">=</span> { <span class="cm-meta">...</span><span class="cm-keyword">this</span>.<span class="cm-variable">$state</span>, <span class="cm-meta">...</span><span class="cm-variable">newState</span> };
+        <span class="cm-keyword">this</span>.<span class="cm-property">render</span>();
+      }
+}
+</code></pre>
+<p><br></p>
+<h2 id="5-&#xC774;&#xBCA4;&#xD2B8;-&#xBC84;&#xBE14;&#xB9C1;-&#xCD94;&#xC0C1;&#xD654;&#xD558;&#xAE30;">5. &#xC774;&#xBCA4;&#xD2B8; &#xBC84;&#xBE14;&#xB9C1; &#xCD94;&#xC0C1;&#xD654;&#xD558;&#xAE30;</h2>
+<ul>
+<li>&#xC704;&#xC758; &#xC774;&#xBCA4;&#xD2B8; &#xBC84;&#xBE14;&#xB9C1; &#xB4F1;&#xB85D; &#xACFC;&#xC815;&#xC744; &#xBA54;&#xC18C;&#xB4DC;&#xB85C; &#xB9CC;&#xB4E4;&#xC5B4;&#xC11C; &#xC0AC;&#xC6A9;&#xD55C;&#xB2E4;.</li>
+</ul>
+<pre><code class="lang-js"><span class="cm-keyword">export</span> <span class="cm-keyword">default</span> <span class="cm-keyword">class</span> <span class="cm-variable">Components</span> {
+    <span class="cm-variable">$target</span>;
+    <span class="cm-variable">$state</span>;
+    <span class="cm-variable">constructor</span>(<span class="cm-variable">$target</span>) {
+        <span class="cm-keyword">this</span>.<span class="cm-property">$target</span> <span class="cm-operator">=</span> <span class="cm-variable">$target</span>;
+        <span class="cm-keyword">this</span>.<span class="cm-property">setup</span>();
+        <span class="cm-keyword">this</span>.<span class="cm-property">render</span>();
+        <span class="cm-keyword">this</span>.<span class="cm-property">setEvent</span>();
+    }
+    <span class="cm-variable">setup</span>() {};
+    <span class="cm-variable">template</span> () { <span class="cm-keyword">return</span> <span class="cm-string">&apos;&apos;</span>; }
+    <span class="cm-variable">render</span>() {
+        <span class="cm-keyword">this</span>.<span class="cm-property">$target</span>.<span class="cm-property">innerHTML</span> <span class="cm-operator">=</span> <span class="cm-keyword">this</span>.<span class="cm-property">template</span>();
+    }
+    <span class="cm-variable">setEvent</span> () {}
+    <span class="cm-variable">setState</span> (<span class="cm-variable">newState</span>) {
+        <span class="cm-keyword">this</span>.<span class="cm-property">$state</span> <span class="cm-operator">=</span> { <span class="cm-meta">...</span><span class="cm-keyword">this</span>.<span class="cm-variable">$state</span>, <span class="cm-meta">...</span><span class="cm-variable">newState</span> };
+        <span class="cm-keyword">this</span>.<span class="cm-property">render</span>();
+    }
+    <span class="cm-variable">addEvent</span> (<span class="cm-variable">eventType</span>, <span class="cm-variable">selector</span>, <span class="cm-variable">callback</span>) {
+        <span class="cm-keyword">const</span> <span class="cm-variable">children</span> <span class="cm-operator">=</span> [ <span class="cm-meta">...</span><span class="cm-keyword">this</span>.<span class="cm-property">$target</span>.<span class="cm-property">querySelectorAll</span>(<span class="cm-variable">selector</span>) ]; 
+        <span class="cm-keyword">const</span> <span class="cm-variable">isTarget</span> <span class="cm-operator">=</span> (<span class="cm-def">target</span>) <span class="cm-operator">=&gt;</span> <span class="cm-variable">children</span>.<span class="cm-property">includes</span>(<span class="cm-variable-2">target</span>)
+                                     <span class="cm-operator">||</span> <span class="cm-variable-2">target</span>.<span class="cm-property">closest</span>(<span class="cm-variable">selector</span>);
+        <span class="cm-keyword">this</span>.<span class="cm-property">$target</span>.<span class="cm-property">addEventListener</span>(<span class="cm-variable">eventType</span>, <span class="cm-def">event</span> <span class="cm-operator">=&gt;</span> {
+          <span class="cm-keyword">if</span> (<span class="cm-operator">!</span><span class="cm-variable">isTarget</span>(<span class="cm-variable-2">event</span>.<span class="cm-property">target</span>)) <span class="cm-keyword">return</span> <span class="cm-atom">false</span>;
+          <span class="cm-variable">callback</span>(<span class="cm-variable-2">event</span>);
+        })
+      }
+}
+</code></pre>
+<ul>
+<li>&#xC791;&#xC131;&#xB41C; &#xBA54;&#xC18C;&#xB4DC;&#xB97C; &#xC544;&#xB798;&#xC640; &#xAC19;&#xC774; &#xC0AC;&#xC6A9;&#xD55C;&#xB2E4;.</li>
+</ul>
+<pre><code class="lang-js"><span class="cm-keyword">import</span> <span class="cm-variable">Component</span> <span class="cm-keyword">from</span> <span class="cm-string">&quot;../core/Component.js&quot;</span>;
+
+<span class="cm-keyword">export</span> <span class="cm-keyword">default</span> <span class="cm-keyword">class</span> <span class="cm-variable">Items</span> <span class="cm-keyword">extends</span> <span class="cm-variable">Component</span> {
+  <span class="cm-variable">setup</span> () {
+    <span class="cm-keyword">this</span>.<span class="cm-property">$state</span> <span class="cm-operator">=</span> { <span class="cm-property">items</span>: [<span class="cm-string">&apos;item1&apos;</span>, <span class="cm-string">&apos;item2&apos;</span>] };
+  }
+  <span class="cm-variable">template</span> () {
+    <span class="cm-keyword">const</span> { <span class="cm-variable">items</span> } <span class="cm-operator">=</span> <span class="cm-keyword">this</span>.<span class="cm-property">$state</span>;
+    <span class="cm-keyword">return</span> <span class="cm-string-2">`</span>
+      <span class="cm-string-2">&lt;ul&gt;</span>
+        <span class="cm-string-2">${</span><span class="cm-variable">items</span>.<span class="cm-property">map</span>((<span class="cm-def">item</span>, <span class="cm-def">key</span>) <span class="cm-operator">=&gt;</span> <span class="cm-string-2">`</span>
+          <span class="cm-string-2">&lt;li&gt;${</span><span class="cm-variable-2">item</span><span class="cm-string-2">}</span><span class="cm-string-2">&lt;/li&gt;</span>
+          <span class="cm-string-2">&lt;button class=&quot;deleteBtn&quot; data-index=&quot;${</span><span class="cm-variable-2">key</span><span class="cm-string-2">}</span><span class="cm-string-2">&quot;&gt;&#xC0AD;&#xC81C;&lt;/button&gt;</span>
+        <span class="cm-string-2">`</span>).<span class="cm-property">join</span>(<span class="cm-string">&apos;&apos;</span>)<span class="cm-string-2">}</span>
+      <span class="cm-string-2">&lt;/ul&gt;</span>
+      <span class="cm-string-2">&lt;button class=&quot;addBtn&quot;&gt;&#xCD94;&#xAC00;&lt;/button&gt;</span>
+    <span class="cm-string-2">`</span>
+  }
+
+  <span class="cm-variable">setEvent</span> () {
+    <span class="cm-keyword">this</span>.<span class="cm-property">addEvent</span>(<span class="cm-string">&apos;click&apos;</span>, <span class="cm-string">&apos;.addBtn&apos;</span>, ({ <span class="cm-def">target</span> }) <span class="cm-operator">=&gt;</span> {
+      <span class="cm-keyword">const</span> { <span class="cm-def">items</span> } <span class="cm-operator">=</span> <span class="cm-keyword">this</span>.<span class="cm-property">$state</span>;
+      <span class="cm-keyword">this</span>.<span class="cm-property">setState</span>({ <span class="cm-property">items</span>: [ <span class="cm-meta">...</span><span class="cm-variable-2">items</span>, <span class="cm-string-2">`item${</span><span class="cm-variable-2">items</span>.<span class="cm-property">length</span> <span class="cm-operator">+</span> <span class="cm-number">1</span><span class="cm-string-2">}</span><span class="cm-string-2">`</span> ] });
+    });
+    <span class="cm-keyword">this</span>.<span class="cm-property">addEvent</span>(<span class="cm-string">&apos;click&apos;</span>, <span class="cm-string">&apos;.deleteBtn&apos;</span>, ({ <span class="cm-def">target</span> }) <span class="cm-operator">=&gt;</span> {
+      <span class="cm-keyword">const</span> <span class="cm-def">items</span> <span class="cm-operator">=</span> [ <span class="cm-meta">...</span><span class="cm-keyword">this</span>.<span class="cm-property">$state</span>.<span class="cm-property">items</span> ];
+      <span class="cm-variable-2">items</span>.<span class="cm-property">splice</span>(<span class="cm-variable-2">target</span>.<span class="cm-property">dataset</span>.<span class="cm-property">index</span>, <span class="cm-number">1</span>);
+      <span class="cm-keyword">this</span>.<span class="cm-property">setState</span>({ <span class="cm-property">items</span> });
+    });
+
+  }
+}
+</code></pre>
+<iframe src="/example/vanilla-js/example_04/index.html" width="100%" height="250px" class="example-frame"></iframe>
+
+<p><br></p>
+<h2 id="6-&#xCEF4;&#xD3EC;&#xB10C;&#xD2B8;-&#xBD84;&#xD560;&#xD558;&#xAE30;">6. &#xCEF4;&#xD3EC;&#xB10C;&#xD2B8; &#xBD84;&#xD560;&#xD558;&#xAE30;</h2>
+<ul>
+<li>&#xC774;&#xC81C;&#xAE4C;&#xC9C0;&#xB294; &#xB2E8;&#xC21C;&#xD788; Item&#xC744; &#xCD94;&#xAC00;&#xD558;&#xB294; &#xAE30;&#xB2A5;&#xBC16;&#xC5D0; &#xC5C6;&#xC5C8;&#xB2E4;. &#xD558;&#xC9C0;&#xB9CC;, &#xC5EC;&#xB7EC; &#xAE30;&#xB2A5;&#xB4E4;&#xC744; &#xCD94;&#xAC00; &#xD588;&#xC744; &#xB54C; <code>Items</code> &#xCEF4;&#xD3EC;&#xB10C;&#xD2B8;&#xC5D0; &#xC5B4;&#xB5A4; &#xBB38;&#xC81C;&#xAC00; &#xBC1C;&#xC0DD;&#xD558;&#xB294;&#xC9C0; &#xC54C;&#xC544;&#xBCF4;&#xC790;.</li>
+<li><code>toggle</code>, <code>filter</code> &#xAE30;&#xB2A5;&#xC744; Items &#xCEF4;&#xD3EC;&#xB10C;&#xD2B8;&#xC5D0; &#xCD94;&#xAC00;</li>
+</ul>
+<pre><code class="lang-js"><span class="cm-keyword">import</span> <span class="cm-variable">Component</span> <span class="cm-keyword">from</span> <span class="cm-string">&quot;../core/Component.js&quot;</span>;
+
+<span class="cm-keyword">export</span> <span class="cm-keyword">default</span> <span class="cm-keyword">class</span> <span class="cm-variable">Items</span> <span class="cm-keyword">extends</span> <span class="cm-variable">Component</span> {
+  <span class="cm-variable">get</span> <span class="cm-variable">filteredItems</span> () {
+    <span class="cm-keyword">const</span> { <span class="cm-variable">isFilter</span>, <span class="cm-variable">items</span> } <span class="cm-operator">=</span> <span class="cm-keyword">this</span>.<span class="cm-property">$state</span>;
+    <span class="cm-keyword">return</span> <span class="cm-variable">items</span>.<span class="cm-property">filter</span>(({ <span class="cm-def">active</span> }) <span class="cm-operator">=&gt;</span> (<span class="cm-variable">isFilter</span> <span class="cm-operator">===</span> <span class="cm-number">1</span> <span class="cm-operator">&amp;&amp;</span> <span class="cm-variable-2">active</span>) <span class="cm-operator">||</span>
+                                        (<span class="cm-variable">isFilter</span> <span class="cm-operator">===</span> <span class="cm-number">2</span> <span class="cm-operator">&amp;&amp;</span> <span class="cm-operator">!</span><span class="cm-variable-2">active</span>) <span class="cm-operator">||</span>
+                                        <span class="cm-variable">isFilter</span> <span class="cm-operator">===</span> <span class="cm-number">0</span>);
+  }
+
+  <span class="cm-variable">setup</span>() {
+    <span class="cm-keyword">this</span>.<span class="cm-property">$state</span> <span class="cm-operator">=</span> {
+      <span class="cm-property">isFilter</span>: <span class="cm-number">0</span>,
+      <span class="cm-property">items</span>: [
+        {
+          <span class="cm-property">seq</span>: <span class="cm-number">1</span>,
+          <span class="cm-property">contents</span>: <span class="cm-string">&apos;item1&apos;</span>,
+          <span class="cm-property">active</span>: <span class="cm-atom">false</span>,
+        },
+        {
+          <span class="cm-property">seq</span>: <span class="cm-number">2</span>,
+          <span class="cm-property">contents</span>: <span class="cm-string">&apos;item2&apos;</span>,
+          <span class="cm-property">active</span>: <span class="cm-atom">true</span>,
+        }
+      ]
+    };
+  }
+  <span class="cm-variable">template</span>() {
+    <span class="cm-keyword">return</span> <span class="cm-string-2">`</span>
+      <span class="cm-string-2">&lt;header&gt;</span>
+        <span class="cm-string-2">&lt;input type=&quot;text&quot; class=&quot;appender&quot; placeholder=&quot;&#xC544;&#xC774;&#xD15C; &#xB0B4;&#xC6A9; &#xC785;&#xB825;&quot; /&gt;</span>
+      <span class="cm-string-2">&lt;/header&gt;</span>
+      <span class="cm-string-2">&lt;main&gt;</span>
+        <span class="cm-string-2">&lt;ul&gt;</span>
+          <span class="cm-string-2">${</span><span class="cm-keyword">this</span>.<span class="cm-property">filteredItems</span>.<span class="cm-property">map</span>(({<span class="cm-def">contents</span>, <span class="cm-def">active</span>, <span class="cm-def">seq</span>}) <span class="cm-operator">=&gt;</span> <span class="cm-string-2">`</span>
+            <span class="cm-string-2">&lt;li data-seq=&quot;${</span><span class="cm-variable-2">seq</span><span class="cm-string-2">}</span><span class="cm-string-2">&quot;&gt;</span>
+              <span class="cm-string-2">${</span><span class="cm-variable-2">contents</span><span class="cm-string-2">}</span>
+              <span class="cm-string-2">&lt;button class=&quot;toggleBtn&quot; style=&quot;color: ${</span><span class="cm-variable-2">active</span> <span class="cm-operator">?</span> <span class="cm-string">&apos;#09F&apos;</span> : <span class="cm-string">&apos;#F09&apos;</span><span class="cm-string-2">}</span><span class="cm-string-2">&quot;&gt;</span>
+                <span class="cm-string-2">${</span><span class="cm-variable-2">active</span> <span class="cm-operator">?</span> <span class="cm-string">&apos;&#xD65C;&#xC131;&apos;</span> : <span class="cm-string">&apos;&#xBE44;&#xD65C;&#xC131;&apos;</span><span class="cm-string-2">}</span>
+              <span class="cm-string-2">&lt;/button&gt;</span>
+              <span class="cm-string-2">&lt;button class=&quot;deleteBtn&quot;&gt;&#xC0AD;&#xC81C;&lt;/button&gt;</span>
+            <span class="cm-string-2">&lt;/li&gt;</span>
+          <span class="cm-string-2">`</span>).<span class="cm-property">join</span>(<span class="cm-string">&apos;&apos;</span>)<span class="cm-string-2">}</span>
+        <span class="cm-string-2">&lt;/ul&gt;</span>
+      <span class="cm-string-2">&lt;/main&gt;</span>
+      <span class="cm-string-2">&lt;footer&gt;</span>
+        <span class="cm-string-2">&lt;button class=&quot;filterBtn&quot; data-is-filter=&quot;0&quot;&gt;&#xC804;&#xCCB4; &#xBCF4;&#xAE30;&lt;/button&gt;</span>
+        <span class="cm-string-2">&lt;button class=&quot;filterBtn&quot; data-is-filter=&quot;1&quot;&gt;&#xD65C;&#xC131; &#xBCF4;&#xAE30;&lt;/button&gt;</span>
+        <span class="cm-string-2">&lt;button class=&quot;filterBtn&quot; data-is-filter=&quot;2&quot;&gt;&#xBE44;&#xD65C;&#xC131; &#xBCF4;&#xAE30;&lt;/button&gt;</span>
+      <span class="cm-string-2">&lt;/footer&gt;</span>
+    <span class="cm-string-2">`</span>
+  }
+
+  <span class="cm-variable">setEvent</span> () {
+    <span class="cm-keyword">this</span>.<span class="cm-property">addEvent</span>(<span class="cm-string">&apos;keyup&apos;</span>, <span class="cm-string">&apos;.appender&apos;</span>, ({ <span class="cm-def">key</span>, <span class="cm-def">target</span> }) <span class="cm-operator">=&gt;</span> {
+      <span class="cm-keyword">if</span> (<span class="cm-variable-2">key</span> <span class="cm-operator">!==</span> <span class="cm-string">&apos;Enter&apos;</span>) <span class="cm-keyword">return</span>;
+      <span class="cm-keyword">const</span> {<span class="cm-def">items</span>} <span class="cm-operator">=</span> <span class="cm-keyword">this</span>.<span class="cm-property">$state</span>;
+      <span class="cm-keyword">const</span> <span class="cm-def">seq</span> <span class="cm-operator">=</span> <span class="cm-variable">Math</span>.<span class="cm-property">max</span>(<span class="cm-number">0</span>, <span class="cm-meta">...</span><span class="cm-variable-2">items</span>.<span class="cm-property">map</span>(<span class="cm-def">v</span> <span class="cm-operator">=&gt;</span> <span class="cm-variable-2">v</span>.<span class="cm-property">seq</span>)) <span class="cm-operator">+</span> <span class="cm-number">1</span>;
+      <span class="cm-keyword">const</span> <span class="cm-def">contents</span> <span class="cm-operator">=</span> <span class="cm-variable-2">target</span>.<span class="cm-property">value</span>;
+      <span class="cm-keyword">const</span> <span class="cm-def">active</span> <span class="cm-operator">=</span> <span class="cm-atom">false</span>;
+      <span class="cm-keyword">this</span>.<span class="cm-property">setState</span>({
+        <span class="cm-property">items</span>: [
+          <span class="cm-meta">...</span><span class="cm-variable-2">items</span>,
+          {<span class="cm-property">seq</span>, <span class="cm-property">contents</span>, <span class="cm-property">active</span>}
+        ]
+      });
+    });
+
+    <span class="cm-keyword">this</span>.<span class="cm-property">addEvent</span>(<span class="cm-string">&apos;click&apos;</span>, <span class="cm-string">&apos;.toggleBtn&apos;</span>, ({<span class="cm-def">target</span>}) <span class="cm-operator">=&gt;</span> {
+      <span class="cm-keyword">const</span> <span class="cm-def">items</span> <span class="cm-operator">=</span> [ <span class="cm-meta">...</span><span class="cm-keyword">this</span>.<span class="cm-property">$state</span>.<span class="cm-property">items</span> ];
+      <span class="cm-keyword">const</span> <span class="cm-def">seq</span> <span class="cm-operator">=</span> <span class="cm-variable">Number</span>(<span class="cm-variable-2">target</span>.<span class="cm-property">closest</span>(<span class="cm-string">&apos;[data-seq]&apos;</span>).<span class="cm-property">dataset</span>.<span class="cm-property">seq</span>);
+      <span class="cm-keyword">const</span> <span class="cm-def">index</span> <span class="cm-operator">=</span> <span class="cm-variable-2">items</span>.<span class="cm-property">findIndex</span>(<span class="cm-def">v</span> <span class="cm-operator">=&gt;</span> <span class="cm-variable-2">v</span>.<span class="cm-property">seq</span> <span class="cm-operator">===</span> <span class="cm-variable-2">seq</span>);
+      <span class="cm-variable-2">items</span>[<span class="cm-variable-2">index</span>].<span class="cm-property">active</span> <span class="cm-operator">=</span> <span class="cm-operator">!</span><span class="cm-variable-2">items</span>[<span class="cm-variable-2">index</span>].<span class="cm-property">active</span>;
+      <span class="cm-keyword">this</span>.<span class="cm-property">setState</span>({<span class="cm-property">items</span>});
+    });
+
+    <span class="cm-keyword">this</span>.<span class="cm-property">addEvent</span>(<span class="cm-string">&apos;click&apos;</span>, <span class="cm-string">&apos;.filterBtn&apos;</span>, ({ <span class="cm-def">target</span> }) <span class="cm-operator">=&gt;</span> {
+      <span class="cm-keyword">this</span>.<span class="cm-property">setState</span>({ <span class="cm-property">isFilter</span>: <span class="cm-variable">Number</span>(<span class="cm-variable-2">target</span>.<span class="cm-property">dataset</span>.<span class="cm-property">isFilter</span>) });
+    });
+
+    <span class="cm-keyword">this</span>.<span class="cm-property">addEvent</span>(<span class="cm-string">&apos;click&apos;</span>, <span class="cm-string">&apos;.addBtn&apos;</span>, ({ <span class="cm-def">target</span> }) <span class="cm-operator">=&gt;</span> {
+      <span class="cm-keyword">const</span> { <span class="cm-def">items</span> } <span class="cm-operator">=</span> <span class="cm-keyword">this</span>.<span class="cm-property">$state</span>;
+      <span class="cm-keyword">this</span>.<span class="cm-property">setState</span>({ <span class="cm-property">items</span>: [ <span class="cm-meta">...</span><span class="cm-variable-2">items</span>, <span class="cm-string-2">`item${</span><span class="cm-variable-2">items</span>.<span class="cm-property">length</span> <span class="cm-operator">+</span> <span class="cm-number">1</span><span class="cm-string-2">}</span><span class="cm-string-2">`</span> ] });
+    });
+    <span class="cm-keyword">this</span>.<span class="cm-property">addEvent</span>(<span class="cm-string">&apos;click&apos;</span>, <span class="cm-string">&apos;.deleteBtn&apos;</span>, ({ <span class="cm-def">target</span> }) <span class="cm-operator">=&gt;</span> {
+      <span class="cm-keyword">const</span> <span class="cm-def">items</span> <span class="cm-operator">=</span> [ <span class="cm-meta">...</span><span class="cm-keyword">this</span>.<span class="cm-property">$state</span>.<span class="cm-property">items</span> ];
+      <span class="cm-variable-2">items</span>.<span class="cm-property">splice</span>(<span class="cm-variable-2">target</span>.<span class="cm-property">dataset</span>.<span class="cm-property">index</span>, <span class="cm-number">1</span>);
+      <span class="cm-keyword">this</span>.<span class="cm-property">setState</span>({ <span class="cm-property">items</span> });
+    });
+
+  }
+}
+</code></pre>
+<p>Items &#xCEF4;&#xD3EC;&#xB10C;&#xD2B8;&#xC5D0; &#xC5EC;&#xB7EC; &#xAE30;&#xB2A5;&#xB4E4;&#xC744; &#xB123;&#xB2E4;&#xBCF4;&#xB2C8; &#xCF54;&#xB4DC;&#xAC00; &#xBCF5;&#xC7A1;&#xD574;&#xC84C;&#xB2E4;. &#xC774;&#xB7F4; &#xACBD;&#xC6B0; &#xAD00;&#xB9AC;&#xD558;&#xAE30;&#xB3C4; &#xD798;&#xB4E4; &#xBFD0;&#xB354;&#xB7EC; <code>&#xCEF4;&#xD3EC;&#xB10C;&#xD2B8;</code>&#xB77C;&#xB294; &#xAE30;&#xB2A5;&#xC5D0; &#xB9DE;&#xC9C0; &#xC54A;&#xAC8C; &#xB418;&#xBC84;&#xB838;&#xB2E4;. &#xCEF4;&#xD3EC;&#xB10C;&#xD2B8;&#xB294; &#xAE30;&#xBCF8;&#xC801;&#xC73C;&#xB85C; <code>&#xC7AC;&#xC0AC;&#xC6A9;&#xC131;</code>&#xC774; &#xBAA9;&#xC801;&#xC774;&#xB2E4;. &#xB530;&#xB77C;&#xC11C;, &#xD558;&#xB098;&#xC758; &#xCEF4;&#xD3EC;&#xB10C;&#xD2B8;&#xC5D0;&#xC11C;&#xB294; &#xCD5C;&#xB300;&#xD55C; &#xC791;&#xC740; &#xB2E8;&#xC704;&#xC758; &#xC77C;&#xC744; &#xD558;&#xB3C4;&#xB85D; &#xD574;&#xC57C;&#xD55C;&#xB2E4;.</p>
+<iframe src="/example/vanilla-js/example_05/index.html" width="100%" height="250px" class="example-frame"></iframe>
+
+<p><br></p>
+<h3 id="&#xD3F4;&#xB354;-&#xAD6C;&#xC870;">&#xD3F4;&#xB354; &#xAD6C;&#xC870;</h3>
+<pre><code class="lang-console">.
+&#x251C;&#x2500;&#x2500; index.html
+&#x2514;&#x2500;&#x2500; src
+    &#x251C;&#x2500;&#x2500; App.js               # main&#xC5D0;&#xC11C; App &#xCEF4;&#xD3EC;&#xB10C;&#xD2B8;&#xB97C; &#xB9C8;&#xC6B4;&#xD2B8;&#xD55C;&#xB2E4;.
+    &#x251C;&#x2500;&#x2500; main.js              # js&#xC758; entry &#xD3EC;&#xC778;&#xD2B8;
+    &#x251C;&#x2500;&#x2500; components
+    &#x2502;   &#x251C;&#x2500;&#x2500; ItemAppender.js
+    &#x2502;   &#x251C;&#x2500;&#x2500; ItemFilter.js
+    &#x2502;   &#x2514;&#x2500;&#x2500; Items.js
+    &#x2514;&#x2500;&#x2500; core
+        &#x2514;&#x2500;&#x2500; Component.js
+</code></pre>
+<h3 id="component-core-&#xBCC0;&#xACBD;">Component Core &#xBCC0;&#xACBD;</h3>
+<ul>
+<li>src/core/Component.js&#xC5D0; &#xB2E4;&#xC74C;&#xACFC; &#xAC19;&#xC774; $props&#xC640; mounted&#xB97C; &#xCD94;&#xAC00;&#xD574;&#xC57C; &#xD55C;&#xB2E4;.</li>
+<li>mounted&#xB97C; &#xCD94;&#xAC00;&#xD55C; &#xC774;&#xC720;&#xB294; render &#xC774;&#xD6C4;&#xC5D0; &#xCD94;&#xAC00;&#xC801;&#xC778; &#xAE30;&#xB2A5;&#xC744; &#xC218;&#xD589;&#xD558;&#xAE30; &#xC704;&#xD574;&#xC11C;&#xC774;&#xB2E4;.</li>
+<li>$props&#xB294; &#xBD80;&#xBAA8; &#xCEF4;&#xD3EC;&#xB10C;&#xD2B8;&#xAC00; &#xC790;&#xC2DD; &#xCEF4;&#xD3EC;&#xB10C;&#xD2B8;&#xC5D0;&#xAC8C; &#xC0C1;&#xD0DC; &#xD639;&#xC740; &#xBA54;&#xC18C;&#xB4DC;&#xB97C; &#xB118;&#xACA8;&#xC8FC;&#xAE30; &#xC704;&#xD574;&#xC11C;&#xC774;&#xB2E4;.</li>
+</ul>
+<pre><code class="lang-js"><span class="cm-keyword">export</span> <span class="cm-keyword">default</span> <span class="cm-keyword">class</span> <span class="cm-variable">Component</span> {
+  <span class="cm-variable">$target</span>;
+  <span class="cm-variable">$props</span>;
+  <span class="cm-variable">$state</span>;
+  <span class="cm-variable">constructor</span> (<span class="cm-variable">$target</span>, <span class="cm-variable">$props</span>) {
+    <span class="cm-keyword">this</span>.<span class="cm-property">$target</span> <span class="cm-operator">=</span> <span class="cm-variable">$target</span>;
+    <span class="cm-keyword">this</span>.<span class="cm-property">$props</span> <span class="cm-operator">=</span> <span class="cm-variable">$props</span>; <span class="cm-comment">// $props &#xD560;&#xB2F9;</span>
+    <span class="cm-keyword">this</span>.<span class="cm-property">setup</span>();
+    <span class="cm-keyword">this</span>.<span class="cm-property">setEvent</span>();
+    <span class="cm-keyword">this</span>.<span class="cm-property">render</span>();
+  }
+  <span class="cm-variable">setup</span> () {};
+  <span class="cm-variable">mounted</span> () {};
+  <span class="cm-variable">template</span> () { <span class="cm-keyword">return</span> <span class="cm-string">&apos;&apos;</span>; }
+  <span class="cm-variable">render</span> () {
+    <span class="cm-keyword">this</span>.<span class="cm-property">$target</span>.<span class="cm-property">innerHTML</span> <span class="cm-operator">=</span> <span class="cm-keyword">this</span>.<span class="cm-property">template</span>();
+    <span class="cm-keyword">this</span>.<span class="cm-property">mounted</span>(); <span class="cm-comment">// render &#xD6C4;&#xC5D0; mounted&#xAC00; &#xC2E4;&#xD589; &#xB41C;&#xB2E4;.</span>
+  }
+  <span class="cm-variable">setEvent</span> () {}
+  <span class="cm-variable">setState</span> (<span class="cm-variable">newState</span>) { <span class="cm-comment">/* &#xC0DD;&#xB7B5; */</span> }
+  <span class="cm-variable">addEvent</span> (<span class="cm-variable">eventType</span>, <span class="cm-variable">selector</span>, <span class="cm-variable">callback</span>) { <span class="cm-comment">/* &#xC0DD;&#xB7B5; */</span> }
+}
+</code></pre>
+<h3 id="&#xC5D4;&#xD2B8;&#xB9AC;-&#xD3EC;&#xC778;&#xD2B8;-&#xBCC0;&#xACBD;">&#xC5D4;&#xD2B8;&#xB9AC; &#xD3EC;&#xC778;&#xD2B8; &#xBCC0;&#xACBD;</h3>
+<ul>
+<li><code>index.html</code> : &#xAE30;&#xC874;&#xC5D0; app.js&#xAC00; &#xC544;&#xB2CC; main.js&#xB97C; &#xAC00;&#xC838;&#xC628;&#xB2E4;.</li>
+</ul>
+<pre><code class="lang-html"><span class="cm-meta">&lt;!DOCTYPE html&gt;</span>
+<span class="cm-tagcm-bracket">&lt;</span><span class="cm-tag">html</span> <span class="cm-attribute">lang</span>=<span class="cm-string">&quot;en&quot;</span><span class="cm-tagcm-bracket">&gt;</span>
+<span class="cm-tagcm-bracket">&lt;</span><span class="cm-tag">head</span><span class="cm-tagcm-bracket">&gt;</span>
+    <span class="cm-tagcm-bracket">&lt;</span><span class="cm-tag">meta</span> <span class="cm-attribute">charset</span>=<span class="cm-string">&quot;UTF-8&quot;</span><span class="cm-tagcm-bracket">&gt;</span>
+    <span class="cm-tagcm-bracket">&lt;</span><span class="cm-tag">meta</span> <span class="cm-attribute">http-equiv</span>=<span class="cm-string">&quot;X-UA-Compatible&quot;</span> <span class="cm-attribute">content</span>=<span class="cm-string">&quot;IE=edge&quot;</span><span class="cm-tagcm-bracket">&gt;</span>
+    <span class="cm-tagcm-bracket">&lt;</span><span class="cm-tag">meta</span> <span class="cm-attribute">name</span>=<span class="cm-string">&quot;viewport&quot;</span> <span class="cm-attribute">content</span>=<span class="cm-string">&quot;width=device-width, initial-scale=1.0&quot;</span><span class="cm-tagcm-bracket">&gt;</span>
+    <span class="cm-tagcm-bracket">&lt;</span><span class="cm-tag">title</span><span class="cm-tagcm-bracket">&gt;</span>Document<span class="cm-tagcm-bracket">&lt;/</span><span class="cm-tag">title</span><span class="cm-tagcm-bracket">&gt;</span>
+<span class="cm-tagcm-bracket">&lt;/</span><span class="cm-tag">head</span><span class="cm-tagcm-bracket">&gt;</span>
+<span class="cm-tagcm-bracket">&lt;</span><span class="cm-tag">body</span><span class="cm-tagcm-bracket">&gt;</span>
+    <span class="cm-tagcm-bracket">&lt;</span><span class="cm-tag">div</span> <span class="cm-attribute">id</span>=<span class="cm-string">&quot;app&quot;</span><span class="cm-tagcm-bracket">&gt;</span><span class="cm-tagcm-bracket">&lt;/</span><span class="cm-tag">div</span><span class="cm-tagcm-bracket">&gt;</span>
+    <span class="cm-tagcm-bracket">&lt;</span><span class="cm-tag">script</span> <span class="cm-attribute">src</span>=<span class="cm-string">&quot;./src/main.js&quot;</span> <span class="cm-attribute">type</span>=<span class="cm-string">&quot;module&quot;</span><span class="cm-tagcm-bracket">&gt;</span><span class="cm-tagcm-bracket">&lt;/</span><span class="cm-tag">script</span><span class="cm-tagcm-bracket">&gt;</span>
+<span class="cm-tagcm-bracket">&lt;/</span><span class="cm-tag">body</span><span class="cm-tagcm-bracket">&gt;</span>
+<span class="cm-tagcm-bracket">&lt;/</span><span class="cm-tag">html</span><span class="cm-tagcm-bracket">&gt;</span>
+</code></pre>
+<h3 id="&#xCEF4;&#xD3EC;&#xB10C;&#xD2B8;-&#xBD84;&#xD560;">&#xCEF4;&#xD3EC;&#xB10C;&#xD2B8; &#xBD84;&#xD560;</h3>
+<blockquote>
+<ul>
+<li>&#xAE30;&#xC874;&#xC758; Items&#xC5D0; &#xC874;&#xC7AC;&#xD558;&#xB358; &#xB85C;&#xC9C1;&#xC744; <code>App.js</code>&#xC5D0; &#xB118;&#xACA8;&#xC8FC;&#xACE0;, <code>Items</code>, <code>ItemAppender</code>, <code>ItemFilter</code> &#xB4F1;&#xC740; <code>App.js</code>&#xC5D0;&#xC11C; &#xB118;&#xACA8;&#xC8FC;&#xB294; &#xB85C;&#xC9C1;&#xC744; &#xC0AC;&#xC6A9;&#xD558;&#xB3C4;&#xB85D; &#xB9CC;&#xB4E4;&#xC5B4;&#xC57C; &#xD55C;&#xB2E4;.</li>
+</ul>
+</blockquote>
+<ul>
+<li>src/App.js</li>
+</ul>
+<pre><code class="lang-js"><span class="cm-keyword">import</span> <span class="cm-variable">Component</span> <span class="cm-keyword">from</span> <span class="cm-string">&quot;./core/Component.js&quot;</span>;
+<span class="cm-keyword">import</span> <span class="cm-variable">Items</span> <span class="cm-keyword">from</span> <span class="cm-string">&quot;./components/Items.js&quot;</span>;
+<span class="cm-keyword">import</span> <span class="cm-variable">ItemAppender</span> <span class="cm-keyword">from</span> <span class="cm-string">&quot;./components/ItemAppender.js&quot;</span>;
+<span class="cm-keyword">import</span> <span class="cm-variable">ItemFilter</span> <span class="cm-keyword">from</span> <span class="cm-string">&quot;./components/ItemFilter.js&quot;</span>;
+
+<span class="cm-keyword">export</span> <span class="cm-keyword">default</span> <span class="cm-keyword">class</span> <span class="cm-variable">App</span> <span class="cm-keyword">extends</span> <span class="cm-variable">Component</span> {
+
+  <span class="cm-variable">setup</span> () {
+    <span class="cm-keyword">this</span>.<span class="cm-property">$state</span> <span class="cm-operator">=</span> {
+      <span class="cm-property">isFilter</span>: <span class="cm-number">0</span>,
+      <span class="cm-property">items</span>: [
+        {
+          <span class="cm-property">seq</span>: <span class="cm-number">1</span>,
+          <span class="cm-property">contents</span>: <span class="cm-string">&apos;item1&apos;</span>,
+          <span class="cm-property">active</span>: <span class="cm-atom">false</span>,
+        },
+        {
+          <span class="cm-property">seq</span>: <span class="cm-number">2</span>,
+          <span class="cm-property">contents</span>: <span class="cm-string">&apos;item2&apos;</span>,
+          <span class="cm-property">active</span>: <span class="cm-atom">true</span>,
+        }
+      ]
+    };
+  }
+
+  <span class="cm-variable">template</span> () {
+    <span class="cm-keyword">return</span> <span class="cm-string-2">`</span>
+      <span class="cm-string-2">&lt;header data-component=&quot;item-appender&quot;&gt;&lt;/header&gt;</span>
+      <span class="cm-string-2">&lt;main data-component=&quot;items&quot;&gt;&lt;/main&gt;</span>
+      <span class="cm-string-2">&lt;footer data-component=&quot;item-filter&quot;&gt;&lt;/footer&gt;</span>
+    <span class="cm-string-2">`</span>;
+  }
+
+  <span class="cm-comment">// mounted&#xC5D0;&#xC11C; &#xC790;&#xC2DD; &#xCEF4;&#xD3EC;&#xB10C;&#xD2B8;&#xB97C; &#xB9C8;&#xC6B4;&#xD2B8; &#xD574;&#xC918;&#xC57C; &#xD55C;&#xB2E4;.</span>
+  <span class="cm-variable">mounted</span> () {
+    <span class="cm-keyword">const</span> { <span class="cm-variable">filteredItems</span>, <span class="cm-variable">addItem</span>, <span class="cm-variable">deleteItem</span>, <span class="cm-variable">toggleItem</span>, <span class="cm-variable">filterItem</span> } <span class="cm-operator">=</span> <span class="cm-keyword">this</span>;
+    <span class="cm-keyword">const</span> <span class="cm-variable">$itemAppender</span> <span class="cm-operator">=</span> <span class="cm-keyword">this</span>.<span class="cm-property">$target</span>.<span class="cm-property">querySelector</span>(<span class="cm-string">&apos;[data-component=&quot;item-appender&quot;]&apos;</span>);
+    <span class="cm-keyword">const</span> <span class="cm-variable">$items</span> <span class="cm-operator">=</span> <span class="cm-keyword">this</span>.<span class="cm-property">$target</span>.<span class="cm-property">querySelector</span>(<span class="cm-string">&apos;[data-component=&quot;items&quot;]&apos;</span>);
+    <span class="cm-keyword">const</span> <span class="cm-variable">$itemFilter</span> <span class="cm-operator">=</span> <span class="cm-keyword">this</span>.<span class="cm-property">$target</span>.<span class="cm-property">querySelector</span>(<span class="cm-string">&apos;[data-component=&quot;item-filter&quot;]&apos;</span>);
+
+    <span class="cm-comment">// &#xD558;&#xB098;&#xC758; &#xAC1D;&#xCCB4;&#xC5D0;&#xC11C; &#xC0AC;&#xC6A9;&#xD558;&#xB294; &#xBA54;&#xC18C;&#xB4DC;&#xB97C; &#xB118;&#xACA8;&#xC904; bind&#xB97C; &#xC0AC;&#xC6A9;&#xD558;&#xC5EC; this&#xB97C; &#xBCC0;&#xACBD;&#xD558;&#xAC70;&#xB098;,</span>
+    <span class="cm-comment">// &#xB2E4;&#xC74C;&#xACFC; &#xAC19;&#xC774; &#xC0C8;&#xB85C;&#xC6B4; &#xD568;&#xC218;&#xB97C; &#xB9CC;&#xB4E4;&#xC5B4;&#xC918;&#xC57C; &#xD55C;&#xB2E4;.</span>
+    <span class="cm-comment">// ex) { addItem: contents =&gt; addItem(contents) }</span>
+    <span class="cm-keyword">new</span> <span class="cm-variable">ItemAppender</span>(<span class="cm-variable">$itemAppender</span>, {
+      <span class="cm-property">addItem</span>: <span class="cm-variable">addItem</span>.<span class="cm-property">bind</span>(<span class="cm-keyword">this</span>)
+    });
+    <span class="cm-keyword">new</span> <span class="cm-variable">Items</span>(<span class="cm-variable">$items</span>, {
+      <span class="cm-property">filteredItems</span>,
+      <span class="cm-property">deleteItem</span>: <span class="cm-variable">deleteItem</span>.<span class="cm-property">bind</span>(<span class="cm-keyword">this</span>),
+      <span class="cm-property">toggleItem</span>: <span class="cm-variable">toggleItem</span>.<span class="cm-property">bind</span>(<span class="cm-keyword">this</span>),
+    });
+    <span class="cm-keyword">new</span> <span class="cm-variable">ItemFilter</span>(<span class="cm-variable">$itemFilter</span>, {
+      <span class="cm-property">filterItem</span>: <span class="cm-variable">filterItem</span>.<span class="cm-property">bind</span>(<span class="cm-keyword">this</span>)
+    });
+  }
+
+  <span class="cm-variable">get</span> <span class="cm-variable">filteredItems</span> () {
+    <span class="cm-keyword">const</span> { <span class="cm-variable">isFilter</span>, <span class="cm-variable">items</span> } <span class="cm-operator">=</span> <span class="cm-keyword">this</span>.<span class="cm-property">$state</span>;
+    <span class="cm-keyword">return</span> <span class="cm-variable">items</span>.<span class="cm-property">filter</span>(({ <span class="cm-def">active</span> }) <span class="cm-operator">=&gt;</span> (<span class="cm-variable">isFilter</span> <span class="cm-operator">===</span> <span class="cm-number">1</span> <span class="cm-operator">&amp;&amp;</span> <span class="cm-variable-2">active</span>) <span class="cm-operator">||</span>
+      (<span class="cm-variable">isFilter</span> <span class="cm-operator">===</span> <span class="cm-number">2</span> <span class="cm-operator">&amp;&amp;</span> <span class="cm-operator">!</span><span class="cm-variable-2">active</span>) <span class="cm-operator">||</span>
+      <span class="cm-variable">isFilter</span> <span class="cm-operator">===</span> <span class="cm-number">0</span>);
+  }
+
+  <span class="cm-variable">addItem</span> (<span class="cm-variable">contents</span>) {
+    <span class="cm-keyword">const</span> {<span class="cm-variable">items</span>} <span class="cm-operator">=</span> <span class="cm-keyword">this</span>.<span class="cm-property">$state</span>;
+    <span class="cm-keyword">const</span> <span class="cm-variable">seq</span> <span class="cm-operator">=</span> <span class="cm-variable">Math</span>.<span class="cm-property">max</span>(<span class="cm-number">0</span>, <span class="cm-meta">...</span><span class="cm-variable">items</span>.<span class="cm-property">map</span>(<span class="cm-def">v</span> <span class="cm-operator">=&gt;</span> <span class="cm-variable-2">v</span>.<span class="cm-property">seq</span>)) <span class="cm-operator">+</span> <span class="cm-number">1</span>;
+    <span class="cm-keyword">const</span> <span class="cm-variable">active</span> <span class="cm-operator">=</span> <span class="cm-atom">false</span>;
+    <span class="cm-keyword">this</span>.<span class="cm-property">setState</span>({
+      <span class="cm-property">items</span>: [
+        <span class="cm-meta">...</span><span class="cm-variable">items</span>,
+        {<span class="cm-property">seq</span>, <span class="cm-property">contents</span>, <span class="cm-property">active</span>}
+      ]
+    });
+  }
+
+  <span class="cm-variable">deleteItem</span> (<span class="cm-variable">seq</span>) {
+    <span class="cm-keyword">const</span> <span class="cm-variable">items</span> <span class="cm-operator">=</span> [ <span class="cm-meta">...</span><span class="cm-keyword">this</span>.<span class="cm-property">$state</span>.<span class="cm-property">items</span> ];;
+    <span class="cm-variable">items</span>.<span class="cm-property">splice</span>(<span class="cm-variable">items</span>.<span class="cm-property">findIndex</span>(<span class="cm-def">v</span> <span class="cm-operator">=&gt;</span> <span class="cm-variable-2">v</span>.<span class="cm-property">seq</span> <span class="cm-operator">===</span> <span class="cm-variable">seq</span>), <span class="cm-number">1</span>);
+    <span class="cm-keyword">this</span>.<span class="cm-property">setState</span>({<span class="cm-property">items</span>});
+  }
+
+  <span class="cm-variable">toggleItem</span> (<span class="cm-variable">seq</span>) {
+    <span class="cm-keyword">const</span> <span class="cm-variable">items</span> <span class="cm-operator">=</span> [ <span class="cm-meta">...</span><span class="cm-keyword">this</span>.<span class="cm-property">$state</span>.<span class="cm-property">items</span> ];
+    <span class="cm-keyword">const</span> <span class="cm-variable">index</span> <span class="cm-operator">=</span> <span class="cm-variable">items</span>.<span class="cm-property">findIndex</span>(<span class="cm-def">v</span> <span class="cm-operator">=&gt;</span> <span class="cm-variable-2">v</span>.<span class="cm-property">seq</span> <span class="cm-operator">===</span> <span class="cm-variable">seq</span>);
+    <span class="cm-variable">items</span>[<span class="cm-variable">index</span>].<span class="cm-property">active</span> <span class="cm-operator">=</span> <span class="cm-operator">!</span><span class="cm-variable">items</span>[<span class="cm-variable">index</span>].<span class="cm-property">active</span>;
+    <span class="cm-keyword">this</span>.<span class="cm-property">setState</span>({<span class="cm-property">items</span>});
+  }
+
+  <span class="cm-variable">filterItem</span> (<span class="cm-variable">isFilter</span>) {
+    <span class="cm-keyword">this</span>.<span class="cm-property">setState</span>({ <span class="cm-property">isFilter</span> });
+  }
+
+}
+</code></pre>
+<ul>
+<li>src/components/ItemAppender.js</li>
+</ul>
+<pre><code class="lang-js"><span class="cm-keyword">import</span> <span class="cm-variable">Component</span> <span class="cm-keyword">from</span> <span class="cm-string">&quot;../core/Component.js&quot;</span>;
+
+<span class="cm-keyword">export</span> <span class="cm-keyword">default</span> <span class="cm-keyword">class</span> <span class="cm-variable">ItemAppender</span> <span class="cm-keyword">extends</span> <span class="cm-variable">Component</span> {
+
+  <span class="cm-variable">template</span>() {
+    <span class="cm-keyword">return</span> <span class="cm-string-2">`&lt;input type=&quot;text&quot; class=&quot;appender&quot; placeholder=&quot;&#xC544;&#xC774;&#xD15C; &#xB0B4;&#xC6A9; &#xC785;&#xB825;&quot; /&gt;`</span>;
+  }
+
+  <span class="cm-variable">setEvent</span>() {
+    <span class="cm-keyword">const</span> { <span class="cm-variable">addItem</span> } <span class="cm-operator">=</span> <span class="cm-keyword">this</span>.<span class="cm-property">$props</span>;
+    <span class="cm-keyword">this</span>.<span class="cm-property">addEvent</span>(<span class="cm-string">&apos;keyup&apos;</span>, <span class="cm-string">&apos;.appender&apos;</span>, ({ <span class="cm-def">key</span>, <span class="cm-def">target</span> }) <span class="cm-operator">=&gt;</span> {
+      <span class="cm-keyword">if</span> (<span class="cm-variable-2">key</span> <span class="cm-operator">!==</span> <span class="cm-string">&apos;Enter&apos;</span>) <span class="cm-keyword">return</span>;
+      <span class="cm-variable">addItem</span>(<span class="cm-variable-2">target</span>.<span class="cm-property">value</span>);
+    });
+  }
+}
+</code></pre>
+<ul>
+<li>src/components/Items.js</li>
+</ul>
+<pre><code class="lang-js"><span class="cm-keyword">import</span> <span class="cm-variable">Component</span> <span class="cm-keyword">from</span> <span class="cm-string">&quot;../core/Component.js&quot;</span>;
+
+<span class="cm-keyword">export</span> <span class="cm-keyword">default</span> <span class="cm-keyword">class</span> <span class="cm-variable">Items</span> <span class="cm-keyword">extends</span> <span class="cm-variable">Component</span> {
+
+  <span class="cm-variable">template</span>() {
+    <span class="cm-keyword">const</span> { <span class="cm-variable">filteredItems</span> } <span class="cm-operator">=</span> <span class="cm-keyword">this</span>.<span class="cm-property">$props</span>;
+    <span class="cm-keyword">return</span> <span class="cm-string-2">`</span>
+      <span class="cm-string-2">&lt;ul&gt;</span>
+        <span class="cm-string-2">${</span><span class="cm-variable">filteredItems</span>.<span class="cm-property">map</span>(({<span class="cm-def">contents</span>, <span class="cm-def">active</span>, <span class="cm-def">seq</span>}) <span class="cm-operator">=&gt;</span> <span class="cm-string-2">`</span>
+          <span class="cm-string-2">&lt;li data-seq=&quot;${</span><span class="cm-variable-2">seq</span><span class="cm-string-2">}</span><span class="cm-string-2">&quot;&gt;</span>
+            <span class="cm-string-2">${</span><span class="cm-variable-2">contents</span><span class="cm-string-2">}</span>
+            <span class="cm-string-2">&lt;button class=&quot;toggleBtn&quot; style=&quot;color: ${</span><span class="cm-variable-2">active</span> <span class="cm-operator">?</span> <span class="cm-string">&apos;#09F&apos;</span> : <span class="cm-string">&apos;#F09&apos;</span><span class="cm-string-2">}</span><span class="cm-string-2">&quot;&gt;</span>
+              <span class="cm-string-2">${</span><span class="cm-variable-2">active</span> <span class="cm-operator">?</span> <span class="cm-string">&apos;&#xD65C;&#xC131;&apos;</span> : <span class="cm-string">&apos;&#xBE44;&#xD65C;&#xC131;&apos;</span><span class="cm-string-2">}</span>
+            <span class="cm-string-2">&lt;/button&gt;</span>
+            <span class="cm-string-2">&lt;button class=&quot;deleteBtn&quot;&gt;&#xC0AD;&#xC81C;&lt;/button&gt;</span>
+          <span class="cm-string-2">&lt;/li&gt;</span>
+        <span class="cm-string-2">`</span>).<span class="cm-property">join</span>(<span class="cm-string">&apos;&apos;</span>)<span class="cm-string-2">}</span>
+      <span class="cm-string-2">&lt;/ul&gt;</span>
+    <span class="cm-string-2">`</span>
+  }
+
+  <span class="cm-variable">setEvent</span>() {
+    <span class="cm-keyword">const</span> { <span class="cm-variable">deleteItem</span>, <span class="cm-variable">toggleItem</span> } <span class="cm-operator">=</span> <span class="cm-keyword">this</span>.<span class="cm-property">$props</span>;
+
+    <span class="cm-keyword">this</span>.<span class="cm-property">addEvent</span>(<span class="cm-string">&apos;click&apos;</span>, <span class="cm-string">&apos;.deleteBtn&apos;</span>, ({<span class="cm-def">target</span>}) <span class="cm-operator">=&gt;</span> {
+      <span class="cm-variable">deleteItem</span>(<span class="cm-variable">Number</span>(<span class="cm-variable-2">target</span>.<span class="cm-property">closest</span>(<span class="cm-string">&apos;[data-seq]&apos;</span>).<span class="cm-property">dataset</span>.<span class="cm-property">seq</span>));
+    });
+
+    <span class="cm-keyword">this</span>.<span class="cm-property">addEvent</span>(<span class="cm-string">&apos;click&apos;</span>, <span class="cm-string">&apos;.toggleBtn&apos;</span>, ({<span class="cm-def">target</span>}) <span class="cm-operator">=&gt;</span> {
+      <span class="cm-variable">toggleItem</span>(<span class="cm-variable">Number</span>(<span class="cm-variable-2">target</span>.<span class="cm-property">closest</span>(<span class="cm-string">&apos;[data-seq]&apos;</span>).<span class="cm-property">dataset</span>.<span class="cm-property">seq</span>));
+    });
+
+  }
+
+}
+</code></pre>
+<ul>
+<li>src/components/ItemFilter.js</li>
+</ul>
+<pre><code class="lang-js"><span class="cm-keyword">import</span> <span class="cm-variable">Component</span> <span class="cm-keyword">from</span> <span class="cm-string">&quot;../core/Component.js&quot;</span>;
+
+<span class="cm-keyword">export</span> <span class="cm-keyword">default</span> <span class="cm-keyword">class</span> <span class="cm-variable">ItemFilter</span> <span class="cm-keyword">extends</span> <span class="cm-variable">Component</span> {
+
+  <span class="cm-variable">template</span>() {
+    <span class="cm-keyword">return</span> <span class="cm-string-2">`</span>
+      <span class="cm-string-2">&lt;button class=&quot;filterBtn&quot; data-is-filter=&quot;0&quot;&gt;&#xC804;&#xCCB4; &#xBCF4;&#xAE30;&lt;/button&gt;</span>
+      <span class="cm-string-2">&lt;button class=&quot;filterBtn&quot; data-is-filter=&quot;1&quot;&gt;&#xD65C;&#xC131; &#xBCF4;&#xAE30;&lt;/button&gt;</span>
+      <span class="cm-string-2">&lt;button class=&quot;filterBtn&quot; data-is-filter=&quot;2&quot;&gt;&#xBE44;&#xD65C;&#xC131; &#xBCF4;&#xAE30;&lt;/button&gt;</span>
+    <span class="cm-string-2">`</span>
+  }
+
+  <span class="cm-variable">setEvent</span>() {
+    <span class="cm-keyword">const</span> { <span class="cm-variable">filterItem</span> } <span class="cm-operator">=</span> <span class="cm-keyword">this</span>.<span class="cm-property">$props</span>;
+    <span class="cm-keyword">this</span>.<span class="cm-property">addEvent</span>(<span class="cm-string">&apos;click&apos;</span>, <span class="cm-string">&apos;.filterBtn&apos;</span>, ({ <span class="cm-def">target</span> }) <span class="cm-operator">=&gt;</span> {
+      <span class="cm-variable">filterItem</span>(<span class="cm-variable">Number</span>(<span class="cm-variable-2">target</span>.<span class="cm-property">dataset</span>.<span class="cm-property">isFilter</span>));
+    });
+  }
+}
+</code></pre>
+<iframe src="/example/vanilla-js/example_06/index.html" width="100%" height="250px" class="example-frame"></iframe>
+
+<p><br></p>
+<h2 id="&#xB05D;&#xC73C;&#xB85C;">&#xB05D;&#xC73C;&#xB85C;</h2>
+<p><code>Vanilla Javascirpt</code>&#xB85C; &#xCEF4;&#xD3EC;&#xB10C;&#xD2B8;&#xB97C; &#xD558;&#xB098;&#xD558;&#xB098; &#xAD6C;&#xD604;&#xD574;&#xBCF4;&#xBA74;&#xC11C; &#xB9CE;&#xC740; &#xAC83;&#xC744; &#xB290;&#xAF08;&#xB2E4;.
+&#xC774;&#xC81C;&#xAE4C;&#xC9C0; <code>Vue.js</code>&#xB85C; &#xCEF4;&#xD3EC;&#xB10C;&#xD2B8; &#xC0DD;&#xC131;&#xD558;&#xACE0; &#xBD80;&#xBAA8;/&#xC790;&#xC2DD; &#xCEF4;&#xD3EC;&#xB10C;&#xD2B8;&#xAC04; &#xC0C1;&#xD0DC;, &#xBA54;&#xC18C;&#xB4DC;&#xB97C; &#xC8FC;&#xACE0; &#xBC1B;&#xB294; &#xB4F1; &#xD504;&#xB808;&#xC784;&#xC6CC;&#xD06C;&#xC5D0;&#xC11C; &#xC81C;&#xACF5;&#xD574;&#xC8FC;&#xB294; &#xAC00;&#xC774;&#xB4DC; &#xB77C;&#xC778;&#xB300;&#xB85C; &#xAC1C;&#xBC1C;&#xC744; &#xD574;&#xC654;&#xAE30; &#xB54C;&#xBB38;&#xC5D0; &#xB0B4;&#xBD80;&#xC801;&#xC73C;&#xB85C;&#xB294; &#xC5B4;&#xB5BB;&#xAC8C; &#xB3CC;&#xC544;&#xAC00;&#xB294;&#xC9C0; &#xC790;&#xC138;&#xD788; &#xC54C;&#xC9C0;&#xB294; &#xBABB;&#xD588;&#xB2E4;.</p>
+<p>&#xC774;&#xBC88; &#xACC4;&#xAE30;&#xAC00; <code>Vanilla Javascirpt</code>&#xB97C; &#xC9D1;&#xC911;&#xC801;&#xC73C;&#xB85C; &#xACF5;&#xBD80;&#xD558;&#xAC8C; &#xB41C; &#xACC4;&#xAE30;&#xAC00; &#xB41C; &#xAC83;&#xC784;&#xC740; &#xD2C0;&#xB9BC;&#xC5C6;&#xB2E4;. </p>
+<p>&#xC55E;&#xC73C;&#xB85C;&#xB294;, &#xAC04;&#xB2E8;&#xD55C; SPA &#xC608;&#xC81C;&#xB4E4;&#xC744; <code>Vanilla Javascirpt</code>&#xB85C; &#xAD6C;&#xD604;&#xD574;&#xBCF4;&#xBA74;&#xC11C; &#xACF5;&#xBD80;&#xD574; &#xBCFC; &#xC0DD;&#xAC01;&#xC774;&#xB2E4;.
+(&#xB098;&#xC911;&#xC5D0;&#xB294;..&#xBCF5;&#xC7A1;&#xD55C; &#xC6F9; &#xC571;&#xC744; <code>Vanilla Javascirpt</code>&#xB85C; &#xAD6C;&#xD604;&#xD574;&#xBCF4;&#xACE0; &#xC2F6;&#xB2E4;!)</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="./" class="navigation navigation-prev " aria-label="Previous page: Vanilla Javascript">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../frontEnd-knowledge/" class="navigation navigation-next " aria-label="Next page: Front-end 필수지식">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"웹 컴포넌트 구현하기","level":"1.4.1","depth":2,"next":{"title":"Front-end 필수지식","level":"1.5","depth":1,"path":"pages/frontEnd-knowledge/README.md","ref":"pages/frontEnd-knowledge/README.md","articles":[{"title":"Web Browser","level":"1.5.1","depth":2,"path":"pages/frontEnd-knowledge/web-browser/README.md","ref":"pages/frontEnd-knowledge/web-browser/README.md","articles":[{"title":"01.브라우저의 동작원리","level":"1.5.1.1","depth":3,"path":"pages/frontEnd-knowledge/web-browser/01.md","ref":"pages/frontEnd-knowledge/web-browser/01.md","articles":[]},{"title":"02.CORS의 정의 및 해결","level":"1.5.1.2","depth":3,"path":"pages/frontEnd-knowledge/web-browser/02.md","ref":"pages/frontEnd-knowledge/web-browser/02.md","articles":[]},{"title":"03.크로스 브라우징","level":"1.5.1.3","depth":3,"path":"pages/frontEnd-knowledge/web-browser/03.md","ref":"pages/frontEnd-knowledge/web-browser/03.md","articles":[]}]},{"title":"Javascirpt","level":"1.5.2","depth":2,"path":"pages/frontEnd-knowledge/javascirpt/README.md","ref":"pages/frontEnd-knowledge/javascirpt/README.md","articles":[{"title":"01.호이스팅","level":"1.5.2.1","depth":3,"path":"pages/frontEnd-knowledge/javascirpt/01.md","ref":"pages/frontEnd-knowledge/javascirpt/01.md","articles":[]},{"title":"02.this","level":"1.5.2.2","depth":3,"path":"pages/frontEnd-knowledge/javascirpt/02.md","ref":"pages/frontEnd-knowledge/javascirpt/02.md","articles":[]},{"title":"03.실행 컨텍스트","level":"1.5.2.3","depth":3,"path":"pages/frontEnd-knowledge/javascirpt/03.md","ref":"pages/frontEnd-knowledge/javascirpt/03.md","articles":[]},{"title":"04.이벤트 버블링, 캡쳐링, 위임","level":"1.5.2.4","depth":3,"path":"pages/frontEnd-knowledge/javascirpt/04.md","ref":"pages/frontEnd-knowledge/javascirpt/04.md","articles":[]}]}]},"previous":{"title":"Vanilla Javascript","level":"1.4","depth":1,"path":"pages/vanilla-javascript/README.md","ref":"pages/vanilla-javascript/README.md","articles":[{"title":"웹 컴포넌트 구현하기","level":"1.4.1","depth":2,"path":"pages/vanilla-javascript/vanilla-js_01.md","ref":"pages/vanilla-javascript/vanilla-js_01.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["expandable-chapters-small","theme-darkblue","highlight-1","livereload"],"styles":{"website":"assets/css/website.css","ebook":"assets/css/ebook.css","pdf":"assets/css/pdf.css","mobi":"assets/css/mobi.css","epub":"assets/css/epub.css"},"pluginsConfig":{"livereload":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-darkblue":{},"highlight":{},"highlight-1":{},"expandable-chapters-small":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"서성식","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"INTRO.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"서성식의 eBook","language":"ko","gitbook":"*"},"file":{"path":"pages/vanilla-javascript/vanilla-js_01.md","mtime":"2022-06-12T10:36:55.635Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-06-12T11:43:16.972Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

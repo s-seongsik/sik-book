@@ -1,0 +1,681 @@
+
+<!DOCTYPE HTML>
+<html lang="ko" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>DOM의 타입과 핵심 인터페이스 · 서성식의 eBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="서성식">
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight-1/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../../assets/css/website.css">
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="elements-finding.html" />
+    
+    
+    <link rel="prev" href="defind.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="검색어 입력" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    HTML DOM
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="defind.html">
+            
+                <a href="defind.html">
+            
+                    
+                    DOM의 개념
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.2.2" data-path="dom-init.html">
+            
+                <a href="dom-init.html">
+            
+                    
+                    DOM의 타입과 핵심 인터페이스
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="elements-finding.html">
+            
+                <a href="elements-finding.html">
+            
+                    
+                    HTML Elements 찾기
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="elements-changing.html">
+            
+                <a href="elements-changing.html">
+            
+                    
+                    HTML Elements 내용 및 속성 변경
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="elements-add-del.html">
+            
+                <a href="elements-add-del.html">
+            
+                    
+                    HTML Elements 추가 및 삭제하기
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../javascript/">
+            
+                <a href="../javascript/">
+            
+                    
+                    Javascript
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../javascript/01.type-conversions.html">
+            
+                <a href="../javascript/01.type-conversions.html">
+            
+                    
+                    형 변환
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../javascript/02.strict-mode.html">
+            
+                <a href="../javascript/02.strict-mode.html">
+            
+                    
+                    엄격 모드
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../javascript/03.comparison.html">
+            
+                <a href="../javascript/03.comparison.html">
+            
+                    
+                    비교 연산자
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../javascript/100.class.html">
+            
+                <a href="../javascript/100.class.html">
+            
+                    
+                    Class 문법
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../vanilla-javascript/">
+            
+                <a href="../vanilla-javascript/">
+            
+                    
+                    Vanilla Javascript
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../vanilla-javascript/vanilla-js_01.html">
+            
+                <a href="../vanilla-javascript/vanilla-js_01.html">
+            
+                    
+                    웹 컴포넌트 구현하기
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../frontEnd-knowledge/">
+            
+                <a href="../frontEnd-knowledge/">
+            
+                    
+                    Front-end 필수지식
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../frontEnd-knowledge/web-browser/">
+            
+                <a href="../frontEnd-knowledge/web-browser/">
+            
+                    
+                    Web Browser
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1.1" data-path="../frontEnd-knowledge/web-browser/01.html">
+            
+                <a href="../frontEnd-knowledge/web-browser/01.html">
+            
+                    
+                    01.브라우저의 동작원리
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.1.2" data-path="../frontEnd-knowledge/web-browser/02.html">
+            
+                <a href="../frontEnd-knowledge/web-browser/02.html">
+            
+                    
+                    02.CORS의 정의 및 해결
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.1.3" data-path="../frontEnd-knowledge/web-browser/03.html">
+            
+                <a href="../frontEnd-knowledge/web-browser/03.html">
+            
+                    
+                    03.크로스 브라우징
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../frontEnd-knowledge/javascirpt/">
+            
+                <a href="../frontEnd-knowledge/javascirpt/">
+            
+                    
+                    Javascirpt
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.2.1" data-path="../frontEnd-knowledge/javascirpt/01.html">
+            
+                <a href="../frontEnd-knowledge/javascirpt/01.html">
+            
+                    
+                    01.호이스팅
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2.2" data-path="../frontEnd-knowledge/javascirpt/02.html">
+            
+                <a href="../frontEnd-knowledge/javascirpt/02.html">
+            
+                    
+                    02.this
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2.3" data-path="../frontEnd-knowledge/javascirpt/03.html">
+            
+                <a href="../frontEnd-knowledge/javascirpt/03.html">
+            
+                    
+                    03.실행 컨텍스트
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2.4" data-path="../frontEnd-knowledge/javascirpt/04.html">
+            
+                <a href="../frontEnd-knowledge/javascirpt/04.html">
+            
+                    
+                    04.이벤트 버블링, 캡쳐링, 위임
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            GitBook에 게시
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >DOM의 타입과 핵심 인터페이스</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="dom&#xC758;-&#xB370;&#xC774;&#xD130;-&#xD0C0;&#xC785;&#xACFC;-&#xD575;&#xC2EC;-&#xC778;&#xD130;&#xD398;&#xC774;&#xC2A4;">DOM&#xC758; &#xB370;&#xC774;&#xD130; &#xD0C0;&#xC785;&#xACFC; &#xD575;&#xC2EC; &#xC778;&#xD130;&#xD398;&#xC774;&#xC2A4;</h1>
+<hr>
+<h2 id="dom&#xC758;-&#xC911;&#xC694;&#xD55C;-&#xB370;&#xC774;&#xD130;-&#xD0C0;&#xC785;">DOM&#xC758; &#xC911;&#xC694;&#xD55C; &#xB370;&#xC774;&#xD130; &#xD0C0;&#xC785;</h2>
+<p>DOM&#xC5D0;&#xC11C; &#xC81C;&#xACF5;&#xD558;&#xB294; API&#xC5D0;&#xC11C; &#xC218;&#xB9CE;&#xC740; data types&#xAC00; &#xC874;&#xC7AC;&#xD55C;&#xB2E4;. </p>
+<p>&#xC544;&#xB798;&#xC758; &#xD45C;&#xB294; &#xC774;&#xB7EC;&#xD55C; data types&#xC5D0; &#xB300;&#xD574; &#xC815;&#xB9AC;&#xD55C; &#xC124;&#xBA85;&#xC774;&#xB2E4;.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">type</th>
+<th style="text-align:left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">Document</td>
+<td style="text-align:left">Document &#xC778;&#xD130;&#xD398;&#xC774;&#xC2A4;&#xB294; &#xBE0C;&#xB77C;&#xC6B0;&#xC800;&#xAC00; &#xBD88;&#xB7EC;&#xC628; &#xC6F9; &#xD398;&#xC774;&#xC9C0;&#xB97C; &#xB098;&#xD0C0;&#xB0B4;&#xBA70;, HTML &#xD398;&#xC774;&#xC9C0;&#xC758; &#xC694;&#xC18C;&#xC5D0; &#xC811;&#xADFC;&#xD558;&#xB824;&#xBA74; &#xD56D;&#xC0C1; Document Object&#xC5D0; &#xC5D1;&#xC138;&#xC2A4;&#xD558;&#xB294; &#xAC83;&#xC73C;&#xB85C; &#xC2DC;&#xC791;&#xD55C;&#xB2E4;.</td>
+</tr>
+<tr>
+<td style="text-align:left">Element</td>
+<td style="text-align:left">Element&#xB294; DOM API&#xC758; &#xBA64;&#xBC84;&#xC5D0; &#xC758;&#xD574; &#xB9AC;&#xD134;&#xB41C; Element &#xB610;&#xB294; Element type&#xC758; node&#xB97C; &#xC758;&#xBBF8;&#xD55C;&#xB2E4;. HTML &#xD398;&#xC774;&#xC9C0;&#xC5D0;&#xC11C; HTML &#xC694;&#xC18C;&#xB97C; &#xCC3E;&#xACE0; &#xC5D1;&#xC138;&#xC2A4;&#xD560; &#xB54C; &#xC0AC;&#xC6A9;&#xD55C;&#xB2E4;.</td>
+</tr>
+<tr>
+<td style="text-align:left">Attribute</td>
+<td style="text-align:left">HTML DOM&#xC5D0;&#xC11C; attr &#xAC1D;&#xCCB4;&#xB294; HTML &#xC18D;&#xC131;&#xC744; &#xB098;&#xD0C0;&#xB0B8;&#xB2E4;. HTML &#xC18D;&#xC131;&#xC740; &#xD56D;&#xC0C1; HTML &#xC694;&#xC18C;&#xC5D0; &#xD3EC;&#xD568;&#xB41C;&#xB2E4;.</td>
+</tr>
+<tr>
+<td style="text-align:left">NamedNodeMap</td>
+<td style="text-align:left">&#xBC30;&#xC5F4;&#xACFC; &#xAC19;&#xC740; &#xC694;&#xC18C; &#xC18D;&#xC131;&#xC744; &#xAC00;&#xC9C4; &#xC815;&#xB82C;&#xB418;&#xC9C0; &#xC54A;&#xC740; &#xCEEC;&#xB809;&#xC158;&#xC774;&#xB2E4;. &#xC989;, NamedNodeMap&#xC740; Attr &#xAC1D;&#xCCB4;&#xC758; &#xBAA9;&#xB85D;&#xC774;&#xB2E4;. &#xB178;&#xB4DC; &#xC218;&#xB97C; &#xBC18;&#xD658;&#xD558;&#xB294; length &#xC18D;&#xC131;&#xC774; &#xC788;&#xC73C;&#xBA70;, &#xB178;&#xB4DC;&#xB294; name &#xB610;&#xB294; index(0&#xBD80;&#xD130; &#xC2DC;&#xC791;) &#xBC88;&#xD638;&#xB85C; &#xC811;&#xADFC;&#xD560; &#xC218; &#xC788;&#xB2E4;.</td>
+</tr>
+<tr>
+<td style="text-align:left">NodeList</td>
+<td style="text-align:left">NodeList&#xB294; elements &#xC758; &#xBC30;&#xC5F4;&#xC774;&#xB2E4;. NodeList&#xC758; Items &#xC740; index &#xB97C; &#xD1B5;&#xD574; &#xC811;&#xADFC; &#xAC00;&#xB2A5;&#xD558;&#xBA70;, index&#xB294; 0&#xBD80;&#xD130; &#xC2DC;&#xC791;&#xD55C;&#xB2E4;. length &#xC18D;&#xC131;&#xC740; NodeList&#xC758; &#xB178;&#xB4DC; &#xC218;&#xB97C; &#xBC18;&#xD658;&#xD558;&#xBA70; NodeList&#xB294; HTMLCollection &#xACFC; &#xAC70;&#xC758; &#xB3D9;&#xC77C; &#xD558;&#xB2E4;.</td>
+</tr>
+<tr>
+<td style="text-align:left">Collection</td>
+<td style="text-align:left">Collection&#xC740; HTML &#xB178;&#xB4DC;&#xC758; &#xBAA8;&#xC74C;&#xC774;&#xB2E4;. &#xBC30;&#xC5F4;&#xACFC; &#xC720;&#xC0AC;&#xD55C; HTML &#xC694;&#xC18C; &#xBAA9;&#xB85D;&#xC774;&#xBA70; Collection &#xC694;&#xC18C;&#xB294; &#xC778;&#xB371;&#xC2A4;(0&#xC2DC;&#xC791;)&#xB85C; &#xC811;&#xADFC;&#xD560; &#xC218; &#xC788;&#xB2E4;. length &#xC18D;&#xC131;&#xC740; Collection &#xC694;&#xC18C;&#xC758; &#xC218;&#xB97C; &#xBC18;&#xD658;&#xD55C;&#xB2E4;.</td>
+</tr>
+<tr>
+<td style="text-align:left">Style</td>
+<td style="text-align:left">Style &#xAC1D;&#xCCB4;&#xB294; &#xAC1C;&#xBCC4; &#xC2A4;&#xD0C0;&#xC77C; &#xBB38;&#xC744; &#xB098;&#xD0C0;&#xB0B8;&#xB2E4;. ex). background</td>
+</tr>
+</tbody>
+</table>
+<p><br></p>
+<h2 id="dom&#xC758;-&#xD575;&#xC2EC;-interfaces">DOM&#xC758; &#xD575;&#xC2EC; Interfaces</h2>
+<p>&#xB2E4;&#xC591;&#xD55C; data types&#xC5D0; &#xB2E4;&#xC591;&#xD55C; Interfaces&#xC774; &#xC788;&#xC9C0;&#xB9CC; &#xADF8; &#xC911;&#xC5D0;&#xC11C; &#xAC00;&#xC7A5; &#xB9CE;&#xC774; &#xC0AC;&#xC6A9;&#xB418;&#xB294; Interfaces&#xB97C; &#xC815;&#xB9AC;&#xD558;&#xC600;&#xB2E4;.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">type</th>
+<th style="text-align:left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">document.getElementById(id)</td>
+<td style="text-align:left">ID&#xB85C; HTML &#xC694;&#xC18C;&#xB97C; &#xCC3E;&#xC744; &#xB54C; &#xC0AC;&#xC6A9;&#xD55C;&#xB2E4;.</td>
+</tr>
+<tr>
+<td style="text-align:left">document.getElementsByTagName(TagName)</td>
+<td style="text-align:left">&#xD0DC;&#xADF8; &#xC774;&#xB984;&#xC73C;&#xB85C; HTML &#xC694;&#xC18C;&#xB97C; &#xCC3E;&#xC744; &#xB54C; &#xC0AC;&#xC6A9;&#xD55C;&#xB2E4;.</td>
+</tr>
+<tr>
+<td style="text-align:left">document.getElementsByClassName(className))</td>
+<td style="text-align:left">class &#xC774;&#xB984;&#xC73C;&#xB85C; HTML &#xC694;&#xC18C;&#xB97C; &#xCC3E;&#xC744; &#xB54C; &#xC0AC;&#xC6A9;&#xD55C;&#xB2E4;.</td>
+</tr>
+<tr>
+<td style="text-align:left">document.createElement(element)</td>
+<td style="text-align:left">HTML &#xC694;&#xC18C;&#xB97C; &#xC0DD;&#xC131;&#xD560; &#xB54C; &#xC0AC;&#xC6A9;&#xD55C;&#xB2E4;.</td>
+</tr>
+<tr>
+<td style="text-align:left">document.appendChild(element)</td>
+<td style="text-align:left">&#xBD80;&#xBAA8; &#xC694;&#xC18C;&#xC5D0; &#xC790;&#xC2DD; &#xC694;&#xC18C;&#xB97C; &#xCD94;&#xAC00;&#xD560; &#xB54C; &#xC0AC;&#xC6A9;&#xD55C;&#xB2E4;.</td>
+</tr>
+<tr>
+<td style="text-align:left">element.innerHTML = new html content</td>
+<td style="text-align:left">HTML &#xC694;&#xC18C;&#xC758; &#xB0B4;&#xBD80; HTML &#xBCC0;&#xACBD;&#xD560; &#xB54C; &#xC0AC;&#xC6A9;&#xD55C;&#xB2E4;.</td>
+</tr>
+<tr>
+<td style="text-align:left">element.attribute = new value</td>
+<td style="text-align:left">HTML &#xC694;&#xC18C;&#xC758; &#xC18D;&#xC131; &#xAC12;&#xC744; &#xCD94;&#xAC00;&#xD560; &#xB54C; &#xC0AC;&#xC6A9;&#xD55C;&#xB2E4;.</td>
+</tr>
+<tr>
+<td style="text-align:left">element.setAttribute(attribute, value)</td>
+<td style="text-align:left">HTML &#xC694;&#xC18C;&#xC758; &#xC18D;&#xC131; &#xAC12;&#xC744; &#xBCC0;&#xACBD;&#xD560; &#xB54C; &#xC0AC;&#xC6A9;&#xD55C;&#xB2E4;.</td>
+</tr>
+<tr>
+<td style="text-align:left">element.getAttribute</td>
+<td style="text-align:left">HTML &#xC694;&#xC18C;&#xC758; &#xC18D;&#xC131; &#xAC12;&#xC744; &#xBC18;&#xD658;&#xD560; &#xB54C; &#xC0AC;&#xC6A9;&#xD55C;&#xB2E4;.</td>
+</tr>
+<tr>
+<td style="text-align:left">element.style.property</td>
+<td style="text-align:left">HTML &#xC694;&#xC18C;&#xC758; &#xC2A4;&#xD0C0;&#xC77C;&#xC744; &#xBCC0;&#xACBD;&#xD560; &#xB54C; &#xC0AC;&#xC6A9;&#xD55C;&#xB2E4;.</td>
+</tr>
+<tr>
+<td style="text-align:left">element.addEventListener</td>
+<td style="text-align:left">&#xC774;&#xBCA4;&#xD2B8; &#xD578;&#xB4E4;&#xB7EC;&#xB97C; HTML &#xC694;&#xC18C;&#xC5D0; &#xC5F0;&#xACB0;</td>
+</tr>
+</tbody>
+</table>
+<p>&#xC774; &#xBC16;&#xC5D0;&#xB3C4; &#xB9CE;&#xC740; Interfaces&#xAC00; &#xC788;&#xC9C0;&#xB9CC; &#xAC00;&#xC7A5; &#xB9CE;&#xC774; &#xC0AC;&#xC6A9;&#xD558;&#xB294; &#xAC83;&#xB9CC; &#xC815;&#xB9AC;&#xD574;&#xBD24;&#xB2E4;.</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="defind.html" class="navigation navigation-prev " aria-label="Previous page: DOM의 개념">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="elements-finding.html" class="navigation navigation-next " aria-label="Next page: HTML Elements 찾기">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"DOM의 타입과 핵심 인터페이스","level":"1.2.2","depth":2,"next":{"title":"HTML Elements 찾기","level":"1.2.3","depth":2,"path":"pages/html-dom/elements-finding.md","ref":"pages/html-dom/elements-finding.md","articles":[]},"previous":{"title":"DOM의 개념","level":"1.2.1","depth":2,"path":"pages/html-dom/defind.md","ref":"pages/html-dom/defind.md","articles":[]},"dir":"ltr"},"config":{"plugins":["expandable-chapters-small","theme-darkblue","highlight-1","livereload"],"styles":{"website":"assets/css/website.css","ebook":"assets/css/ebook.css","pdf":"assets/css/pdf.css","mobi":"assets/css/mobi.css","epub":"assets/css/epub.css"},"pluginsConfig":{"livereload":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-darkblue":{},"highlight":{},"highlight-1":{},"expandable-chapters-small":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"서성식","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"INTRO.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"서성식의 eBook","language":"ko","gitbook":"*"},"file":{"path":"pages/html-dom/dom-init.md","mtime":"2022-06-12T10:36:55.633Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-06-12T11:43:16.972Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
