@@ -1,0 +1,894 @@
+
+<!DOCTYPE HTML>
+<html lang="ko" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>04.이벤트 버블링, 캡쳐링, 위임 · 서성식의 eBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="서성식">
+        
+        
+    
+    <link rel="stylesheet" href="../../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-highlight-1/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../../../assets/css/website.css">
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    
+    <link rel="prev" href="03.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="검색어 입력" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../../">
+            
+                <a href="../../../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                    HTML DOM
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../../html-dom/defind.html">
+            
+                <a href="../../html-dom/defind.html">
+            
+                    
+                    DOM의 개념
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../../html-dom/dom-init.html">
+            
+                <a href="../../html-dom/dom-init.html">
+            
+                    
+                    DOM의 타입과 핵심 인터페이스
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../../html-dom/elements-finding.html">
+            
+                <a href="../../html-dom/elements-finding.html">
+            
+                    
+                    HTML Elements 찾기
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../../html-dom/elements-changing.html">
+            
+                <a href="../../html-dom/elements-changing.html">
+            
+                    
+                    HTML Elements 내용 및 속성 변경
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="../../html-dom/elements-add-del.html">
+            
+                <a href="../../html-dom/elements-add-del.html">
+            
+                    
+                    HTML Elements 추가 및 삭제하기
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <span>
+            
+                    
+                    Javascript
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../../javascript/01.type-conversions.html">
+            
+                <a href="../../javascript/01.type-conversions.html">
+            
+                    
+                    형 변환
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../../javascript/02.strict-mode.html">
+            
+                <a href="../../javascript/02.strict-mode.html">
+            
+                    
+                    엄격 모드
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../../javascript/03.comparison.html">
+            
+                <a href="../../javascript/03.comparison.html">
+            
+                    
+                    비교 연산자
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../../javascript/04.class.html">
+            
+                <a href="../../javascript/04.class.html">
+            
+                    
+                    Class 문법
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" >
+            
+                <span>
+            
+                    
+                    Vanilla Javascript
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../../vanilla-javascript/vanilla-js_01.html">
+            
+                <a href="../../vanilla-javascript/vanilla-js_01.html">
+            
+                    
+                    웹 컴포넌트 구현하기
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" >
+            
+                <span>
+            
+                    
+                    Front-end 필수지식
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" >
+            
+                <span>
+            
+                    
+                    Web Browser
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1.1" data-path="../web-browser/01.html">
+            
+                <a href="../web-browser/01.html">
+            
+                    
+                    01.브라우저의 동작원리
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.1.2" data-path="../web-browser/02.html">
+            
+                <a href="../web-browser/02.html">
+            
+                    
+                    02.CORS의 정의 및 해결
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.1.3" data-path="../web-browser/03.html">
+            
+                <a href="../web-browser/03.html">
+            
+                    
+                    03.크로스 브라우징
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" >
+            
+                <span>
+            
+                    
+                    Javascript
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.2.1" data-path="01.html">
+            
+                <a href="01.html">
+            
+                    
+                    01.호이스팅
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2.2" data-path="02.html">
+            
+                <a href="02.html">
+            
+                    
+                    02.this
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2.3" data-path="03.html">
+            
+                <a href="03.html">
+            
+                    
+                    03.실행 컨텍스트
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.5.2.4" data-path="04.html">
+            
+                <a href="04.html">
+            
+                    
+                    04.이벤트 버블링, 캡쳐링, 위임
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            GitBook에 게시
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../../.." >04.이벤트 버블링, 캡쳐링, 위임</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#xC774;&#xBCA4;&#xD2B8;-&#xBC84;&#xBE14;&#xB9C1;-&#xC774;&#xBCA4;&#xD2B8;-&#xCEA1;&#xCCD0;&#xB9C1;-&#xC774;&#xBCA4;&#xD2B8;-&#xC704;&#xC784;">&#xC774;&#xBCA4;&#xD2B8; &#xBC84;&#xBE14;&#xB9C1;, &#xC774;&#xBCA4;&#xD2B8; &#xCEA1;&#xCCD0;&#xB9C1;, &#xC774;&#xBCA4;&#xD2B8; &#xC704;&#xC784;</h1>
+<hr>
+<h2 id="&#xC2DC;&#xC791;&#xC73C;&#xB85C;">&#xC2DC;&#xC791;&#xC73C;&#xB85C;</h2>
+<p><code>Vanilla JS</code>&#xB85C; &#xCEF4;&#xD3EC;&#xB10C;&#xD2B8; &#xAD6C;&#xD604;&#xC744; &#xACF5;&#xBD80;&#xD558;&#xB2E4;&#xAC00; <code>&#xC774;&#xBCA4;&#xD2B8; &#xBC84;&#xBE14;&#xB9C1;</code>&#xC774;&#xB77C;&#xB294; &#xAC83;&#xC744; &#xC811;&#xD558;&#xAC8C; &#xB418;&#xC5C8;&#xB2E4;. &#xD55C; &#xBC88;&#xB3C4; &#xD574;&#xBCF8; &#xC801; &#xC5C6;&#xC5C8;&#xAE30; &#xB54C;&#xBB38;&#xC5D0; &#xACF5;&#xBD80;&#xD55C; &#xB0B4;&#xC6A9;&#xC744; &#xC815;&#xB9AC;&#xD558;&#xAC8C; &#xB418;&#xC5C8;&#xB2E4;.</p>
+<h2 id="&#xC774;&#xBCA4;&#xD2B8;-&#xB4F1;&#xB85D;&#xC774;&#xB780;">&#xC774;&#xBCA4;&#xD2B8; &#xB4F1;&#xB85D;&#xC774;&#xB780;</h2>
+<p><code>&#xC774;&#xBCA4;&#xD2B8; &#xB4F1;&#xB85D;</code>&#xC740; &#xC6F9; &#xC560;&#xD50C;&#xB9AC;&#xCF00;&#xC774;&#xC158;&#xC5D0;&#xC11C; &#xAE30;&#xBCF8;&#xC801;&#xC73C;&#xB85C; &#xC774;&#xD574;&#xD558;&#xACE0; &#xC788;&#xC5B4;&#xC57C;&#xD558;&#xB294; &#xB0B4;&#xC6A9;&#xC774;&#xB2E4;.
+<code>&#xC774;&#xBCA4;&#xD2B8; &#xB4F1;&#xB85D;</code>&#xC774;&#xB780; &#xC6F9; &#xC560;&#xD50C;&#xB9AC;&#xCF00;&#xC774;&#xC158;&#xC5D0;&#xC11C; &#xC0AC;&#xC6A9;&#xC790;&#xC758; &#xC785;&#xB825;&#xC744; &#xBC1B;&#xAE30; &#xC704;&#xD574; &#xD544;&#xC694;&#xD55C; &#xAE30;&#xB2A5;&#xC774;&#xB2E4;. &#xB300;&#xD45C;&#xC801;&#xC73C;&#xB85C; <code>click</code> &#xC774;&#xBCA4;&#xD2B8;&#xAC00; &#xC788;&#xB2E4;.</p>
+<p>&#xC544;&#xB798;&#xC758; &#xAC04;&#xB2E8;&#xD55C; &#xC608;&#xC81C;&#xB97C; &#xBCF4;&#xC790;.</p>
+<pre><code class="lang-html"><span class="cm-meta">&lt;!DOCTYPE html&gt;</span>
+<span class="cm-tagcm-bracket">&lt;</span><span class="cm-tag">html</span> <span class="cm-attribute">lang</span>=<span class="cm-string">&quot;en&quot;</span><span class="cm-tagcm-bracket">&gt;</span>
+<span class="cm-tagcm-bracket">&lt;</span><span class="cm-tag">head</span><span class="cm-tagcm-bracket">&gt;</span>
+    <span class="cm-tagcm-bracket">&lt;</span><span class="cm-tag">meta</span> <span class="cm-attribute">charset</span>=<span class="cm-string">&quot;UTF-8&quot;</span><span class="cm-tagcm-bracket">&gt;</span>
+    <span class="cm-tagcm-bracket">&lt;</span><span class="cm-tag">meta</span> <span class="cm-attribute">http-equiv</span>=<span class="cm-string">&quot;X-UA-Compatible&quot;</span> <span class="cm-attribute">content</span>=<span class="cm-string">&quot;IE=edge&quot;</span><span class="cm-tagcm-bracket">&gt;</span>
+    <span class="cm-tagcm-bracket">&lt;</span><span class="cm-tag">meta</span> <span class="cm-attribute">name</span>=<span class="cm-string">&quot;viewport&quot;</span> <span class="cm-attribute">content</span>=<span class="cm-string">&quot;width=device-width, initial-scale=1.0&quot;</span><span class="cm-tagcm-bracket">&gt;</span>
+    <span class="cm-tagcm-bracket">&lt;</span><span class="cm-tag">title</span><span class="cm-tagcm-bracket">&gt;</span>Document<span class="cm-tagcm-bracket">&lt;/</span><span class="cm-tag">title</span><span class="cm-tagcm-bracket">&gt;</span>
+<span class="cm-tagcm-bracket">&lt;/</span><span class="cm-tag">head</span><span class="cm-tagcm-bracket">&gt;</span>
+<span class="cm-tagcm-bracket">&lt;</span><span class="cm-tag">body</span><span class="cm-tagcm-bracket">&gt;</span>
+    <span class="cm-tagcm-bracket">&lt;</span><span class="cm-tag">button</span> <span class="cm-attribute">id</span>=<span class="cm-string">&quot;btn&quot;</span> <span class="cm-attribute">style</span>=<span class="cm-string">&quot;height: 20px; width: 100px;&quot;</span><span class="cm-tagcm-bracket">&gt;</span>&#xBC84;&#xD2BC;&#xD074;&#xB9AD;<span class="cm-tagcm-bracket">&lt;/</span><span class="cm-tag">button</span><span class="cm-tagcm-bracket">&gt;</span>
+    <span class="cm-tagcm-bracket">&lt;</span><span class="cm-tag">script</span><span class="cm-tagcm-bracket">&gt;</span>
+        const btn = document.querySelector(&apos;#btn&apos;)
+        btn.addEventListener(&apos;click&apos;, function(){
+            alert(&apos;click&apos;);
+        })
+    <span class="cm-tagcm-bracket">&lt;/</span><span class="cm-tag">script</span><span class="cm-tagcm-bracket">&gt;</span>
+<span class="cm-tagcm-bracket">&lt;/</span><span class="cm-tag">body</span><span class="cm-tagcm-bracket">&gt;</span>
+<span class="cm-tagcm-bracket">&lt;/</span><span class="cm-tag">html</span><span class="cm-tagcm-bracket">&gt;</span>
+</code></pre>
+<p>&#xBC84;&#xD2BC;&#xC744; &#xD074;&#xB9AD;&#xD558;&#xAC8C; &#xB418;&#xBA74; &#xCF5C;&#xBC31;&#xD568;&#xC218;&#xB85C; <code>alert()</code>&#xB97C; &#xD638;&#xCD9C;&#xD558;&#xC5EC; &#xC2E4;&#xD589;&#xD558;&#xAC8C; &#xB418;&#xB294; &#xAC04;&#xB2E8;&#xD55C; &#xC608;&#xC81C;&#xC774;&#xB2E4;.
+&#xC774;&#xCC98;&#xB7FC; <code>addEventListener()</code>&#xB294; &#xC6F9; API&#xB85C; &#xC6F9; &#xAC1C;&#xBC1C;&#xC790;&#xB4E4;&#xC774; &#xB3D9;&#xC801;&#xC778; &#xAE30;&#xB2A5;&#xB4E4;&#xC744; &#xCD94;&#xAC00;&#xD560; &#xC218; &#xC788;&#xB3C4;&#xB85D; &#xB3C4;&#xC640;&#xC900;&#xB2E4;.
+&#xADF8;&#xB7FC; &#xBE0C;&#xB77C;&#xC6B0;&#xC800;&#xB294; &#xC5B4;&#xB5BB;&#xAC8C; &#xC774;&#xBCA4;&#xD2B8;&#xC758; &#xBC1C;&#xC0DD;&#xC744; &#xAC10;&#xC9C0;&#xD588;&#xC744;&#xAE4C;? &#xBE0C;&#xB77C;&#xC6B0;&#xC800;&#xAC00; &#xC774;&#xBCA4;&#xD2B8;&#xB97C; &#xAC10;&#xC9C0;&#xD558;&#xB294; &#xBC29;&#xC2DD; 2&#xAC00;&#xC9C0;&#xB97C; &#xC54C;&#xC544;&#xBCF4;&#xC790;.</p>
+<p><br></p>
+<h2 id="&#xC774;&#xBCA4;&#xD2B8;-&#xBC84;&#xBE14;&#xB9C1;---event-bubbling">&#xC774;&#xBCA4;&#xD2B8; &#xBC84;&#xBE14;&#xB9C1; - Event Bubbling</h2>
+<p><code>&#xC774;&#xBCA4;&#xD2B8; &#xBC84;&#xBE14;&#xB9C1;</code>&#xC774;&#xB780; &#xD2B9;&#xC815; &#xD654;&#xBA74; &#xC694;&#xC18C;&#xC5D0;&#xC11C; &#xC774;&#xBCA4;&#xD2B8;&#xAC00; &#xBC1C;&#xC0DD;&#xD588;&#xC744; &#xB54C; &#xD574;&#xB2F9; &#xC774;&#xBCA4;&#xD2B8;&#xAC00; &#xB354; <code>&#xC0C1;&#xC704;&#xC758; &#xD654;&#xBA74; &#xC694;&#xC18C;</code>&#xB4E4;&#xB85C; &#xC804;&#xB2EC;&#xB418;&#xC5B4; &#xAC00;&#xB294; &#xD2B9;&#xC131;&#xC744; &#xB9D0;&#xD55C;&#xB2E4;.</p>
+<p><img src="https://user-images.githubusercontent.com/52439201/158369837-525a4233-51c1-4d9b-98b5-6b6ad0163305.png" alt="image"></p>
+<blockquote>
+<p><code>&#xC0C1;&#xC704;&#xC758; &#xD654;&#xBA74; &#xC694;&#xC18C;</code>&#xB780; HTML &#xC694;&#xC18C;&#xB294; &#xAE30;&#xBCF8;&#xC801;&#xC73C;&#xB85C; &#xD2B8;&#xB9AC; &#xAD6C;&#xC870;&#xB97C; &#xAC16;&#xC2B5;&#xB2C8;&#xB2E4;. &#xC5EC;&#xAE30;&#xC11C;&#xB294; &#xD2B8;&#xB9AC; &#xAD6C;&#xC870;&#xC0C1;&#xC73C;&#xB85C; &#xD55C; &#xB2E8;&#xACC4; &#xC704;&#xC5D0; &#xC788;&#xB294; &#xC694;&#xC18C;&#xB97C; &#xC0C1;&#xC704; &#xC694;&#xC18C;&#xB77C;&#xACE0; &#xD558;&#xBA70; body &#xD0DC;&#xADF8;&#xB97C; &#xCD5C;&#xC0C1;&#xC704; &#xC694;&#xC18C;&#xB77C;&#xACE0; &#xBD80;&#xB978;&#xB2E4;.</p>
+</blockquote>
+<p>&#xBC11;&#xC758; &#xC608;&#xC81C;&#xB85C; &#xC774;&#xD574;&#xD574;&#xBCF4;&#xC790;.</p>
+<p>&#xC0C8; &#xAC1C;&#xC758; <code>div</code> &#xD0DC;&#xADF8;&#xAC00; &#xC788;&#xB2E4;. &#xAC00;&#xC7A5; &#xD558;&#xC704;&#xC758; <code>div</code>&#xD0DC;&#xADF8;&#xC5D0;&#xC11C; <code>click</code>&#xC774;&#xBCA4;&#xD2B8;&#xAC00; &#xBC1C;&#xC0DD;&#xD588;&#xC744; &#xB54C; &#xCD5C;&#xC0C1;&#xC704; &#xC694;&#xC18C;&#xC778; body &#xD0DC;&#xADF8;&#xAE4C;&#xC9C0; &#xC804;&#xB2EC;&#xB41C;&#xB2E4;.</p>
+<pre><code class="lang-html"><span class="cm-meta">&lt;!DOCTYPE html&gt;</span>
+<span class="cm-tagcm-bracket">&lt;</span><span class="cm-tag">html</span> <span class="cm-attribute">lang</span>=<span class="cm-string">&quot;en&quot;</span><span class="cm-tagcm-bracket">&gt;</span>
+<span class="cm-tagcm-bracket">&lt;</span><span class="cm-tag">head</span><span class="cm-tagcm-bracket">&gt;</span>
+    <span class="cm-tagcm-bracket">&lt;</span><span class="cm-tag">meta</span> <span class="cm-attribute">charset</span>=<span class="cm-string">&quot;UTF-8&quot;</span><span class="cm-tagcm-bracket">&gt;</span>
+    <span class="cm-tagcm-bracket">&lt;</span><span class="cm-tag">meta</span> <span class="cm-attribute">http-equiv</span>=<span class="cm-string">&quot;X-UA-Compatible&quot;</span> <span class="cm-attribute">content</span>=<span class="cm-string">&quot;IE=edge&quot;</span><span class="cm-tagcm-bracket">&gt;</span>
+    <span class="cm-tagcm-bracket">&lt;</span><span class="cm-tag">meta</span> <span class="cm-attribute">name</span>=<span class="cm-string">&quot;viewport&quot;</span> <span class="cm-attribute">content</span>=<span class="cm-string">&quot;width=device-width, initial-scale=1.0&quot;</span><span class="cm-tagcm-bracket">&gt;</span>
+    <span class="cm-tagcm-bracket">&lt;</span><span class="cm-tag">title</span><span class="cm-tagcm-bracket">&gt;</span>Document<span class="cm-tagcm-bracket">&lt;/</span><span class="cm-tag">title</span><span class="cm-tagcm-bracket">&gt;</span>
+<span class="cm-tagcm-bracket">&lt;/</span><span class="cm-tag">head</span><span class="cm-tagcm-bracket">&gt;</span>
+<span class="cm-tagcm-bracket">&lt;</span><span class="cm-tag">body</span><span class="cm-tagcm-bracket">&gt;</span>
+    <span class="cm-tagcm-bracket">&lt;</span><span class="cm-tag">style</span><span class="cm-tagcm-bracket">&gt;</span>
+        div {
+            width: 100px;
+            height: 20px;
+        }
+        .three {
+          background-color: gray;
+        }
+    <span class="cm-tagcm-bracket">&lt;/</span><span class="cm-tag">style</span><span class="cm-tagcm-bracket">&gt;</span>
+    <span class="cm-tagcm-bracket">&lt;</span><span class="cm-tag">body</span><span class="cm-tagcm-bracket">&gt;</span>
+        <span class="cm-tagcm-bracket">&lt;</span><span class="cm-tag">div</span> <span class="cm-attribute">class</span>=<span class="cm-string">&quot;one&quot;</span><span class="cm-tagcm-bracket">&gt;</span>
+            <span class="cm-tagcm-bracket">&lt;</span><span class="cm-tag">div</span> <span class="cm-attribute">class</span>=<span class="cm-string">&quot;two&quot;</span><span class="cm-tagcm-bracket">&gt;</span>
+                <span class="cm-tagcm-bracket">&lt;</span><span class="cm-tag">div</span> <span class="cm-attribute">class</span>=<span class="cm-string">&quot;three&quot;</span><span class="cm-tagcm-bracket">&gt;</span>
+                <span class="cm-tagcm-bracket">&lt;/</span><span class="cm-tag">div</span><span class="cm-tagcm-bracket">&gt;</span>
+            <span class="cm-tagcm-bracket">&lt;/</span><span class="cm-tag">div</span><span class="cm-tagcm-bracket">&gt;</span>
+        <span class="cm-tagcm-bracket">&lt;/</span><span class="cm-tag">div</span><span class="cm-tagcm-bracket">&gt;</span>
+    <span class="cm-tagcm-bracket">&lt;/</span><span class="cm-tag">body</span><span class="cm-tagcm-bracket">&gt;</span>
+    <span class="cm-tagcm-bracket">&lt;</span><span class="cm-tag">script</span><span class="cm-tagcm-bracket">&gt;</span>
+        var divs = document.querySelectorAll(&apos;div&apos;);
+        divs.forEach(function(div) {
+            div.addEventListener(&apos;click&apos;, logEvent);
+        });
+
+        function logEvent(event) {
+            console.log(event.currentTarget.className);
+        }
+    <span class="cm-tagcm-bracket">&lt;/</span><span class="cm-tag">script</span><span class="cm-tagcm-bracket">&gt;</span>
+<span class="cm-tagcm-bracket">&lt;/</span><span class="cm-tag">body</span><span class="cm-tagcm-bracket">&gt;</span>
+<span class="cm-tagcm-bracket">&lt;/</span><span class="cm-tag">html</span><span class="cm-tagcm-bracket">&gt;</span>
+</code></pre>
+<p>&#xC704; &#xCF54;&#xB4DC;&#xB97C; &#xC2E4;&#xD589;&#xD558;&#xBA74; <code>querySelectorAll</code>&#xB85C; <code>div</code> &#xD0DC;&#xADF8; &#xBAA8;&#xB450; &#xD074;&#xB9AD; &#xC774;&#xBCA4;&#xD2B8;&#xB97C; &#xB4F1;&#xB85D;&#xD55C;&#xB2E4;. &#xADF8;&#xB9AC;&#xACE0;, &#xD074;&#xB9AD;&#xD588;&#xC744; &#xB54C; <code>logEvent()</code>&#xAC00; &#xC2E4;&#xD589;&#xB41C;&#xB2E4;.
+&#xBC11;&#xC758; &#xACB0;&#xACFC;&#xB97C; &#xBCF4;&#xBA74; <code>three</code>-&gt;<code>two</code>-&gt;<code>one</code> &#xC21C;&#xC11C;&#xB85C; &#xCF58;&#xC194; &#xB85C;&#xADF8;&#xAC00; &#xCD9C;&#xB825;&#xB41C; &#xAC83;&#xC744; &#xD655;&#xC778;&#xD560; &#xC218; &#xC788;&#xB2E4;.</p>
+<p><img src="https://user-images.githubusercontent.com/52439201/157051957-0cfbbd39-c938-4bc1-b94b-0b9958655653.png" alt="image"></p>
+<p>&#xC774;&#xC640; &#xAC19;&#xC774; <code>div</code> &#xD0DC;&#xADF8; &#xD55C; &#xAC1C;&#xB9CC; &#xD074;&#xB9AD;&#xD588;&#xB294;&#xB370; 3&#xAC1C; &#xC774;&#xBCA4;&#xD2B8;&#xAC00; &#xBC1C;&#xC0DD;&#xD55C; &#xC774;&#xC720;&#xB294; &#xBE0C;&#xB77C;&#xC6B0;&#xC800;&#xB294; &#xD2B9;&#xC815; &#xD654;&#xBA74; &#xC694;&#xC18C;&#xC5D0;&#xC11C; &#xC774;&#xBCA4;&#xD2B8;&#xAC00; &#xBC1C;&#xC0DD;&#xD588;&#xC744; &#xB54C; &#xADF8; &#xC774;&#xBCA4;&#xD2B8; &#xCD5C;&#xC0C1;&#xC704;&#xC5D0; &#xC788;&#xB294; &#xD654;&#xBA74; &#xC694;&#xC18C;&#xAE4C;&#xC9C0; &#xC774;&#xBCA4;&#xD2B8;&#xB97C; <code>&#xC804;&#xD30C;</code>&#xC2DC;&#xD0A8;&#xB2E4;.
+&#xB530;&#xB77C;&#xC11C;, <code>three</code>-&gt;<code>two</code>-&gt;<code>one</code> &#xC21C;&#xC11C;&#xB85C; &#xC774;&#xBCA4;&#xD2B8;&#xAC00; &#xC2E4;&#xD589;&#xB41C; &#xAC83;&#xC774;&#xB2E4;.</p>
+<p>&#xB9CC;&#xC57D;, &#xD2B9;&#xC815; <code>div</code> &#xD0DC;&#xADF8;&#xC5D0;&#xB9CC; &#xC774;&#xBCA4;&#xD2B8;&#xB97C; &#xC900;&#xB2E4;&#xBA74; &#xC704;&#xC640; &#xAC19;&#xC740; &#xB3D9;&#xC791;&#xC740; &#xC77C;&#xC5B4;&#xB098;&#xC9C0; &#xC54A;&#xB294;&#xB2E4;.</p>
+<p>&#xC774;&#xC640; &#xAC19;&#xC774; &#xD558;&#xC704;&#xC5D0;&#xC11C; &#xC0C1;&#xC704; &#xC694;&#xC18C;&#xB85C;&#xC758; &#xC774;&#xBCA4;&#xD2B8; &#xC804;&#xD30C; &#xBC29;&#xC2DD;&#xC744; &#xC774;&#xBCA4;&#xD2B8; &#xBC84;&#xBE14;&#xB9C1;(Event Bubbling)&#xC774;&#xB77C;&#xACE0; &#xD55C;&#xB2E4;.</p>
+<p><br></p>
+<h2 id="&#xC774;&#xBCA4;&#xD2B8;-&#xCEA1;&#xCCD0;---event-capture">&#xC774;&#xBCA4;&#xD2B8; &#xCEA1;&#xCCD0; - Event Capture</h2>
+<p>&#xC774;&#xBCA4;&#xD2B8; &#xCEA1;&#xCC98;&#xB294; &#xC774;&#xBCA4;&#xD2B8; &#xBC84;&#xBE14;&#xB9C1;&#xACFC; &#xBC18;&#xB300; &#xBC29;&#xD5A5;&#xC73C;&#xB85C; &#xC9C4;&#xD589;&#xB418;&#xB294; &#xC774;&#xBCA4;&#xD2B8; &#xC804;&#xD30C; &#xBC29;&#xC2DD;&#xC774;&#xB2E4;.</p>
+<p>&#xBC11;&#xC758; &#xADF8;&#xB9BC;&#xCC98;&#xB7FC; &#xD2B9;&#xC815; &#xC774;&#xBCA4;&#xD2B8;&#xAC00; &#xBC1C;&#xC0DD;&#xD558;&#xAC8C; &#xB418;&#xBA74; &#xCD5C;&#xC0C1;&#xC704; &#xC694;&#xC18C;&#xC778; body &#xD0DC;&#xADF8;&#xC5D0;&#xC11C; &#xD574;&#xB2F9; &#xD0DC;&#xADF8;&#xB97C; &#xCC3E;&#xC544; &#xB0B4;&#xB824;&#xAC04;&#xB2E4;.</p>
+<p><img src="https://user-images.githubusercontent.com/52439201/158369900-21f2ae40-e7da-47ac-837d-6e2cd3d8a1a6.png" alt="image"></p>
+<p>&#xBC11;&#xC758; &#xC608;&#xC81C;&#xB85C; &#xC774;&#xD574;&#xD574;&#xBCF4;&#xC790;. </p>
+<p>&#xC774;&#xBCA4;&#xD2B8; &#xCEA1;&#xCCD0;&#xB85C; &#xC804;&#xD30C;&#xD558;&#xB824;&#xBA74; <code>addEventListener()</code> API&#xC5D0;&#xC11C; &#xC635;&#xC158; &#xAC1D;&#xCCB4;&#xC5D0; <code>capture:true</code>&#xB97C; &#xC124;&#xC815;&#xD574;&#xC8FC;&#xBA74; &#xB41C;&#xB2E4;. </p>
+<pre><code class="lang-html"><span class="cm-meta">&lt;!DOCTYPE html&gt;</span>
+<span class="cm-tagcm-bracket">&lt;</span><span class="cm-tag">html</span> <span class="cm-attribute">lang</span>=<span class="cm-string">&quot;en&quot;</span><span class="cm-tagcm-bracket">&gt;</span>
+<span class="cm-tagcm-bracket">&lt;</span><span class="cm-tag">head</span><span class="cm-tagcm-bracket">&gt;</span>
+    <span class="cm-tagcm-bracket">&lt;</span><span class="cm-tag">meta</span> <span class="cm-attribute">charset</span>=<span class="cm-string">&quot;UTF-8&quot;</span><span class="cm-tagcm-bracket">&gt;</span>
+    <span class="cm-tagcm-bracket">&lt;</span><span class="cm-tag">meta</span> <span class="cm-attribute">http-equiv</span>=<span class="cm-string">&quot;X-UA-Compatible&quot;</span> <span class="cm-attribute">content</span>=<span class="cm-string">&quot;IE=edge&quot;</span><span class="cm-tagcm-bracket">&gt;</span>
+    <span class="cm-tagcm-bracket">&lt;</span><span class="cm-tag">meta</span> <span class="cm-attribute">name</span>=<span class="cm-string">&quot;viewport&quot;</span> <span class="cm-attribute">content</span>=<span class="cm-string">&quot;width=device-width, initial-scale=1.0&quot;</span><span class="cm-tagcm-bracket">&gt;</span>
+    <span class="cm-tagcm-bracket">&lt;</span><span class="cm-tag">title</span><span class="cm-tagcm-bracket">&gt;</span>Document<span class="cm-tagcm-bracket">&lt;/</span><span class="cm-tag">title</span><span class="cm-tagcm-bracket">&gt;</span>
+<span class="cm-tagcm-bracket">&lt;/</span><span class="cm-tag">head</span><span class="cm-tagcm-bracket">&gt;</span>
+<span class="cm-tagcm-bracket">&lt;</span><span class="cm-tag">body</span><span class="cm-tagcm-bracket">&gt;</span>
+    <span class="cm-tagcm-bracket">&lt;</span><span class="cm-tag">style</span><span class="cm-tagcm-bracket">&gt;</span>
+        div {
+            width: 100px;
+            height: 20px;
+        }
+        .three {
+            background-color: gray;
+        }
+    <span class="cm-tagcm-bracket">&lt;/</span><span class="cm-tag">style</span><span class="cm-tagcm-bracket">&gt;</span>
+    <span class="cm-tagcm-bracket">&lt;</span><span class="cm-tag">body</span><span class="cm-tagcm-bracket">&gt;</span>
+        <span class="cm-tagcm-bracket">&lt;</span><span class="cm-tag">div</span> <span class="cm-attribute">class</span>=<span class="cm-string">&quot;one&quot;</span><span class="cm-tagcm-bracket">&gt;</span>
+            <span class="cm-tagcm-bracket">&lt;</span><span class="cm-tag">div</span> <span class="cm-attribute">class</span>=<span class="cm-string">&quot;two&quot;</span><span class="cm-tagcm-bracket">&gt;</span>
+                <span class="cm-tagcm-bracket">&lt;</span><span class="cm-tag">div</span> <span class="cm-attribute">class</span>=<span class="cm-string">&quot;three&quot;</span><span class="cm-tagcm-bracket">&gt;</span>
+                <span class="cm-tagcm-bracket">&lt;/</span><span class="cm-tag">div</span><span class="cm-tagcm-bracket">&gt;</span>
+            <span class="cm-tagcm-bracket">&lt;/</span><span class="cm-tag">div</span><span class="cm-tagcm-bracket">&gt;</span>
+        <span class="cm-tagcm-bracket">&lt;/</span><span class="cm-tag">div</span><span class="cm-tagcm-bracket">&gt;</span>
+    <span class="cm-tagcm-bracket">&lt;/</span><span class="cm-tag">body</span><span class="cm-tagcm-bracket">&gt;</span>
+    <span class="cm-tagcm-bracket">&lt;</span><span class="cm-tag">script</span><span class="cm-tagcm-bracket">&gt;</span>
+        var divs = document.querySelectorAll(&apos;div&apos;);
+        divs.forEach(function(div) {
+            div.addEventListener(&apos;click&apos;, logEvent, {
+                capture: true // default &#xAC12;&#xC740; false&#xC785;&#xB2C8;&#xB2E4;.
+            });
+        });
+
+        function logEvent(event) {
+            console.log(event.currentTarget.className);
+        }
+    <span class="cm-tagcm-bracket">&lt;/</span><span class="cm-tag">script</span><span class="cm-tagcm-bracket">&gt;</span>
+<span class="cm-tagcm-bracket">&lt;/</span><span class="cm-tag">body</span><span class="cm-tagcm-bracket">&gt;</span>
+<span class="cm-tagcm-bracket">&lt;/</span><span class="cm-tag">html</span><span class="cm-tagcm-bracket">&gt;</span>
+</code></pre>
+<p>&#xBC11;&#xC5D0; &#xACB0;&#xACFC;&#xB97C; &#xBCF4;&#xBA74; &#xC544;&#xAE4C;&#xC640; &#xB2E4;&#xB974;&#xAC8C; <code>&lt;div class=&quot;three&quot;&gt;&lt;/div&gt;</code> &#xD074;&#xB9AD;&#xD558;&#xBA74; &#xCD5C;&#xC0C1;&#xC704; &#xC694;&#xC18C; -&gt; &#xCD5C;&#xD558;&#xC704; &#xC694;&#xC18C; &#xC21C;&#xC11C;&#xB85C; &#xC804;&#xD30C;&#xB41C;&#xB2E4;.</p>
+<p><img src="https://user-images.githubusercontent.com/52439201/157054279-0c90c878-7438-4fbd-9a34-92f8232a0e19.png" alt="image"></p>
+<p><br></p>
+<h2 id="eventstoppropagation">event.stopPropagation()</h2>
+<p>&#xC774;&#xBCA4;&#xD2B8; &#xBC84;&#xBE14;&#xB9C1;&#xACFC;, &#xC774;&#xBCA4;&#xD2B8; &#xCEA1;&#xCCD0; &#xBC29;&#xC2DD;&#xC740; &#xD3EC;&#xD568;&#xB41C; &#xBAA8;&#xB4E0; &#xC694;&#xC18C;&#xB4E4;&#xC5D0;&#xAC8C; &#xC804;&#xD30C;&#xC2DC;&#xD0A8;&#xB2E4;(&#xC21C;&#xC11C;&#xB9CC; &#xB2E4;&#xB97C; &#xBFD0;).
+&#xD558;&#xC9C0;&#xB9CC;, &#xC2DC;&#xC791;&#xC9C0;&#xC810;&#xC5D0;&#xC11C; &#xD55C; &#xBC88;&#xB9CC; &#xC774;&#xBCA4;&#xD2B8;&#xB97C; &#xBC1C;&#xC0DD;&#xC2DC;&#xD0A4;&#xACE0; &#xC0C1;&#xC704; &#xD639;&#xC740; &#xD558;&#xC704;&#xB85C; &#xC774;&#xBCA4;&#xD2B8;&#xB97C; &#xC804;&#xB2EC;&#xD558;&#xACE0; &#xC2F6;&#xC9C0; &#xC54A;&#xC744; &#xB54C; <code>event.stopPropagation()</code>&#xB97C; &#xC0AC;&#xC6A9;&#xD55C;&#xB2E4;.</p>
+<ul>
+<li>&#xC774;&#xBCA4;&#xD2B8; &#xBC84;&#xBE14;&#xB9C1; &#xC804;&#xD30C;&#xB97C; &#xB9C9;&#xB294;&#xB2E4;. </li>
+</ul>
+<pre><code class="lang-html"><span class="cm-tagcm-bracket">&lt;</span><span class="cm-tag">body</span><span class="cm-tagcm-bracket">&gt;</span>
+    <span class="cm-tagcm-bracket">&lt;</span><span class="cm-tag">div</span> <span class="cm-attribute">class</span>=<span class="cm-string">&quot;one&quot;</span><span class="cm-tagcm-bracket">&gt;</span>
+        <span class="cm-tagcm-bracket">&lt;</span><span class="cm-tag">div</span> <span class="cm-attribute">class</span>=<span class="cm-string">&quot;two&quot;</span><span class="cm-tagcm-bracket">&gt;</span>
+            <span class="cm-tagcm-bracket">&lt;</span><span class="cm-tag">div</span> <span class="cm-attribute">class</span>=<span class="cm-string">&quot;three&quot;</span><span class="cm-tagcm-bracket">&gt;</span>
+            <span class="cm-tagcm-bracket">&lt;/</span><span class="cm-tag">div</span><span class="cm-tagcm-bracket">&gt;</span>
+        <span class="cm-tagcm-bracket">&lt;/</span><span class="cm-tag">div</span><span class="cm-tagcm-bracket">&gt;</span>
+    <span class="cm-tagcm-bracket">&lt;/</span><span class="cm-tag">div</span><span class="cm-tagcm-bracket">&gt;</span>
+<span class="cm-tagcm-bracket">&lt;/</span><span class="cm-tag">body</span><span class="cm-tagcm-bracket">&gt;</span>
+<span class="cm-tagcm-bracket">&lt;</span><span class="cm-tag">script</span><span class="cm-tagcm-bracket">&gt;</span>
+    var divs = document.querySelectorAll(&apos;div&apos;);
+    divs.forEach(function(div) {
+        div.addEventListener(&apos;click&apos;, logEvent);
+    });
+
+    function logEvent(event) {
+        event.stopPropagation();
+        console.log(event.currentTarget.className);
+    }
+<span class="cm-tagcm-bracket">&lt;/</span><span class="cm-tag">script</span><span class="cm-tagcm-bracket">&gt;</span>
+</code></pre>
+<ul>
+<li>&#xC774;&#xBCA4;&#xD2B8; &#xCEA1;&#xCCD0; &#xC804;&#xD30C;&#xB97C; &#xB9C9;&#xB294;&#xB2E4;.  </li>
+</ul>
+<pre><code class="lang-html"><span class="cm-tagcm-bracket">&lt;</span><span class="cm-tag">body</span><span class="cm-tagcm-bracket">&gt;</span>
+    <span class="cm-tagcm-bracket">&lt;</span><span class="cm-tag">div</span> <span class="cm-attribute">class</span>=<span class="cm-string">&quot;one&quot;</span><span class="cm-tagcm-bracket">&gt;</span>
+        <span class="cm-tagcm-bracket">&lt;</span><span class="cm-tag">div</span> <span class="cm-attribute">class</span>=<span class="cm-string">&quot;two&quot;</span><span class="cm-tagcm-bracket">&gt;</span>
+            <span class="cm-tagcm-bracket">&lt;</span><span class="cm-tag">div</span> <span class="cm-attribute">class</span>=<span class="cm-string">&quot;three&quot;</span><span class="cm-tagcm-bracket">&gt;</span>
+            <span class="cm-tagcm-bracket">&lt;/</span><span class="cm-tag">div</span><span class="cm-tagcm-bracket">&gt;</span>
+        <span class="cm-tagcm-bracket">&lt;/</span><span class="cm-tag">div</span><span class="cm-tagcm-bracket">&gt;</span>
+    <span class="cm-tagcm-bracket">&lt;/</span><span class="cm-tag">div</span><span class="cm-tagcm-bracket">&gt;</span>
+<span class="cm-tagcm-bracket">&lt;/</span><span class="cm-tag">body</span><span class="cm-tagcm-bracket">&gt;</span>
+<span class="cm-tagcm-bracket">&lt;</span><span class="cm-tag">script</span><span class="cm-tagcm-bracket">&gt;</span>
+    var divs = document.querySelectorAll(&apos;div&apos;);
+    divs.forEach(function(div) {
+        div.addEventListener(&apos;click&apos;, logEvent, {
+              capture: true // default &#xAC12;&#xC740; false&#xC785;&#xB2C8;&#xB2E4;.
+          });
+    });
+
+    function logEvent(event) {
+        event.stopPropagation();
+        console.log(event.currentTarget.className);
+    }
+<span class="cm-tagcm-bracket">&lt;/</span><span class="cm-tag">script</span><span class="cm-tagcm-bracket">&gt;</span>
+</code></pre>
+<p><br></p>
+<h2 id="&#xC774;&#xBCA4;&#xD2B8;-&#xC704;&#xC784;---event-delegation">&#xC774;&#xBCA4;&#xD2B8; &#xC704;&#xC784; - Event Delegation</h2>
+<p>&#xC774;&#xBCA4;&#xD2B8; &#xBC84;&#xBE14;, &#xC774;&#xBCA4;&#xD2B8; &#xCEA1;&#xCCD0;&#xB85C; &#xC774;&#xBCA4;&#xD2B8;&#xB97C; &#xC804;&#xD30C;&#xD558;&#xB294; &#xAC83;&#xC744; &#xBC30;&#xC6E0;&#xB2E4;. &#xC774;&#xAC83;&#xC740; &#xC774;&#xBCA4;&#xD2B8; &#xC704;&#xC784;&#xC744; &#xC704;&#xD55C; &#xAE30;&#xCD08; &#xC9C0;&#xC2DD;&#xC774;&#xB77C;&#xACE0; &#xD574;&#xB3C4; &#xACFC;&#xC5B8;&#xC774; &#xC544;&#xB2C8;&#xB2E4;.
+&#xC774;&#xBCA4;&#xD2B8; &#xC704;&#xC784;&#xC740; &#xC2E4;&#xC81C; <code>Vanilla Javascript</code>&#xB85C; &#xC6F9; &#xC571;&#xC744; &#xAD6C;&#xD604;&#xD560; &#xB54C; &#xC790;&#xC8FC; &#xC0AC;&#xC6A9;&#xD558;&#xAC8C; &#xB418;&#xB294; &#xCF54;&#xB529; &#xD328;&#xD134;&#xC774;&#xB2E4;.</p>
+<p>&#xC774;&#xBCA4;&#xD2B8; &#xC704;&#xC784;&#xC744; &#xAC04;&#xB2E8;&#xD558;&#xAC8C; &#xC124;&#xBA85;&#xD558;&#xC790;&#xBA74;, <code>&#xD558;&#xC704; &#xC694;&#xC18C;&#xC5D0; &#xC774;&#xBCA4;&#xD2B8;&#xB97C; &#xAC01;&#xAC01; &#xBD99;&#xC774;&#xC9C0; &#xC54A;&#xACE0; &#xC0C1;&#xC704; &#xC694;&#xC18C;&#xC5D0;&#xC11C; &#xD558;&#xC704; &#xC694;&#xC18C;&#xC758; &#xC774;&#xBCA4;&#xD2B8;&#xB4E4;&#xC744; &#xC81C;&#xC5B4;&#xD558;&#xB294; &#xBC29;&#xC2DD;</code>&#xC774;&#xB2E4;.</p>
+<p>&#xBC11;&#xC758; &#xAC04;&#xB2E8;&#xD55C; &#xC608;&#xC81C;&#xB85C; &#xC774;&#xD574;&#xD574;&#xBCF4;&#xC790;.</p>
+<pre><code class="lang-html"><span class="cm-meta">&lt;!DOCTYPE html&gt;</span>
+<span class="cm-tagcm-bracket">&lt;</span><span class="cm-tag">html</span> <span class="cm-attribute">lang</span>=<span class="cm-string">&quot;en&quot;</span><span class="cm-tagcm-bracket">&gt;</span>
+<span class="cm-tagcm-bracket">&lt;</span><span class="cm-tag">head</span><span class="cm-tagcm-bracket">&gt;</span>
+    <span class="cm-tagcm-bracket">&lt;</span><span class="cm-tag">meta</span> <span class="cm-attribute">charset</span>=<span class="cm-string">&quot;UTF-8&quot;</span><span class="cm-tagcm-bracket">&gt;</span>
+    <span class="cm-tagcm-bracket">&lt;</span><span class="cm-tag">meta</span> <span class="cm-attribute">http-equiv</span>=<span class="cm-string">&quot;X-UA-Compatible&quot;</span> <span class="cm-attribute">content</span>=<span class="cm-string">&quot;IE=edge&quot;</span><span class="cm-tagcm-bracket">&gt;</span>
+    <span class="cm-tagcm-bracket">&lt;</span><span class="cm-tag">meta</span> <span class="cm-attribute">name</span>=<span class="cm-string">&quot;viewport&quot;</span> <span class="cm-attribute">content</span>=<span class="cm-string">&quot;width=device-width, initial-scale=1.0&quot;</span><span class="cm-tagcm-bracket">&gt;</span>
+    <span class="cm-tagcm-bracket">&lt;</span><span class="cm-tag">title</span><span class="cm-tagcm-bracket">&gt;</span>Document<span class="cm-tagcm-bracket">&lt;/</span><span class="cm-tag">title</span><span class="cm-tagcm-bracket">&gt;</span>
+<span class="cm-tagcm-bracket">&lt;/</span><span class="cm-tag">head</span><span class="cm-tagcm-bracket">&gt;</span>
+<span class="cm-tagcm-bracket">&lt;</span><span class="cm-tag">body</span><span class="cm-tagcm-bracket">&gt;</span>
+    <span class="cm-tagcm-bracket">&lt;</span><span class="cm-tag">style</span><span class="cm-tagcm-bracket">&gt;</span>
+        button {
+            width: 100px;
+            height: 20px;
+            background-color: gray;
+        }
+    <span class="cm-tagcm-bracket">&lt;/</span><span class="cm-tag">style</span><span class="cm-tagcm-bracket">&gt;</span>
+    <span class="cm-tagcm-bracket">&lt;</span><span class="cm-tag">body</span><span class="cm-tagcm-bracket">&gt;</span>
+        <span class="cm-tagcm-bracket">&lt;</span><span class="cm-tag">div</span> <span class="cm-attribute">class</span>=<span class="cm-string">&quot;list&quot;</span><span class="cm-tagcm-bracket">&gt;</span>
+            <span class="cm-tagcm-bracket">&lt;</span><span class="cm-tag">button</span> <span class="cm-attribute">class</span>=<span class="cm-string">&quot;one&quot;</span><span class="cm-tagcm-bracket">&gt;</span>one<span class="cm-tagcm-bracket">&lt;/</span><span class="cm-tag">button</span><span class="cm-tagcm-bracket">&gt;</span>
+            <span class="cm-tagcm-bracket">&lt;</span><span class="cm-tag">button</span> <span class="cm-attribute">class</span>=<span class="cm-string">&quot;two&quot;</span><span class="cm-tagcm-bracket">&gt;</span>two<span class="cm-tagcm-bracket">&lt;/</span><span class="cm-tag">button</span><span class="cm-tagcm-bracket">&gt;</span>
+            <span class="cm-tagcm-bracket">&lt;</span><span class="cm-tag">button</span> <span class="cm-attribute">class</span>=<span class="cm-string">&quot;three&quot;</span><span class="cm-tagcm-bracket">&gt;</span>three<span class="cm-tagcm-bracket">&lt;/</span><span class="cm-tag">button</span><span class="cm-tagcm-bracket">&gt;</span>
+        <span class="cm-tagcm-bracket">&lt;/</span><span class="cm-tag">div</span><span class="cm-tagcm-bracket">&gt;</span>
+    <span class="cm-tagcm-bracket">&lt;/</span><span class="cm-tag">body</span><span class="cm-tagcm-bracket">&gt;</span>
+    <span class="cm-tagcm-bracket">&lt;</span><span class="cm-tag">script</span><span class="cm-tagcm-bracket">&gt;</span>
+        var buttons = document.querySelectorAll(&apos;button&apos;);
+        buttons.forEach(function(button) {
+            button.addEventListener(&apos;click&apos;, function(event){
+                alert(event.currentTarget.className);
+            });
+        });
+    <span class="cm-tagcm-bracket">&lt;/</span><span class="cm-tag">script</span><span class="cm-tagcm-bracket">&gt;</span>
+<span class="cm-tagcm-bracket">&lt;/</span><span class="cm-tag">body</span><span class="cm-tagcm-bracket">&gt;</span>
+<span class="cm-tagcm-bracket">&lt;/</span><span class="cm-tag">html</span><span class="cm-tagcm-bracket">&gt;</span>
+</code></pre>
+<p>&#xC704;&#xC758; &#xCF54;&#xB4DC;&#xB294; <code>querySelectorAll()</code>&#xB85C; &#xBAA8;&#xB4E0; <code>button</code> &#xC694;&#xC18C;&#xB4E4;&#xC744; &#xAC00;&#xC838;&#xC640; &#xAC01;&#xAC01; <code>click</code> &#xC774;&#xBCA4;&#xD2B8; &#xB9AC;&#xC2A4;&#xB108;&#xB97C; &#xCD94;&#xAC00;&#xD574;&#xC92C;&#xB2E4;. 
+&#xC2E4;&#xD589;&#xC2DC;&#xD0A8; &#xB2E4;&#xC74C; &#xAC01; &#xBC84;&#xD2BC;&#xC744; &#xB204;&#xB974;&#xBA74; &#xD574;&#xB2F9; &#xBC84;&#xD2BC;&#xC758; <code>class name</code>&#xC774; &#xC54C;&#xB78C;&#xCC3D;&#xC73C;&#xB85C; &#xD45C;&#xC2DC;&#xB41C;&#xB2E4;.</p>
+<p><img src="https://user-images.githubusercontent.com/52439201/157164917-92359fb2-1c20-43b5-8bd1-0485829b9131.png" alt="image"></p>
+<p><img src="https://user-images.githubusercontent.com/52439201/157165259-394a84ab-1839-42e2-83c7-d6b9d8390868.png" alt="image"></p>
+<p><img src="https://user-images.githubusercontent.com/52439201/157165277-6b03d1dd-d2ce-440d-8fe6-5e8a5b78eb0d.png" alt="image"></p>
+<p><br></p>
+<p>&#xC5EC;&#xAE30;&#xAE4C;&#xC9C0;&#xB294; &#xC5B4;&#xB835;&#xC9C0; &#xC54A;&#xAC8C; &#xC9C4;&#xD589;&#xD588;&#xC9C0;&#xB9CC;, &#xB9CC;&#xC57D; &#xC0C8;&#xB85C;&#xC6B4; &#xBC84;&#xD2BC;&#xC744; &#xCD94;&#xAC00;&#xD574;&#xBCF4;&#xBA74; &#xC5B4;&#xB5BB;&#xAC8C; &#xB420;&#xAE4C;?</p>
+<pre><code class="lang-js"><span class="cm-comment">// (&#xC0DD;&#xB7B5;...)</span>
+
+<span class="cm-comment">/* &#xC0C8;&#xB85C;&#xC6B4; four &#xBC84;&#xD2BC; &#xC0DD;&#xC131; */</span>
+<span class="cm-keyword">var</span> <span class="cm-variable">list</span> <span class="cm-operator">=</span> <span class="cm-variable">document</span>.<span class="cm-property">querySelector</span>(<span class="cm-string">&apos;.list&apos;</span>);
+<span class="cm-keyword">var</span> <span class="cm-variable">button</span> <span class="cm-operator">=</span> <span class="cm-variable">document</span>.<span class="cm-property">createElement</span>(<span class="cm-string">&apos;button&apos;</span>);
+<span class="cm-keyword">var</span> <span class="cm-variable">button_text</span> <span class="cm-operator">=</span> <span class="cm-variable">document</span>.<span class="cm-property">createTextNode</span>(<span class="cm-string">&apos;four&apos;</span>);
+
+<span class="cm-variable">button</span>.<span class="cm-property">appendChild</span>(<span class="cm-variable">button_text</span>);
+<span class="cm-variable">list</span>.<span class="cm-property">appendChild</span>(<span class="cm-variable">button</span>);
+</code></pre>
+<p><img src="https://user-images.githubusercontent.com/52439201/157165496-a0667cd7-8986-423c-8916-9f54ec611a21.png" alt="image"></p>
+<p>&#xC2E4;&#xD589;&#xC2DC;&#xD0A4;&#xACE0; <code>four</code> &#xBC84;&#xD2BC;&#xC744; &#xD074;&#xB9AD;&#xD574;&#xB3C4; click &#xC774;&#xBCA4;&#xD2B8; &#xB9AC;&#xC2A4;&#xB108;&#xAC00; &#xC791;&#xB3D9;&#xB418;&#xC9C0; &#xC54A;&#xB294;&#xB2E4;. &#xADF8; &#xC774;&#xC720;&#xB294; &#xAC04;&#xB2E8;&#xD558;&#xB2E4;.<br>&#xCD5C;&#xCD08; <code>button</code> &#xC694;&#xC18C;&#xB4E4;&#xC758; &#xD074;&#xB9AD; &#xC774;&#xBCA4;&#xD2B8;&#xB97C; &#xCD94;&#xAC00;&#xD558;&#xB294; &#xC2DC;&#xC810;&#xC5D0;&#xC11C;&#xB294; <code>one</code>, <code>two</code>, <code>three</code> 3&#xAC1C;&#xC758; &#xBC84;&#xD2BC;&#xB9CC; &#xC874;&#xC7AC;&#xD588;&#xAE30; &#xB54C;&#xBB38;&#xC5D0; &#xD574;&#xB2F9; &#xBC84;&#xD2BC;&#xB4E4;&#xB9CC; &#xC774;&#xBCA4;&#xD2B8;&#xAC00; &#xB4F1;&#xB85D;&#xB418;&#xC5C8;&#xACE0;
+&#xB098;&#xC911;&#xC5D0; &#xCD94;&#xAC00;&#xD55C; <code>four</code> &#xBC84;&#xD2BC;&#xC740; &#xD074;&#xB9AD; &#xC774;&#xBCA4;&#xD2B8;&#xAC00; &#xB4F1;&#xB85D;&#xB418;&#xC9C0; &#xC54A;&#xC558;&#xB2E4;. &#xB530;&#xB77C;&#xC11C;, <code>four</code> &#xBC84;&#xD2BC;&#xC5D0;&#xB3C4; &#xC0C8;&#xB86D;&#xAC8C; &#xC774;&#xBCA4;&#xD2B8;&#xB97C; &#xB4F1;&#xB85D;&#xD574;&#xC918;&#xC57C; &#xD55C;&#xB2E4;.</p>
+<p>&#xD558;&#xC9C0;&#xB9CC;, &#xAC1C;&#xBC1C;&#xC744; &#xD558;&#xB2E4;&#xBCF4;&#xBA74; &#xC0C8;&#xB85C;&#xC6B4; &#xAE30;&#xB2A5;, &#xC0C8;&#xB85C;&#xC6B4; &#xC694;&#xC18C;&#xB4E4;&#xC744; &#xCD94;&#xAC00;&#xD560; &#xC0C1;&#xD669;&#xC774; &#xB9CE;&#xC544;&#xC9C4;&#xB2E4;. &#xADF8;&#xB7F4; &#xB54C; &#xB9C8;&#xB2E4; &#xC774;&#xBCA4;&#xD2B8; &#xB9AC;&#xC2A4;&#xB108;&#xB97C; &#xB4F1;&#xB85D;&#xD574;&#xC57C; &#xD55C;&#xB2E4;&#xBA74; &#xB9E4;&#xC6B0; &#xBC88;&#xAC70;&#xB86D;&#xAC8C;&#xB41C;&#xB2E4;.<br>&#xC774; &#xBC88;&#xAC70;&#xB85C;&#xC6B4; &#xC791;&#xC5C5;&#xC744; &#xD574;&#xACB0;&#xD558;&#xB294; &#xBC29;&#xBC95;&#xC774; <code>&#xC774;&#xBCA4;&#xD2B8; &#xC704;&#xC784;</code>&#xC774;&#xB2E4;.</p>
+<p>&#xC704;&#xC758; &#xCF54;&#xB4DC;&#xB97C; &#xC544;&#xB798;&#xC640; &#xAC19;&#xC774; &#xBCC0;&#xACBD;&#xD574;&#xBCF4;&#xC790;.</p>
+<pre><code class="lang-js"><span class="cm-keyword">var</span> <span class="cm-variable">buttons</span> <span class="cm-operator">=</span> <span class="cm-variable">document</span>.<span class="cm-property">querySelectorAll</span>(<span class="cm-string">&apos;.list&apos;</span>);
+<span class="cm-variable">buttons</span>.<span class="cm-property">forEach</span>(<span class="cm-keyword">function</span>(<span class="cm-def">button</span>) {
+    <span class="cm-variable-2">button</span>.<span class="cm-property">addEventListener</span>(<span class="cm-string">&apos;click&apos;</span>, <span class="cm-keyword">function</span>(<span class="cm-def">event</span>){
+        <span class="cm-variable">alert</span>(<span class="cm-variable-2">event</span>.<span class="cm-property">currentTarget</span>.<span class="cm-property">className</span>);
+    });
+});
+
+<span class="cm-comment">/* &#xC0C8;&#xB85C;&#xC6B4; four &#xBC84;&#xD2BC; &#xC0DD;&#xC131; */</span>
+<span class="cm-keyword">var</span> <span class="cm-variable">list</span> <span class="cm-operator">=</span> <span class="cm-variable">document</span>.<span class="cm-property">querySelector</span>(<span class="cm-string">&apos;.list&apos;</span>);
+<span class="cm-keyword">var</span> <span class="cm-variable">button</span> <span class="cm-operator">=</span> <span class="cm-variable">document</span>.<span class="cm-property">createElement</span>(<span class="cm-string">&apos;button&apos;</span>);
+<span class="cm-keyword">var</span> <span class="cm-variable">button_text</span> <span class="cm-operator">=</span> <span class="cm-variable">document</span>.<span class="cm-property">createTextNode</span>(<span class="cm-string">&apos;four&apos;</span>);
+
+<span class="cm-variable">button</span>.<span class="cm-property">appendChild</span>(<span class="cm-variable">button_text</span>);
+<span class="cm-variable">list</span>.<span class="cm-property">appendChild</span>(<span class="cm-variable">button</span>);
+</code></pre>
+<p>&#xBAA8;&#xB4E0; <code>button</code>&#xC694;&#xC18C;&#xB97C; &#xC77C;&#xC77C;&#xC774; &#xC774;&#xBCA4;&#xD2B8; &#xB9AC;&#xC2A4;&#xB108;&#xB97C; &#xCD94;&#xAC00;&#xD560; &#xD544;&#xC694;&#xC5C6;&#xC774; <code>button</code>&#xC694;&#xC18C;&#xC758; &#xC0C1;&#xC704; &#xC694;&#xC18C;&#xC778; <code>&lt;div class=&quot;list&quot;&gt;</code>&#xC5D0; &#xC774;&#xBCA4;&#xD2B8; &#xB9AC;&#xC2A4;&#xB108;&#xB97C; &#xB4F1;&#xB85D;&#xD558;&#xBA74; &#xD558;&#xC704;&#xC5D0; &#xBC1C;&#xC0DD;&#xD55C; &#xD074;&#xB9AD; &#xC774;&#xBCA4;&#xD2B8;&#xB97C; &#xAC10;&#xC9C0;&#xD55C;&#xB2E4;.</p>
+<p><img src="https://user-images.githubusercontent.com/52439201/157173418-7c0088c0-b543-4d55-b2da-be2c532c5d1a.png" alt="image"></p>
+<h3 id="&#xD2B9;&#xC815;-&#xD558;&#xC704;-&#xC694;&#xC18C;&#xB9CC;-&#xC81C;&#xC5B4;">&#xD2B9;&#xC815; &#xD558;&#xC704; &#xC694;&#xC18C;&#xB9CC; &#xC81C;&#xC5B4;</h3>
+<p>&#xD558;&#xC9C0;&#xB9CC; &#xC5EC;&#xAE30;&#xC11C; &#xAC01; &#xBC84;&#xD2BC;&#xC744; &#xD074;&#xB9AD;&#xD574;&#xB3C4; <code>list</code>&#xB77C;&#xB294; &#xB0B4;&#xC6A9;&#xC758; &#xC54C;&#xB78C;&#xCC3D;&#xC774; &#xBC1C;&#xC0DD;&#xD55C;&#xB2E4;. &#xADF8; &#xC774;&#xC720;&#xB294; &#xD604;&#xC7AC;&#xC758; &#xD0C0;&#xAC9F;&#xC740; &#xCD5C;&#xC0C1;&#xC704; &#xC694;&#xC18C;&#xC778; <code>&lt;div class=&quot;list&quot;&gt;</code>&#xC774;&#xAE30; &#xB54C;&#xBB38;&#xC774;&#xB2E4;.
+&#xB530;&#xB77C;&#xC11C; <code>alert(event.currentTarget.className);</code>&#xC774; <code>list</code>&#xB9CC; &#xBC1C;&#xC0DD;&#xD558;&#xB294; &#xAC83;&#xC774;&#xB2E4;. </p>
+<p>&#xADF8;&#xB9AC;&#xACE0; &#xD604;&#xC7AC; <code>&lt;div class=&quot;list&quot;&gt;</code> &#xD0DC;&#xADF8;&#xC758; &#xD558;&#xC704; &#xBAA8;&#xB4E0; &#xC694;&#xC18C;&#xB4E4;&#xC740; &#xC774;&#xBCA4;&#xD2B8;&#xB97C; &#xAC10;&#xC9C0;&#xD558;&#xAE30; &#xB54C;&#xBB38;&#xC5D0; &#xD2B9;&#xC815; &#xD0DC;&#xADF8;. &#xD2B9;&#xC815; &#xD074;&#xB798;&#xC2A4;, &#xD2B9;&#xC815; ID&#xC5D0;&#xB9CC; &#xC774;&#xBCA4;&#xD2B8;&#xB97C; &#xC8FC;&#xACE0;&#xC2F6;&#xB2E4;&#xBA74; &#xC608;&#xC678;&#xCC98;&#xB9AC;&#xB85C; &#xAD6C;&#xD604;&#xD574;&#xC57C; &#xD55C;&#xB2E4;.  </p>
+<p><code>button</code> &#xD0DC;&#xADF8;&#xC778; &#xACBD;&#xC6B0;&#xC5D0;&#xB9CC; &#xC774;&#xBCA4;&#xD2B8;&#xAC00; &#xBC1C;&#xC0DD;&#xD558;&#xB3C4;&#xB85D; &#xC218;&#xC815;&#xD574;&#xBCF4;&#xC790;.</p>
+<pre><code class="lang-html"><span class="cm-meta">&lt;!DOCTYPE html&gt;</span>
+<span class="cm-tagcm-bracket">&lt;</span><span class="cm-tag">html</span> <span class="cm-attribute">lang</span>=<span class="cm-string">&quot;en&quot;</span><span class="cm-tagcm-bracket">&gt;</span>
+<span class="cm-tagcm-bracket">&lt;</span><span class="cm-tag">head</span><span class="cm-tagcm-bracket">&gt;</span>
+    <span class="cm-tagcm-bracket">&lt;</span><span class="cm-tag">meta</span> <span class="cm-attribute">charset</span>=<span class="cm-string">&quot;UTF-8&quot;</span><span class="cm-tagcm-bracket">&gt;</span>
+    <span class="cm-tagcm-bracket">&lt;</span><span class="cm-tag">meta</span> <span class="cm-attribute">http-equiv</span>=<span class="cm-string">&quot;X-UA-Compatible&quot;</span> <span class="cm-attribute">content</span>=<span class="cm-string">&quot;IE=edge&quot;</span><span class="cm-tagcm-bracket">&gt;</span>
+    <span class="cm-tagcm-bracket">&lt;</span><span class="cm-tag">meta</span> <span class="cm-attribute">name</span>=<span class="cm-string">&quot;viewport&quot;</span> <span class="cm-attribute">content</span>=<span class="cm-string">&quot;width=device-width, initial-scale=1.0&quot;</span><span class="cm-tagcm-bracket">&gt;</span>
+    <span class="cm-tagcm-bracket">&lt;</span><span class="cm-tag">title</span><span class="cm-tagcm-bracket">&gt;</span>Document<span class="cm-tagcm-bracket">&lt;/</span><span class="cm-tag">title</span><span class="cm-tagcm-bracket">&gt;</span>
+<span class="cm-tagcm-bracket">&lt;/</span><span class="cm-tag">head</span><span class="cm-tagcm-bracket">&gt;</span>
+<span class="cm-tagcm-bracket">&lt;</span><span class="cm-tag">body</span><span class="cm-tagcm-bracket">&gt;</span>
+    <span class="cm-tagcm-bracket">&lt;</span><span class="cm-tag">style</span><span class="cm-tagcm-bracket">&gt;</span>
+        button, div{
+            width: 100px;
+            height: 20px;
+            background-color: gray;
+        }
+    <span class="cm-tagcm-bracket">&lt;/</span><span class="cm-tag">style</span><span class="cm-tagcm-bracket">&gt;</span>
+    <span class="cm-tagcm-bracket">&lt;</span><span class="cm-tag">body</span><span class="cm-tagcm-bracket">&gt;</span>
+        <span class="cm-tagcm-bracket">&lt;</span><span class="cm-tag">div</span> <span class="cm-attribute">class</span>=<span class="cm-string">&quot;list&quot;</span><span class="cm-tagcm-bracket">&gt;</span>
+            <span class="cm-tagcm-bracket">&lt;</span><span class="cm-tag">button</span> <span class="cm-attribute">class</span>=<span class="cm-string">&quot;one&quot;</span><span class="cm-tagcm-bracket">&gt;</span>one<span class="cm-tagcm-bracket">&lt;/</span><span class="cm-tag">button</span><span class="cm-tagcm-bracket">&gt;</span>
+            <span class="cm-tagcm-bracket">&lt;</span><span class="cm-tag">button</span> <span class="cm-attribute">class</span>=<span class="cm-string">&quot;two&quot;</span><span class="cm-tagcm-bracket">&gt;</span>two<span class="cm-tagcm-bracket">&lt;/</span><span class="cm-tag">button</span><span class="cm-tagcm-bracket">&gt;</span>
+            <span class="cm-tagcm-bracket">&lt;</span><span class="cm-tag">button</span> <span class="cm-attribute">class</span>=<span class="cm-string">&quot;three&quot;</span><span class="cm-tagcm-bracket">&gt;</span>three<span class="cm-tagcm-bracket">&lt;/</span><span class="cm-tag">button</span><span class="cm-tagcm-bracket">&gt;</span>
+            <span class="cm-tagcm-bracket">&lt;</span><span class="cm-tag">div</span> <span class="cm-attribute">class</span>=<span class="cm-string">&quot;four&quot;</span><span class="cm-tagcm-bracket">&gt;</span>four<span class="cm-tagcm-bracket">&lt;/</span><span class="cm-tag">div</span><span class="cm-tagcm-bracket">&gt;</span>
+        <span class="cm-tagcm-bracket">&lt;/</span><span class="cm-tag">div</span><span class="cm-tagcm-bracket">&gt;</span>
+    <span class="cm-tagcm-bracket">&lt;/</span><span class="cm-tag">body</span><span class="cm-tagcm-bracket">&gt;</span>
+    <span class="cm-tagcm-bracket">&lt;</span><span class="cm-tag">script</span><span class="cm-tagcm-bracket">&gt;</span>
+        var buttons = document.querySelectorAll(&apos;.list&apos;);
+        buttons.forEach(function(button) {
+            button.addEventListener(&apos;click&apos;, function(event){
+                if (event.target.tagName === &apos;BUTTON&apos;){ // button &#xD0DC;&#xADF8;&#xC778; &#xACBD;&#xC6B0;&#xC5D0;&#xB9CC; &#xCF5C;&#xBC31;&#xD568;&#xC218;&#xB97C; &#xB9AC;&#xD134;&#xD55C;&#xB2E4;. 
+                    alert(event.target.className);
+                }
+            });
+        });
+
+        /* &#xC0C8;&#xB85C;&#xC6B4; five &#xBC84;&#xD2BC; &#xC0DD;&#xC131; */
+        var list = document.querySelector(&apos;.list&apos;);
+        var button = document.createElement(&apos;button&apos;);
+        var button_text = document.createTextNode(&apos;five&apos;);
+
+        button.setAttribute(&apos;class&apos;, &apos;five&apos;);
+        button.appendChild(button_text);
+        list.appendChild(button);
+    <span class="cm-tagcm-bracket">&lt;/</span><span class="cm-tag">script</span><span class="cm-tagcm-bracket">&gt;</span>
+<span class="cm-tagcm-bracket">&lt;/</span><span class="cm-tag">body</span><span class="cm-tagcm-bracket">&gt;</span>
+<span class="cm-tagcm-bracket">&lt;/</span><span class="cm-tag">html</span><span class="cm-tagcm-bracket">&gt;</span>
+</code></pre>
+<p><code>one</code>, <code>two</code>, <code>three</code>, <code>five</code>&#xC778; button &#xD0DC;&#xADF8;&#xB4E4;&#xC740; &#xC774;&#xBCA4;&#xD2B8; &#xB9AC;&#xC2A4;&#xB108;&#xAC00; &#xB4F1;&#xB85D;&#xB41C; &#xAC83;&#xC744; &#xD655;&#xC778;&#xD560; &#xC218; &#xC788;&#xB2E4;. </p>
+<p><img src="https://user-images.githubusercontent.com/52439201/157174650-61d4f95c-d475-4bb1-8980-eddec36814a8.png" alt="image"></p>
+<p><img src="https://user-images.githubusercontent.com/52439201/157174686-019a70c3-98f5-4186-8e94-ea01f4dbee57.png" alt="image"></p>
+<p><img src="https://user-images.githubusercontent.com/52439201/157174721-109358f8-0a56-47f1-8f13-68ba18ceb5ad.png" alt="image"></p>
+<p><img src="https://user-images.githubusercontent.com/52439201/157174743-b9452226-3853-4b7c-a5c9-d72628576296.png" alt="image"></p>
+<p>&#xD558;&#xC9C0;&#xB9CC;, <code>div</code> &#xD0DC;&#xADF8;&#xB294; &#xC774;&#xBCA4;&#xD2B8; &#xB9AC;&#xC2A4;&#xB108;&#xAC00; &#xB4F1;&#xB85D;&#xB418;&#xC9C0; &#xC54A;&#xC558;&#xB2E4;.</p>
+<p><img src="https://user-images.githubusercontent.com/52439201/157174788-2e6c68e0-b35a-4b7b-bcf4-93ff519d9809.png" alt="image"></p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="03.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: 03.실행 컨텍스트">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"04.이벤트 버블링, 캡쳐링, 위임","level":"1.5.2.4","depth":3,"previous":{"title":"03.실행 컨텍스트","level":"1.5.2.3","depth":3,"path":"pages/frontEnd-knowledge/javascript/03.md","ref":"pages/frontEnd-knowledge/javascript/03.md","articles":[]},"dir":"ltr"},"config":{"plugins":["expandable-chapters-small","theme-darkblue","highlight-1"],"styles":{"website":"assets/css/website.css","ebook":"assets/css/ebook.css","pdf":"assets/css/pdf.css","mobi":"assets/css/mobi.css","epub":"assets/css/epub.css"},"pluginsConfig":{"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-darkblue":{},"highlight":{},"highlight-1":{},"expandable-chapters-small":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"서성식","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"INTRO.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"서성식의 eBook","language":"ko","gitbook":"*"},"file":{"path":"pages/frontEnd-knowledge/javascript/04.md","mtime":"2022-06-12T10:36:55.632Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-07-11T14:57:03.025Z"},"basePath":"../../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../../gitbook/gitbook.js"></script>
+    <script src="../../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
